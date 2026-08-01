@@ -1183,5 +1183,50 @@
   },
   "when-a-teen-gave-voice-to-the-voiceless-why-ai-needs-young-minds": {
     "verdict": "Profiles a Class 11 student in Gurugram who built Paraspeak, a ₹2,000 AI device that converts slurred speech from paralysis or neurological patients into clear spoken Hindi, after seeing patients unable to communicate on a school medical center visit. The standout detail is that no Hindi slurred-speech dataset existed for him to train on, so he built one himself — turning the absence of resources into the actual engineering challenge rather than an excuse to quit."
+  },
+  "your-degree-might-be-obsolete-before-you-even-graduate-what-a-google-ai-pioneer-just-said": {
+    "verdict": "Relays a blunt warning from Jad Tarifi, founder of Google's Generative AI team, that AI PhDs and even law and medicine degrees risk becoming outdated before students finish them, given how fast the field itself is moving. His actual advice is more constructive than the alarming headline suggests — go narrow into underexplored intersections like AI plus regional languages or climate rather than chasing AI research purely because it's trendy."
+  },
+  "how-much-money-little-do-ai-companies-really-make": {
+    "verdict": "A sharply skeptical breakdown of Big Tech's AI spending versus actual returns — $327 billion invested industry-wide against just $18 billion in revenue, with companies like Microsoft and Amazon burning tens of billions for single-digit-billion payoffs. The Indian comparison lands the argument hardest: this spending gap exceeds Pakistan's entire GDP, yet it's building servers to autocomplete emails rather than anything with tangible public value."
+  },
+  "when-indian-government-ads-go-half-price-the-silent-crisis-in-indian-digital-publishing": {
+    "verdict": "Exposes the Central Bureau of Communication's near-50% cut to government digital ad rates since 2016, even as digital has become India's largest ad medium, arguing this quietly guts regional and niche publishers who depend on government ads for 20-30% of revenue. The comparison of a 10-second government video ad's ₹25 rate to a railway station chai is the piece's sharpest rhetorical jab, making an abstract policy failure viscerally concrete."
+  },
+  "googles-doj-defeat-what-the-search-monopoly-ruling-really-means": {
+    "verdict": "Breaks down Judge Amit Mehta's ruling that Google illegally maintained a search monopoly, but stopped short of forcing a Chrome or Android breakup, instead banning exclusive default deals and mandating limited search-index data sharing with rivals. Frames the outcome precisely as a surgical strike rather than a knockout — Google keeps its crown jewels but loses the ability to wall off competition with defaults, with an appeal from Google all but guaranteed to follow."
+  },
+  "if-google-ai-mode-becomes-default-what-really-happens": {
+    "verdict": "Walks systematically through what happens if AI Mode replaces traditional search results by default, arguing the shift isn't just fewer clicks but a wholesale change from 'ranking' to 'being cited' as the metric that determines visibility. The sector-by-sector breakdown across e-commerce, food delivery, healthcare, and travel makes the abstract threat concrete, and the India-specific framing — 95% mobile-first users, multilingual rollout compressing results further — argues the disruption lands harder here than in Western markets."
+  },
+  "google-update-search-console-removes-support-for-six-structured-data-types": {
+    "verdict": "A short reference update noting Google is dropping Search Console support for six already-deprecated structured data types (Course Info, Claim Review, Vehicle Listing, and others) starting September 2025, with the API following in December. Clarifies the practical stakes correctly — rankings aren't affected, this is purely reporting-tool cleanup for formats no longer surfaced in Search."
+  },
+  "ai-mode-is-now-in-hindi-600-million-users-get-instant-answers": {
+    "verdict": "Argues Google's Hindi-language AI Mode rollout is less a feature update than a consolidation of control over how 600 million Hindi speakers discover information, replacing the old page-one link model with a narrower, cited-summary format. The competitive framing is the sharpest insight — by localizing AI Mode for Hindi first, Google effectively cuts off regional players like Dailyhunt and ShareChat that built their value on serving exactly this audience."
+  },
+  "how-google-is-asking-you-to-plan-your-next-vacation-with-ai": {
+    "verdict": "Covers Google's Holiday Travel Trends report and its push toward AI-driven trip planning via the natural-language Flight Deals tool, framing the real goal as keeping users inside Google's ecosystem — Flights, Hotels, Maps — rather than sending them to third-party booking sites. Notes the quieter implication worth sitting with: Google isn't just answering travel questions anymore, it's training people to default to AI over open-web comparison shopping for life decisions."
+  },
+  "googles-new-simplify-feature-on-ios-making-tough-text-easy-to-understand": {
+    "verdict": "Explains Google's new Gemini-powered Simplify feature in the iOS Google app, which lets users highlight dense or jargon-heavy webpage text and instantly get a plain-language rewrite without leaving the page. The step-by-step walkthrough and concrete use cases — legal or medical report jargon, confusing product specs — make clear this is a genuinely practical accessibility tool, not just another AI gimmick."
+  },
+  "ai-hallucinations-machines-that-overthink-without-self-awareness": {
+    "verdict": "Opens with the now-infamous case of lawyers citing ChatGPT-fabricated court cases to frame AI hallucination as structurally inevitable — language models predict plausible next words rather than retrieve verified facts, so gaps in data get filled with confident fiction rather than admitted uncertainty. The human-overthinking analogy is the piece's best move, but the closing distinction is the sharper one: humans sometimes catch themselves mid-spiral, and the machine never does."
+  },
+  "installs-dont-pay-salaries-loyal-users-do": {
+    "verdict": "Uses brutal Indian app retention benchmarks — shopping apps at just 9% Day-1 retention, most categories down to 3-5% by Day-30 — to argue install counts are vanity metrics while loyalty, subscriptions, and owned first-party data are what actually sustain a business. The Blinkit and jewelry-brand examples ground the abstract retention math in real interventions, showing that even modest onboarding fixes can meaningfully move the needle."
+  },
+  "from-tents-to-servers-in-space-how-starcloud-wants-to-rethink-ai-data-centres": {
+    "verdict": "Profiles Starcloud's bet on orbital AI data centres powered by continuous solar exposure and passive radiative cooling, aiming to sidestep the land, water, and grid strain that terrestrial data centres increasingly run into. Stays appropriately grounded about the hurdles — launch costs, radiation-hardening, communication latency, and unresolved space governance questions — rather than treating the vision as a foregone conclusion."
+  },
+  "ai-growth-vs-talent-strategy-the-workforce-crisis-of-2025": {
+    "verdict": "Draws on the WEF's Chief People Officers Outlook to argue companies are freezing hiring while simultaneously scrambling to redesign their entire talent strategy, caught between AI adoption outpacing employee upskilling and a workforce that now values flexibility and purpose over pure compensation. The central claim is worth taking seriously — this isn't an HR problem solvable with new policies, it requires structural operating-model redesign, especially in India where a large but not industry-ready workforce sharpens the mismatch."
+  },
+  "gmail-to-add-one-stop-purchase-tracking-and-smarter-promotions": {
+    "verdict": "A short product update on Gmail's new Purchases view, which consolidates order confirmations and delivery updates into a single list, alongside a Promotions tab reordered by relevance rather than recency ahead of the holiday shopping season. Straightforward reporting on a convenience feature rather than an argument, but useful as a heads-up for anyone whose inbox turns into a shopping mess every festive season."
+  },
+  "google-brings-satellite-sos-to-pixel-watch-4-a-lifeline-beyond-cellular-networks": {
+    "verdict": "Details the Pixel Watch 4's new Satellite SOS feature, letting users send emergency messages via satellite without a nearby phone when cellular service is unavailable, complete with guided orientation cues and a locked interface to keep panicked users focused during a crisis. Notes the real engineering challenge honestly — squeezing satellite-grade antenna performance into a watch-sized device — rather than treating the feature as trivially easy to build."
   }
 }
