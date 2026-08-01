@@ -598,5 +598,50 @@
   },
   "mastering-mind-maps-in-notebooklm-a-simple-guide": {
     "verdict": "A straightforward walkthrough of NotebookLM's Mind Map feature, which auto-generates a visual, clickable breakdown of uploaded source material for students, writers, and researchers overwhelmed by dense documents. Covers the practical mechanics — generating, zooming, querying individual nodes, and sharing via notebook access or file download — without much beyond a feature tour."
+  },
+  "ai-is-rewriting-the-app-store-playbook-and-its-just-getting-started": {
+    "verdict": "Flags a genuinely notable milestone — ChatGPT briefly overtook TikTok as the world's most-downloaded app, with Grok sitting at #3 and AI tools dominating the Tools category top five. Argues this signals a shift from infinite-scroll social apps to co-creative AI utilities, with real implications for how apps retain users and monetize going forward."
+  },
+  "from-audience-to-community-how-indian-media-can-build-with-the-people-not-just-for-them": {
+    "verdict": "Argues Indian media's real advantage isn't scale but linguistic and cultural specificity — pitching concrete formats like Marathi voice-note agri-policy breakdowns or Bhojpuri YouTube Shorts job updates for daily wage workers. The sharpest idea is treating audiences as collaborators rather than users, with feedback loops that actually show people what happened after they reported a local issue."
+  },
+  "ai-seo-guide-how-to-rank-your-website-on-perplexity-ai": {
+    "verdict": "A tactical guide to Perplexity visibility centered on domain authority, structured FAQ-style content, and earning citations from research or academic sources rather than chasing traditional click-through metrics. Includes a genuinely useful comparison table showing how ranking priorities diverge across ChatGPT, Perplexity, and DeepSeek — Perplexity leans technical and citation-heavy, ChatGPT favors conversational long-tail questions."
+  },
+  "ai-seo-guide-how-to-rank-your-website-on-chatgpt": {
+    "verdict": "Recommends writing in question-and-answer format, building topical content clusters, and using FAQ/HowTo schema to make content easier for ChatGPT to cite when browsing is enabled. The most practical tip: literally ask ChatGPT what it knows about your brand as a diagnostic, then work backward from what's missing to figure out where visibility gaps exist."
+  },
+  "ai-seo-guide-how-to-rank-website-on-deepseek-search-effectively": {
+    "verdict": "Applies the same AI-search playbook to DeepSeek — specific, intent-matching titles over generic ones, conversational long-tail phrasing, and freshness signals like updating old posts with current data. The baking-blog example ties it together concretely: turning 'How to Bake a Cake' into a specific, schema-marked, video-supported guide shared in relevant communities for backlinks."
+  },
+  "how-to-force-google-to-index-your-site-fast-even-if-its-ignoring-you": {
+    "verdict": "A hands-on indexing troubleshooting guide — manual URL submission via Search Console, internal linking from high-traffic pages, and social/forum sharing as a way to get Googlebot's attention faster. Backs it with a worked real-world example of indexing a new gardening post within an hour by combining Reddit, LinkedIn, internal links, and a GSC submission simultaneously."
+  },
+  "seo-is-not-a-thing-on-perplexity-what-that-means-for-the-future-of-ai-search": {
+    "verdict": "Argues Perplexity fundamentally breaks the SEO paradigm because it reasons and synthesizes rather than ranks — there's no keyword game to win, no backlink count that guarantees inclusion, just whether a source is reliable enough to cite. The reframe offered is stark: stop optimizing for algorithms and start being genuinely citable, since on Perplexity you either exist in the answer or you don't, with no middle ground like page two."
+  },
+  "google-confirms-discover-feed-coming-to-desktop": {
+    "verdict": "Reports Google's Search Liaison confirming Discover is rolling out to desktop permanently, not as a limited test, appearing as a scrollable personalized feed on the homepage's right side. Notes the practical shift for publishers: Discover inclusion isn't keyword-driven like search ranking, so success depends on quality visuals, accurate non-clickbait headlines, and large images meeting Google's max-image-preview settings."
+  },
+  "google-just-updated-interest-forms-for-structured-data-carousels-beta-heres-what-you-need-to-know": {
+    "verdict": "Flags a quiet Google update clarifying how to apply for its Structured Data Carousels beta — swipeable, structured-data-driven result carousels currently limited to EEA countries for travel, local, and shopping queries. Frames early participation as a genuine first-mover advantage, since beta features with fewer participants mean outsized visibility once the feature matures."
+  },
+  "welcome-to-rudrakasturi-com-your-daily-dose-of-digital-enlightenment-and-mild-panic": {
+    "verdict": "A satirical, sarcasm-heavy take on AI Overviews eating publisher traffic, using a running gag about a fictional blogger named Bobby whose 3,000-word article gets reduced to a one-liner nobody clicks through to. Underneath the jokes is a real point about the asymmetry Google's 'we still link to sources' defense glosses over — technically true, functionally irrelevant when the summary already answered the question."
+  },
+  "the-quiet-revolution-of-google-search-what-elizabeth-reid-just-told-the-world": {
+    "verdict": "Distills a Financial Times interview with Google Search head Elizabeth Reid, who describes AI Overviews as 'launchpads' rather than destinations and insists Google search isn't trying to become a chatbot. Her most interesting claim, worth watching skeptically: AI Overview clicks are actually higher-quality and spread across a wider variety of sites, potentially offsetting some of the traffic decline everyone else in this feed is worried about."
+  },
+  "google-search-is-redirecting-country-domains-to-google-com-what-it-means-for-you": {
+    "verdict": "Explains Google's consolidation of country-specific domains like google.fr and google.co.uk into a single google.com, framed as a natural extension of location-based results Google has used since 2017 anyway. The practical wrinkle for marketers: domain-based referral tracking gets less precise, making hreflang tags and Search Console geotargeting more important than ever for anyone running region-specific content."
+  },
+  "google-ai-overviews-are-showing-fewer-top-10-search-results": {
+    "verdict": "Cites SEMrush data showing AI Overviews' overlap with actual top-10 organic rankings dropped slightly overall after the March 2025 core update, even as overlap rose sharply in categories like travel and restaurants. The key implication: ranking well in traditional search no longer guarantees AI Overview inclusion, and vice versa — they're becoming two increasingly separate games worth tracking separately."
+  },
+  "google-is-deprecating-the-special-announcements-feature-heres-what-you-need-to-know": {
+    "verdict": "Reports Google sunsetting the SpecialAnnouncement schema — built for pandemic-era lockdown notices and health advisories — by July 2025, since post-COVID demand for emergency markup has largely evaporated. Uses it as a reminder that structured data investments aren't permanent, urging news and health sites still using the tag to migrate to NewsArticle or WebPage schema before support ends."
+  },
+  "chatgpt-just-got-smarter-and-more-personal-heres-what-memory-with-search-means-for-you": {
+    "verdict": "Covers OpenAI's Memory-plus-Search feature, which quietly rewrites your search queries using remembered context — like knowing you're vegan and in San Francisco — to skip the need to re-explain preferences every time. Addresses the obvious privacy concern directly, noting memory is fully editable, deletable, and toggleable off entirely if the personalization trade-off doesn't feel worth it."
   }
 }
