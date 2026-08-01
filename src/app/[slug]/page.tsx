@@ -7,6 +7,9 @@ import {
 } from "@/lib/content";
 import PostBanner from "@/components/PostBanner";
 import MarkdownContent from "@/components/MarkdownContent";
+import AiShareBar from "@/components/AiShareBar";
+
+const SITE_URL = "https://blog.rudrakasturi.com";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -35,8 +38,17 @@ export async function generateMetadata({
     openGraph: {
       title: item.title,
       description,
+      url: `${SITE_URL}/${item.slug}`,
+      siteName: "Rudra Kasturi",
       type: "article",
       publishedTime: item.date,
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@kasturitagore",
+      title: item.title,
+      description,
     },
   };
 }
@@ -52,9 +64,44 @@ export default async function ContentPage({
   if (!item) notFound();
 
   const isPost = Boolean(getPostBySlug(slug));
+  const url = `${SITE_URL}/${item.slug}`;
+  const description =
+    item.excerpt || item.content_md.slice(0, 160).replace(/\n/g, " ");
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, item: { "@id": SITE_URL, name: "Rudra Kasturi" } },
+          { "@type": "ListItem", position: 2, item: { "@id": url, name: item.title } },
+        ],
+      },
+      {
+        "@type": isPost ? "BlogPosting" : "WebPage",
+        "@id": `${url}#content`,
+        url,
+        headline: item.title,
+        name: item.title,
+        description,
+        ...(isPost && {
+          datePublished: item.date,
+          dateModified: item.date,
+          articleSection: item.categories[0],
+          author: { "@type": "Person", name: "Rudra Kasturi", url: SITE_URL },
+          publisher: { "@type": "Organization", name: "Rudra Kasturi", url: SITE_URL },
+        }),
+      },
+    ],
+  };
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <PostBanner title={item.title} slug={item.slug} />
       <h1 className="mt-8 text-3xl font-bold tracking-tight">{item.title}</h1>
       {isPost && (
@@ -66,6 +113,11 @@ export default async function ContentPage({
           })}
           {item.categories.length > 0 && ` · ${item.categories.join(", ")}`}
         </p>
+      )}
+      {isPost && (
+        <div className="mt-6">
+          <AiShareBar url={url} />
+        </div>
       )}
       <div className="mt-8">
         <MarkdownContent content={item.content_md} />

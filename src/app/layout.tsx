@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-51ZDEXDSP8";
+const ADSENSE_CLIENT_ID = "ca-pub-2121262893172079";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +24,14 @@ export const metadata: Metadata = {
   },
   description: "Search. Strategy. AI. Growth. Coach. Revenue.",
   metadataBase: new URL("https://blog.rudrakasturi.com"),
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+  },
+  other: {
+    "google-adsense-account": ADSENSE_CLIENT_ID,
+  },
 };
 
 export default function RootLayout({
@@ -33,6 +45,24 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-neutral-900">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+        <Script
+          async
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+          strategy="afterInteractive"
+        />
         <header className="border-b border-neutral-200">
           <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-5">
             <Link href="/" className="text-lg font-semibold tracking-tight">
