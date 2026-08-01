@@ -1,15 +1,7 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import {
-  getAllCategories,
-  getPostsByCategory,
-  categorySlug,
-  categoryColor,
-  readingTime,
-  formatDateIST,
-} from "@/lib/content";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import { getAllCategories, getPostsByCategory, categorySlug } from "@/lib/content";
+import CategoryPageView, { CATEGORY_PAGE_SIZE } from "@/components/CategoryPageView";
 
 const SITE_URL = "https://blog.rudrakasturi.com";
 
@@ -63,7 +55,9 @@ export default async function CategoryPage({
   const name = resolveCategory(category);
   if (!name) notFound();
 
-  const posts = getPostsByCategory(name);
+  const allPosts = getPostsByCategory(name);
+  const totalPages = Math.max(1, Math.ceil(allPosts.length / CATEGORY_PAGE_SIZE));
+  const posts = allPosts.slice(0, CATEGORY_PAGE_SIZE);
   const url = `${SITE_URL}/category/${category}`;
 
   const jsonLd = {
@@ -83,7 +77,7 @@ export default async function CategoryPage({
         name,
         description: `Posts about ${name} from Rudra Kasturi.`,
         isPartOf: { "@type": "WebSite", url: SITE_URL, name: "Rudra Kasturi" },
-        hasPart: posts.slice(0, 20).map((post) => ({
+        hasPart: posts.map((post) => ({
           "@type": "BlogPosting",
           headline: post.title,
           url: `${SITE_URL}/${post.slug}`,
@@ -94,35 +88,18 @@ export default async function CategoryPage({
   };
 
   return (
-    <div className="mx-auto max-w-5xl px-5 py-14">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: name }]} />
-      <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-accent">
-        Category
-      </p>
-      <h1 className="font-display text-4xl font-semibold text-ink">{name}</h1>
-      <p className="mt-3 text-ink-soft">{posts.length} posts</p>
-
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/${post.slug}`}
-            style={{ borderLeftColor: categoryColor(name) }}
-            className="group block rounded-md border border-line border-l-4 bg-paper p-4 transition hover:shadow-sm"
-          >
-            <h3 className="font-display text-base font-semibold leading-snug text-ink group-hover:text-accent">
-              {post.title}
-            </h3>
-            <p className="mt-2 text-sm text-ink-soft">
-              {formatDateIST(post.date)} · {readingTime(post.content_md)} min read
-            </p>
-          </Link>
-        ))}
-      </div>
-    </div>
+      <CategoryPageView
+        name={name}
+        posts={posts}
+        total={allPosts.length}
+        page={1}
+        totalPages={totalPages}
+      />
+    </>
   );
 }

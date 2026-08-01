@@ -12,9 +12,11 @@ import {
   AUTHOR_URL,
 } from "@/lib/content";
 import PostBanner from "@/components/PostBanner";
+import ArticleBody from "@/components/ArticleBody";
 import MarkdownContent from "@/components/MarkdownContent";
 import AiShareBar from "@/components/AiShareBar";
 import ArticleSidebar from "@/components/ArticleSidebar";
+import ContinuousReader from "@/components/ContinuousReader";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const SITE_URL = "https://blog.rudrakasturi.com";
@@ -174,16 +176,18 @@ export default async function ContentPage({
         </div>
       )}
 
-      <MarkdownContent content={item.content_md} />
+      {isPost ? <ArticleBody post={item} /> : <MarkdownContent content={item.content_md} />}
 
-      <div className="mt-16 border-t border-line pt-8">
-        <Link
-          href="/archive"
-          className="font-mono text-sm text-ink-soft transition hover:text-accent"
-        >
-          ← Back to all writing
-        </Link>
-      </div>
+      {!isPost && (
+        <div className="mt-16 border-t border-line pt-8">
+          <Link
+            href="/archive"
+            className="font-mono text-sm text-ink-soft transition hover:text-accent"
+          >
+            ← Back to all writing
+          </Link>
+        </div>
+      )}
     </article>
   );
 
@@ -193,7 +197,10 @@ export default async function ContentPage({
 
   return (
     <div className="mx-auto grid min-w-0 max-w-6xl gap-12 px-5 py-14 lg:grid-cols-[minmax(0,1fr)_280px]">
-      <div className="min-w-0">{articleBody}</div>
+      <div className="min-w-0">
+        {articleBody}
+        <ContinuousReader startSlug={slug} />
+      </div>
       <div className="min-w-0 lg:sticky lg:top-24 lg:h-fit">
         <ArticleSidebar currentSlug={slug} />
       </div>

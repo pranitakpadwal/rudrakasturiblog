@@ -102,6 +102,50 @@ export function getRecentPosts(excludeSlug: string, limit: number): ContentItem[
     .slice(0, limit);
 }
 
+// Ranks by shared tags first, then shared category, so "read also" and
+// recirculation modules surface genuinely related posts instead of just
+// the newest ones.
+// Picks the next post for continuous-scroll reading: same category first
+// (keeps the reader on-topic), falling back to the next post overall.
+export function getNextArticle(
+  currentSlug: string,
+  excludeSlugs: string[]
+): ContentItem | undefined {
+  const current = getPostBySlug(currentSlug);
+  if (!current) return undefined;
+  const exclude = new Set([currentSlug, ...excludeSlugs]);
+  const all = getAllPosts();
+
+  const sameCategory = all.find(
+    (p) => !exclude.has(p.slug) && p.categories.some((c) => current.categories.includes(c))
+  );
+  if (sameCategory) return sameCategory;
+
+  return all.find((p) => !exclude.has(p.slug));
+}
+
+export function getRelatedPosts(
+  post: ContentItem,
+  exclude: string[],
+  limit: number
+): ContentItem[] {
+  const tagSet = new Set(post.tags.map((t) => t.toLowerCase()));
+  const categorySet = new Set(post.categories);
+  const excludeSet = new Set([post.slug, ...exclude]);
+
+  return getAllPosts()
+    .filter((p) => !excludeSet.has(p.slug))
+    .map((p) => {
+      const sharedTags = p.tags.filter((t) => tagSet.has(t.toLowerCase())).length;
+      const sharedCategory = p.categories.some((c) => categorySet.has(c)) ? 1 : 0;
+      return { post: p, score: sharedTags * 2 + sharedCategory };
+    })
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((x) => x.post);
+}
+
 function hashString(input: string): number {
   let hash = 0;
   for (let i = 0; i < input.length; i++) {
@@ -142,22 +186,6 @@ const CATEGORY_COLORS = [
 
 export function categoryColor(category: string): string {
   return CATEGORY_COLORS[hashString(category) % CATEGORY_COLORS.length];
-}
-
-export interface PostSummary {
-  slug: string;
-  title: string;
-  category: string;
-}
-
-// Lean projection for client-side infinite scroll — no body text, no full
-// date/tag payload, just enough to render a card.
-export function getPostSummaries(): PostSummary[] {
-  return getAllPosts().map((p) => ({
-    slug: p.slug,
-    title: p.title,
-    category: p.categories[0] ?? "",
-  }));
 }
 
 export function readingTime(markdown: string): number {
