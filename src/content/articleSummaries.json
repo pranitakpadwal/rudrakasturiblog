@@ -553,5 +553,50 @@
   },
   "updated-feature-availability-for-breadcrumb-markup-what-seos-should-know": {
     "verdict": "Reports Google limiting breadcrumb display to desktop search results only, dropping them from mobile due to screen space and truncation issues, while keeping the underlying structured data valid either way. Recommends SEOs shift mobile optimization energy toward titles, meta descriptions, and other rich-result types like FAQ schema now that breadcrumbs won't show up there."
+  },
+  "gen-z-the-generation-of-rejection": {
+    "verdict": "Draws on Business Insider reporting to argue Gen Z faces rejection at unprecedented scale and frequency — ghosting on dating apps, seven-college application averages that still yield few acceptances, and ghost jobs that 71% of applicants say they've encountered. The therapist quote framing it as 'rejection by technology, not actual people' is the sharpest observation in an otherwise stat-heavy roundup."
+  },
+  "why-seos-are-hitting-quit-the-burnout-crisis-behind-googles-relentless-updates": {
+    "verdict": "Surveys the real toll of Google's constant algorithm churn on SEO professionals — 51% report stress or feeling stuck, 27% have considered quitting, and client trust erodes fast when rankings vanish overnight. Includes raw quotes from Indian SEOs describing being blamed by clients for algorithm changes entirely outside their control, landing on the blunt conclusion that 'the easy mode era is over.'"
+  },
+  "traffic-is-out-influence-is-in-the-new-rules-of-digital-marketing": {
+    "verdict": "Relays Rand Fishkin's SMX talk arguing traffic is dying as a metric because every platform — social, email, search, AI — is now designed to keep users from clicking away, citing the striking stat that linkless social posts get 10x the reach of ones with links. The prescribed shift is concrete: stop chasing clicks, start building influence and engagement directly on the platforms where audiences already live."
+  },
+  "how-to-turn-off-or-disable-google-ai-overview-most-searched-keyword-in-google-usa": {
+    "verdict": "A practical how-to for disabling Google's AI Overviews, ranging from browser extensions and a custom search-engine URL trick (udm=14 parameter) for tech-savvy users to simpler fixes like the 'Web' filter or switching to Bing/DuckDuckGo for everyone else. Frames the demand itself as the real story — enough people actively dislike AI Overviews that 'how to turn off Google AI Overview' became a genuinely trending US search term."
+  },
+  "explainer-does-hiring-freelance-writers-from-penalized-sites-hurt-your-google-ranking": {
+    "verdict": "Relays Danny Sullivan's clear answer to a common SEO anxiety: Google judges content, not the freelancer's résumé, so hiring someone who previously worked on a penalized site poses zero inherent risk. The chef analogy lands the point well — what matters is the quality of what they cook for you now, not where they used to work."
+  },
+  "does-google-favor-big-brands-over-small-creators-heres-what-google-says": {
+    "verdict": "Danny Sullivan pushes back on the persistent fear that Google's algorithm structurally favors big publishers, arguing brand recognition only helps when it's genuinely earned through backlinks, direct searches, and clear topical authority — not baked in by size. The practical advice for small creators is concrete: ditch vague homepage titles like 'Welcome to My Blog' for something that instantly signals what the site actually does."
+  },
+  "explainer-how-google-treats-ai-generated-content-its-impact-on-seo": {
+    "verdict": "Clarifies Google's position that AI-written content is fine as long as it's genuinely useful, introducing the AIM/AIO distinction — AI-generated page content versus Google's own AI Overview summaries — and explaining that your content can quietly influence an AI Overview as 'grounding data' even if it's never cited by name. The core message repeats the site's recurring theme: Google judges output quality, not the method of production."
+  },
+  "explainer-does-removing-old-articles-help-your-crawl-budget-rankings": {
+    "verdict": "Danny Sullivan's answer to whether pruning old content helps rankings: crawl budget is basically a non-issue unless you're running a massive site like Amazon or Wikipedia, and pruning only helps when it's clearing genuine duplicates, not just trimming for the sake of a smaller sitemap. The clean takeaway for small sites — update and merge weak content instead of deleting it outright, and always redirect what you do remove."
+  },
+  "google-news-is-changing-what-you-need-to-know": {
+    "verdict": "Reports Google News automating publication pages starting March 2025, killing manual Publisher Center customization in favor of pulling logos from favicons and titles from Search site-name settings. Clarifies the one thing publishers actually need to worry about — none of this changes ranking eligibility, which still runs on relevance, prominence, freshness, and location — but they do need to make sure their favicon and site name are properly configured."
+  },
+  "google-discontinues-ai-while-browsing-what-it-means-for-users-and-publishers": {
+    "verdict": "Covers Google quietly retiring its 'AI while browsing' summarization feature in March 2025, likely under pressure from publishers unhappy about AI summarizing paywalled or premium content without driving real engagement. Reads the move as a small but genuine signal that Google is willing to walk back AI features that visibly work against publisher interests, not just publisher-friendly spin."
+  },
+  "microsoft-ai-tour-wraps-up-with-groundbreaking-insights-from-korea-and-japan": {
+    "verdict": "A first-person recap of Microsoft's AI Tour stops in Seoul and Tokyo, contrasting Korean startups' B2C generative-AI strength (retail, character chat apps) against Japan's SaaS-and-agentic-AI focus at companies like Money Forward and Mercari. Reads largely as promotional event coverage, with the most substantive point being that both markets have moved past scattergun LLM experimentation toward deliberate, long-term AI architecture investment."
+  },
+  "why-people-are-tuning-out-the-news-a-growing-trend-of-news-avoidance": {
+    "verdict": "Cites a Guardian-reported finding that 39% of people now actively avoid news content, driven by negativity fatigue, distrust in media motives, and information overload from 24/7 coverage. Extends the trend to India specifically, arguing sensationalism and perceived bias are pushing Indian audiences toward independent YouTube journalism and regional aggregators as traditional TV news loses ground."
+  },
+  "how-instagram-reels-can-boost-your-google-search-presence": {
+    "verdict": "A dialogue-format explainer on Instagram Reels now surfacing in Google's short-video search results, arguing this gives creators free discovery beyond Instagram's own algorithm. The practical advice is straightforward — keyword-rich captions and hashtags, a strong hook in the first three seconds, and consistent posting — framed as low-effort SEO most Instagram creators aren't yet exploiting."
+  },
+  "how-googles-gemini-decides-when-to-use-grounding-for-user-queries": {
+    "verdict": "Explains how Gemini decides whether to fetch real-time web data ('grounding') for a query using a prediction score between 0 and 1 against a default 0.3 threshold — a stock price question scores high, 'what's the boiling point of water' scores near zero. Clarifies grounding exists specifically to balance accuracy against speed and compute cost, not to fact-check every possible query indiscriminately."
+  },
+  "mastering-mind-maps-in-notebooklm-a-simple-guide": {
+    "verdict": "A straightforward walkthrough of NotebookLM's Mind Map feature, which auto-generates a visual, clickable breakdown of uploaded source material for students, writers, and researchers overwhelmed by dense documents. Covers the practical mechanics — generating, zooming, querying individual nodes, and sharing via notebook access or file download — without much beyond a feature tour."
   }
 }
