@@ -463,5 +463,50 @@
   },
   "december-2024-google-spam-update-rolling-out-globally": {
     "verdict": "A short status notice on Google's December 2024 spam update, targeting keyword stuffing, cloaking and low-quality content across all languages within a roughly one-week rollout. Reiterates the standard reassurance that sites following Search Essentials guidelines shouldn't see meaningful impact, with a pointer to the Search Status Dashboard for rollout confirmation."
+  },
+  "5xx-server-errors-robots-txt-how-google-manages-crawling-when-things-go-south": {
+    "verdict": "Maps out Google's exact three-phase fallback when robots.txt returns a 5xx error: crawling halts within 12 hours, falls back to a cached robots.txt for up to 30 days, then either assumes no restrictions or stops crawling entirely depending on whether the site is otherwise reachable. The practical warning: sites without a previously cached robots.txt get crawled wide open the moment the error hits, which may not be what the owner wants."
+  },
+  "how-google-handles-3xx-and-4xx-errors-in-robots-txt-fetching": {
+    "verdict": "A companion technical reference explaining Google follows at most five redirect hops when fetching robots.txt before giving up and treating it as a 404, and ignores HTML meta-refresh or JavaScript redirects entirely. The sharpest warning: don't use 401 or 403 to try to throttle Googlebot — Google just treats those as 'no robots.txt exists' and crawls everything anyway."
+  },
+  "why-does-google-delete-5-star-reviews": {
+    "verdict": "Cites a GMBapi.com study of nearly 5 million reviews finding 69.5% of deletions were actually 5-star ratings, since generic glowing phrases like 'great service' read as suspiciously fake to Google's filters. The standout finding: businesses that reply to reviews at all see dramatically fewer deletions — only 26.3% of removed reviews came from businesses that responded to reviewers."
+  },
+  "youtubes-new-crackdown-on-misleading-titles-and-thumbnails-begins-in-india": {
+    "verdict": "Covers YouTube piloting a clickbait crackdown in India first, given its scale as one of YouTube's largest markets, targeting videos whose titles or thumbnails promise breaking news the content never delivers. Notably lenient in its first phase — removals happen without an immediate strike, giving creators room to adjust before enforcement gets stricter."
+  },
+  "openai-brings-chatgpt-to-your-landline-introducing-1-800-chatgpt": {
+    "verdict": "Reports OpenAI's toll-free 1-800-CHATGPT line letting anyone with a landline or basic phone talk to ChatGPT's voice mode, with 15 free minutes for US callers. Frames it as a genuine accessibility play aimed at people without smartphones or reliable internet, not just a novelty stunt."
+  },
+  "the-inspiring-story-of-britannica-from-bookshelves-to-ai-brilliance": {
+    "verdict": "Traces Encyclopaedia Britannica's pivot from ending print in 2012 to building an AI-powered education business now pulling over 7 billion annual page views across Britannica.com and Merriam-Webster. The differentiator it highlights: Britannica's chatbots draw only from its own fact-checked knowledge base, positioned as a direct answer to hallucination-prone general AI tools."
+  },
+  "googles-monopoly-fix-a-turning-point-for-search-and-competition": {
+    "verdict": "Covers Google's proposed remedies after being ruled an illegal search monopoly — looser default-placement deals with Apple, more freedom for Android makers to pre-install rival search engines — while Google simultaneously plans to appeal the ruling itself. Notes the real tension plainly: Google is offering concessions it insists are sufficient while fighting the underlying verdict that made them necessary."
+  },
+  "srinivasa-ramanujan-the-genius-who-bridged-worlds-and-inspired-ai": {
+    "verdict": "A tribute to Ramanujan on his birth anniversary, tracing how his self-taught work on number theory and partitions underpins modern cryptography and quietly parallels how machine learning hunts for patterns in data. Speculative in its AI connection — the piece imagines what Ramanujan might have done with modern compute rather than claiming any documented influence on AI research."
+  },
+  "ai-in-2025-how-it-will-transform-businesses-across-industries": {
+    "verdict": "A sector-by-sector forecast of AI's 2025 business impact, covering multimodal diagnostics in healthcare, AI supply-chain rerouting in logistics, and deepfake detection in media — each paired with a concrete hypothetical example. Reads as a broad industry primer rather than a grounded prediction, useful mainly as a checklist of where AI investment is likely headed next."
+  },
+  "ai-in-publishing-mistakes-you-should-avoid-in-2025": {
+    "verdict": "A quote-heavy list of AI adoption pitfalls for publishers — chasing AI for novelty ('the Dancing Bear Problem'), over-automating editorial judgment, and neglecting CMS readiness — each paired with a fix. The most concrete example is The Washington Post's Heliograf, cited as the right model: AI handles breaking-news snippets while humans keep the in-depth analysis."
+  },
+  "chatgpt-search-a-game-changer-for-editors-publishers-and-beyond": {
+    "verdict": "Covers ChatGPT Search's December 2024 rollout to all free-tier users, framing it as a genuine research and SEO-ideation tool for editors rather than just a chat feature. Includes a useful competitor table positioning ChatGPT's ad-free, conversational depth against Perplexity's brevity and Gemini's real-time-but-shallower answers."
+  },
+  "the-stories-that-defined-2024-top-google-searches-in-the-usa-and-india": {
+    "verdict": "A breezy year-end roundup of top 2024 Google searches split by country — US politics and Olympic drama versus India's cricket World Cup win and Chandrayaan-3 moon landing. Pure listicle territory, valuable mainly as a cultural snapshot rather than any analytical insight."
+  },
+  "why-http-caching-matters-for-seos-and-website-performance": {
+    "verdict": "A technical primer on HTTP caching headers — Cache-Control, ETag, Expires, Last-Modified — explaining how properly cached static assets speed up repeat visits for both users and Googlebot. Includes copy-paste header examples for static versus dynamic content, positioning caching as an underrated, low-effort SEO lever most sites leave on the table."
+  },
+  "faceted-navigation-how-to-optimize-crawling-and-save-seo-resources": {
+    "verdict": "Tackles the classic e-commerce filter-URL problem, where color/size/brand combinations can spawn near-infinite crawlable URLs that burn through Google's crawl budget on near-duplicate pages. Offers a genuinely useful decision tree: block faceted URLs entirely via robots.txt or noindex if they add no value, or canonicalize and clean up the URL structure if some filtered views are worth ranking."
+  },
+  "writers-its-time-to-rewrite-the-rules-with-ai-in-2025": {
+    "verdict": "A pep talk aimed squarely at writers anxious about AI replacement, arguing the real 2025 job description becomes writer-plus-strategist-plus-storyteller rather than pure prose generator. Heavy on motivational quotes and light on data, but the practical advice underneath — learn SEO fundamentals, use AI for drafts and research, keep authenticity as the differentiator — tracks with the rest of the site's AI-and-work coverage."
   }
 }
