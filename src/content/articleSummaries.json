@@ -733,5 +733,50 @@
   },
   "the-rise-of-ai-smart-founders-why-vcs-now-fund-prompts-not-products": {
     "verdict": "A sharply satirical takedown of 2025 pitch culture, where founders raise seed rounds on GPT-generated mockups and 'prompt portfolios' instead of actual working products, illustrated by a real anecdote of a mental-health app funded on nothing but a Midjourney screenshot and a Notion page. The closing argument lands the point cleanly: prompts are trivially copyable, so real defensibility still comes from data flywheels, distribution, and the unglamorous work of shipping — not clever screenshots that impress FOMO-addled VCs."
+  },
+  "is-llms-txt-accepted-by-search-engines": {
+    "verdict": "Clarifies that llms.txt — a proposed robots.txt-style file for governing AI crawler access — has zero official adoption from OpenAI, Google, or Perplexity, all of which currently honor robots.txt only. Frames adopting it anyway as a symbolic, defensive move that positions publishers for future licensing negotiations even before any AI company is contractually bound to respect it."
+  },
+  "how-to-optimize-for-ai-overviews-what-google-is-really-looking-for": {
+    "verdict": "A tactical guide to AI Overview inclusion built around five concrete levers — leading with the direct answer, semantic HTML structure, visible E-E-A-T signals, question-and-answer formatting, and specific real-world examples over generic claims. The reframing at the close is the most useful idea: the goal isn't appearing in the summary, it's writing something specific enough that a reader still wants to click through for more."
+  },
+  "google-softens-its-stance-on-automated-translation": {
+    "verdict": "Reports John Mueller confirming Google will index machine-translated pages as long as they're genuinely reviewed and useful, walking back the older blanket 'automated = spam' assumption. The three-scenario comparison table makes the standard concrete: unreviewed bulk auto-translation gets penalized, while AI-plus-human-review — even just spot-checking top-traffic pages — performs fine."
+  },
+  "ai-killed-the-click-youtube-brought-it-back": {
+    "verdict": "Cites Datos data showing YouTube searches per user nearly tripled year-over-year even as roughly 60% of Google searches now end without a click, arguing YouTube is quietly becoming the only major search surface where search still reliably converts into sustained attention. The sharpest observation is behavioral: when people want something explained by an actual human — a doctor, a reviewer, a regional creator — they don't want an AI Overview, they want a face and a voice."
+  },
+  "youtube-auto-dubbing-is-here-the-search-game-just-changed-for-regional-creators": {
+    "verdict": "Covers YouTube's June 2025 default rollout of AI auto-dubbing across nine languages including Telugu, Tamil, Bengali and Hindi, framing it as a genuine distribution unlock for India's regional creators rather than a gimmick. Includes the practical opt-out steps for creators who don't want it, and correctly identifies the bigger shift: one shoot now effectively becomes content in five-plus languages with zero extra production cost."
+  },
+  "google-just-changed-the-rules-ai-overviews-now-count-in-search-console": {
+    "verdict": "Reports Google folding AI Overview and AI Mode clicks into the standard Search Console Web performance report, ending months of SEOs being unable to see where their AI-driven traffic was actually going. Honest about the current limitation — there's no dedicated AI filter yet, so the practical workaround is watching for unexplained click spikes with unchanged rankings as a proxy signal."
+  },
+  "instagram-update-your-public-posts-will-show-up-on-google-from-july-10": {
+    "verdict": "Explains Instagram's July 2025 default opt-in letting Google, Bing and other search engines index public professional-account content, meaning old reels and photos could resurface in search results without users realizing they agreed to it. Walks through the exact settings path to opt out, flagging the real tension between creators wanting discoverability and casual users who just wanted analytics from a pro account, not global searchability."
+  },
+  "publishers-beware-instagram-content-will-now-rank-on-google-by-default": {
+    "verdict": "Argues Instagram's new search-indexing default isn't just a privacy toggle — it's a competitive threat to publishers, since verified Instagram accounts already frequently outrank news articles and product reviews for queries like celebrity looks or product hands-ons. Names the publisher categories most exposed — entertainment, fashion, affiliate blogs, product review sites — and argues every additional indexed Reel is effectively a stolen ranking slot from a traditional article."
+  },
+  "google-discover-now-testing-ai-generated-summaries-what-it-means-for-publishers-seo": {
+    "verdict": "Spots Google testing AI-generated summary snippets on Discover cards, sitting below the headline and separate from the publisher's own description — essentially previewing the article's content before a click happens. Draws the parallel to AI Overviews explicitly, warning publishers that Discover is shifting toward 'preview-first, click-optional,' meaning headline and thumbnail optimization alone won't be enough to protect click-through rates."
+  },
+  "google-adds-feature-availability-for-loyalty-program-structured-data-what-devs-seos-need-to-know": {
+    "verdict": "Reports Google documenting exactly which eight countries (US, UK, Canada, Australia, Germany, France, Brazil, Mexico) currently support LoyaltyProgram rich results, saving developers from implementing valid markup that simply won't render anywhere visible yet. Clarifies the practical nuance: markup still validates and can be tested globally via Rich Results Test even in unsupported regions, so early implementation elsewhere is future-proofing, not wasted effort."
+  },
+  "opinion-will-your-15l-seo-job-still-exist-in-2-years": {
+    "verdict": "Argues premium SEO salaries in India face real pressure not because SEO is dying but because its economics are breaking — rankings can hold steady while AI Overviews and closed ecosystems quietly siphon off the clicks that used to justify the headcount cost. The pivot advice is concrete and specific: become a 'growth architect' fluent in distribution, monetization, and GenAI workflow automation rather than someone whose value stops at keyword rankings and CTR."
+  },
+  "can-you-use-article-content-in-youtube-videos-using-ai-will-it-impact-your-rankings": {
+    "verdict": "Answers a common publisher question directly: YouTube doesn't penalize AI-repurposed article content as long as the resulting video performs on the metrics that actually matter — watch time, engagement, click-through — regardless of how the script originated. The clearest practical warning is against copy-pasting article text verbatim into a script, since articles and video demand fundamentally different pacing and tone."
+  },
+  "he-didnt-change-the-feed-did-vijay-mallya-and-the-masterclass-of-online-reputation-management": {
+    "verdict": "Uses Vijay Mallya's 2025 media reemergence to argue modern reputation management isn't about clearing your name anymore — it's about generating enough new, emotionally engaging content to make old, damning search results feel contested rather than settled. The sharpest line reframes the entire mechanism: algorithms don't judge truth, they reward engagement, tension and watch time, and Mallya's interview simply met that bar regardless of what it actually proved."
+  },
+  "the-clickless-udaan-how-googles-ai-flew-off-with-our-traffic-leaving-indian-publishers-at-the-terminal": {
+    "verdict": "A furious, sarcasm-loaded rebuttal to Google's 'you'll get more visibility' line on AI Overviews, arguing it fundamentally misunderstands the Indian publishing economy — one built on volume-driven programmatic ad revenue at razor-thin RPMs, not a handful of high-intent conversions. The core demand is concrete and specific: a YouTube-style revenue-share model, a real opt-out that doesn't tank rankings, and transparency on exactly how much traffic AI Overviews are rerouting away from publishers."
+  },
+  "why-my-left-hand-disappeared-in-ai-a-simple-truth-about-training-data": {
+    "verdict": "Uses a simple personal experiment — asking an image model to draw someone writing left-handed, and getting a right-handed result anyway — to illustrate how generative AI defaults to statistically dominant patterns in its training data rather than actually parsing the prompt's specifics. Extends the point convincingly to bigger stakes: if AI can't reliably render something as basic as handedness, the same blind pattern-matching is quietly shaping how it represents gender, profession, and culture by default."
   }
 }
