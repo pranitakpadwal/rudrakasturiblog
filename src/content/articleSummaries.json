@@ -778,5 +778,50 @@
   },
   "opinion-will-your-%e2%82%b915l-seo-job-still-exist-in-2-years": {
     "verdict": "Argues premium SEO salaries in India face real pressure not because SEO is dying but because its economics are breaking — rankings can hold steady while AI Overviews and closed ecosystems quietly siphon off the clicks that used to justify the headcount cost. The pivot advice is concrete and specific: become a 'growth architect' fluent in distribution, monetization, and GenAI workflow automation rather than someone whose value stops at keyword rankings and CTR."
+  },
+  "from-jio-to-gpt-ai-is-coming-to-gaon-and-this-time-the-entrepreneur-sells-achar-not-saas": {
+    "verdict": "Draws a direct parallel between Jio's 4G rollout democratizing internet access and AI's potential to democratize entrepreneurship for small-town and rural Indians who can't type in English but can speak into a phone. The concrete examples land well — voice-generated business plans, AI-designed festive packaging for an achar seller, subsidy scheme lookups in regional languages — making the case that AI's real Bharat opportunity is oral, not typed."
+  },
+  "googles-game-changer-ai-mode-is-live-in-india-what-it-is-how-to-enable-and-how-to-use": {
+    "verdict": "A straightforward how-to for enabling Google's AI Mode beta in India via Search Labs, walking through the interface — the AI Mode tab, generated summary, and source cards — with a worked example on an Iran-US news query. Functional and instructional rather than analytical, aimed at readers who just want to try the feature."
+  },
+  "googles-ai-mode-is-here-but-publishers-still-own-the-breaking-news-game-for-now": {
+    "verdict": "A hands-on test of AI Mode against real Indian queries — breaking news, exam notifications — finding it consistently lags behind classic Google search by pulling stale, already-indexed content instead of live updates, and skews toward global outlets like CNBC over Indian sources like Jagran or Adda247. The tone-mismatch observation is sharp: AI Mode's polished English doesn't match how a 22-year-old in Patna actually phrases an SBI PO exam question."
+  },
+  "google-ai-mode-vs-search-crawling-indexing-ranking-and-summarising-explained": {
+    "verdict": "Explains cleanly why AI Mode lags on breaking news: it doesn't crawl the web live, it's a Gemini-based summarization layer sitting on top of Google's existing index, applying safety filters that deliberately delay coverage of volatile or unclear stories. The librarian analogy nails the distinction — Googlebot is the reporter, the index is the library, AI Mode is the librarian summarizing five books after the fact, not out gathering new ones."
+  },
+  "google-ai-mode-isnt-available-in-indian-languages-yet-why-publishers-shouldnt-panic": {
+    "verdict": "Reassures regional-language publishers that AI Mode is still English-only in India as of its launch, meaning Hindi, Telugu, Tamil and other vernacular content faces zero disruption from AI summaries for now. Frames this gap as a genuine window of opportunity — classic SEO fundamentals still fully govern regional search, giving vernacular publishers runway to prepare before AI Mode eventually catches up."
+  },
+  "your-story-their-summary-how-google-ai-mode-credits-sources-or-doesnt": {
+    "verdict": "Distinguishes two very different ways AI Mode credits sources — a low-visibility footnote citation versus an inline in-paragraph mention that actually drives clicks — and observes Google appears to reserve inline treatment for established brands like Economic Times or NDTV over smaller outlets that may have broken the story first. The practical advice for publishers is concrete: write with your brand name embedded naturally in the text, since that seems to correlate with earning the more valuable inline citation."
+  },
+  "everyones-faking-it-the-harsh-reality-of-influencer-marketing-in-india": {
+    "verdict": "A blunt takedown of Indian influencer marketing's broken incentive triangle — brands wanting viral-and-organic-and-cheap-and-fast, agencies recycling the same creator lists under time pressure, and creators surviving on underpaid barter deals with no real conversion tracking. The uncomfortable closer lands hardest: if your biggest metric is reach and your smallest is revenue, the campaign never actually worked, it just looked like it did."
+  },
+  "google-local-reviews-are-sneaking-into-ai-mode-without-user-intent": {
+    "verdict": "Observes AI Mode pulling Google Business Profile reviews and local dealer listings into search summaries even when the user's query never mentioned reviews or location explicitly, because Google is now inferring intent rather than matching literal keywords. The actionable insight for local businesses is real: showing up in AI Mode may now depend more on GMB review quality and consistency than on traditional SEO ranking work."
+  },
+  "ai-cms-the-future-of-journalism-is-structured-searchable-and-always-on": {
+    "verdict": "Argues Indian newsrooms still running manual, unstructured CMS workflows are unprepared for a search landscape where Google increasingly summarizes rather than links, and makes the case for AI-native CMS tooling that auto-tags entities, generates multi-language variants, and flags factual inconsistencies in sensitive beats like finance and elections. Grounds the pitch in concrete Indian scenarios — an RBI repo rate story live within two minutes, 500 auto-generated constituency-level election reports — while explicitly preserving editorial judgment as something AI shouldn't and can't replace."
+  },
+  "how-one-no-one-knows-us-supplement-brand-beat-big-players-in-ai-mode-search-without-burning-vc-cash": {
+    "verdict": "Walks through a fictional (explicitly disclosed) case study of getting an unknown brand into ChatGPT's recommendations within two weeks by seeding varied, genuinely readable articles across multiple platforms and organic-sounding Reddit mentions, rather than SEO-stuffed press releases. The underlying strategy is real and stated plainly at the end: AI models reflect whatever evidence exists about your brand across the open web, so building that evidence deliberately — in different tones, across different platforms — is how smaller brands earn AI visibility without ad spend."
+  },
+  "google-dropped-the-june-2025-core-update-and-just-like-that-your-rankings-may-have-left-the-building": {
+    "verdict": "A high-energy reaction to Google's June 2025 core update, arguing the real stakes have shifted beyond traditional rankings to whether content is even considered worth summarizing by AI — original, cited, authoritative content wins while thin or sales-only pages get sidelined. The diagnostic checklist is useful and concrete: check GA4 for a post-June-30 traffic cliff, then literally Google your own brand name to see if you still show up in AI Overviews at all."
+  },
+  "ai-in-the-law-office-llms-are-doing-what-junior-lawyers-cant-and-google-never-could": {
+    "verdict": "Uses three grounded fictional scenarios — a Delhi mutual divorce, a Hyderabad tenant eviction, a Bangalore B2B consumer dispute — to contrast messy, contradictory Google search results against LLMs delivering structured, actionable legal steps in one response. Honest about the real risk too: LLMs don't search live data, so they can confidently hallucinate nonexistent statute sections when asked about recent case law or jurisdiction-specific nuance, meaning they work best as a paralegal doing the first-draft grunt work, not a source of final legal strategy."
+  },
+  "genz-slang-delulu-is-the-solulu-and-you-are-just-jealous": {
+    "verdict": "A tongue-in-cheek glossary and cultural read of Gen Z slang — delulu, rizz, touch grass, main character energy — arguing the invented vocabulary functions less as communication and more as in-group signaling and emotional armor for a generation coping with pandemics, job market anxiety, and climate dread through irony. The sharpest line reframes the whole phenomenon: this isn't really a new language, it's a firewall built to keep outsiders from ruining the vibe."
+  },
+  "if-cloudflare-can-say-no-to-ai-why-cant-you": {
+    "verdict": "Covers Cloudflare's default block on major AI crawlers like GPTBot and ClaudeBot as a genuinely significant infrastructure-level pushback against AI training on unpaid creator content, then pivots to the harder problem: Google's own crawler is exempt because publishers depend on Googlebot for search traffic, meaning they can't opt out of AI Overviews without disappearing from search entirely. The most pointed argument is about journalists specifically — even if AI licensing deals eventually pay publishers, the individual reporter's byline still vanishes from the AI-generated answer, so money flowing up doesn't necessarily mean credit flowing to the people who did the actual work."
+  },
+  "google-read-aloud-user-agent-update-effective-july-1-2025": {
+    "verdict": "A technical notice on Google updating its Read Aloud accessibility crawler's user agent string to mimic a modern Chrome browser instead of an outdated one, fixing rendering failures on JavaScript-heavy or PWA sites that were blocking or mishandling the old signature. The practical checklist for site owners is narrow but clear: whitelist the updated Google-Read-Aloud user agent in bot rules and verify accessibility tooling actually reads your content correctly now that the crawler behaves like a real modern browser."
   }
 }
