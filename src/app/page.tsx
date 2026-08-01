@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts, formatShortDateIST } from "@/lib/content";
+import { getAllPosts, getTopPosts, formatShortDateIST, categoryColor } from "@/lib/content";
 import HeroSlider from "@/components/HeroSlider";
 
 const SLIDER_COUNT = 5;
@@ -13,20 +13,50 @@ export default function Home() {
     excerpt: p.excerpt,
     category: p.categories[0] ?? "",
   }));
-  const latest = posts.slice(SLIDER_COUNT, SLIDER_COUNT + LATEST_COUNT);
+  const sliderSlugs = new Set(slides.map((s) => s.slug));
+  const mustRead = getTopPosts().slice(0, 4);
+  const mustReadSlugs = new Set(mustRead.map((p) => p.slug));
+  const latest = posts
+    .filter((p) => !sliderSlugs.has(p.slug) && !mustReadSlugs.has(p.slug))
+    .slice(0, LATEST_COUNT);
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-10">
       <div className="mb-6">
-        <p className="mb-1 font-mono text-xs uppercase tracking-[0.2em] text-accent">
-          Rudra Kasturi
-        </p>
         <h1 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
           Make search fun.
         </h1>
       </div>
 
       <HeroSlider slides={slides} />
+
+      {mustRead.length > 0 && (
+        <>
+          <div className="mt-12 mb-6 flex items-center gap-4">
+            <h2 className="font-display text-xl font-semibold text-ink">Don&apos;t miss these</h2>
+            <div className="h-px flex-1 bg-line" />
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {mustRead.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/${post.slug}`}
+                style={{ borderLeftColor: categoryColor(post.categories[0] ?? "") }}
+                className="group block rounded-md border border-line border-l-4 bg-paper p-4 transition hover:shadow-sm"
+              >
+                {post.categories[0] && (
+                  <p className="mb-1 font-mono text-[11px] uppercase tracking-wide text-ink-soft">
+                    {post.categories[0]}
+                  </p>
+                )}
+                <h3 className="font-display text-base font-semibold leading-snug text-ink group-hover:text-accent">
+                  {post.title}
+                </h3>
+              </Link>
+            ))}
+          </div>
+        </>
+      )}
 
       <div className="mt-12 mb-6 flex items-center gap-4">
         <h2 className="font-display text-xl font-semibold text-ink">Latest</h2>

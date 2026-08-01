@@ -63,8 +63,9 @@ export default function ContinuousReader({ startSlug }: { startSlug: string }) {
   }, [articles.length, done, loading, loadNext]);
 
   function onArticleVisible(article: NextArticle) {
+    if (window.location.pathname === `/${article.slug}`) return;
     document.title = `${article.title} | Rudra Kasturi`;
-    window.history.replaceState(null, "", `/${article.slug}`);
+    window.history.pushState({ slug: article.slug }, "", `/${article.slug}`);
   }
 
   return (

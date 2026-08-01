@@ -14,7 +14,7 @@ import {
 import PostBanner from "@/components/PostBanner";
 import ArticleBody from "@/components/ArticleBody";
 import MarkdownContent from "@/components/MarkdownContent";
-import AiShareBar from "@/components/AiShareBar";
+import SocialShareBar from "@/components/SocialShareBar";
 import ArticleSidebar from "@/components/ArticleSidebar";
 import ContinuousReader from "@/components/ContinuousReader";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -172,7 +172,7 @@ export default async function ContentPage({
 
       {isPost && (
         <div className="mb-8">
-          <AiShareBar url={url} />
+          <SocialShareBar url={url} title={item.title} />
         </div>
       )}
 
