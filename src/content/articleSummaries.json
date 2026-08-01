@@ -764,9 +764,6 @@
   "google-adds-feature-availability-for-loyalty-program-structured-data-what-devs-seos-need-to-know": {
     "verdict": "Reports Google documenting exactly which eight countries (US, UK, Canada, Australia, Germany, France, Brazil, Mexico) currently support LoyaltyProgram rich results, saving developers from implementing valid markup that simply won't render anywhere visible yet. Clarifies the practical nuance: markup still validates and can be tested globally via Rich Results Test even in unsupported regions, so early implementation elsewhere is future-proofing, not wasted effort."
   },
-  "opinion-will-your-15l-seo-job-still-exist-in-2-years": {
-    "verdict": "Argues premium SEO salaries in India face real pressure not because SEO is dying but because its economics are breaking — rankings can hold steady while AI Overviews and closed ecosystems quietly siphon off the clicks that used to justify the headcount cost. The pivot advice is concrete and specific: become a 'growth architect' fluent in distribution, monetization, and GenAI workflow automation rather than someone whose value stops at keyword rankings and CTR."
-  },
   "can-you-use-article-content-in-youtube-videos-using-ai-will-it-impact-your-rankings": {
     "verdict": "Answers a common publisher question directly: YouTube doesn't penalize AI-repurposed article content as long as the resulting video performs on the metrics that actually matter — watch time, engagement, click-through — regardless of how the script originated. The clearest practical warning is against copy-pasting article text verbatim into a script, since articles and video demand fundamentally different pacing and tone."
   },
@@ -778,5 +775,8 @@
   },
   "why-my-left-hand-disappeared-in-ai-a-simple-truth-about-training-data": {
     "verdict": "Uses a simple personal experiment — asking an image model to draw someone writing left-handed, and getting a right-handed result anyway — to illustrate how generative AI defaults to statistically dominant patterns in its training data rather than actually parsing the prompt's specifics. Extends the point convincingly to bigger stakes: if AI can't reliably render something as basic as handedness, the same blind pattern-matching is quietly shaping how it represents gender, profession, and culture by default."
+  },
+  "opinion-will-your-%e2%82%b915l-seo-job-still-exist-in-2-years": {
+    "verdict": "Argues premium SEO salaries in India face real pressure not because SEO is dying but because its economics are breaking — rankings can hold steady while AI Overviews and closed ecosystems quietly siphon off the clicks that used to justify the headcount cost. The pivot advice is concrete and specific: become a 'growth architect' fluent in distribution, monetization, and GenAI workflow automation rather than someone whose value stops at keyword rankings and CTR."
   }
 }
