@@ -688,5 +688,50 @@
   },
   "how-tollywoods-larven-ai-studio-could-reshape-indian-filmmaking-a-tech-deep-dive": {
     "verdict": "Profiles LARVEN AI Studio, a Dil Raju and Dimension NXG venture bringing generative pre-visualization, script-optimization NLP, and neural-rendered VFX to Telugu cinema — claiming a six-month Baahubali-scale war sequence could now render in weeks. Takes the ethical questions seriously rather than glossing over them, pressing on job displacement for junior VFX technicians and the risk that algorithm-optimized scripts homogenize Telugu cinema's more experimental instincts."
+  },
+  "google-image-seo-best-practices-2025-edition-a-practical-guide-for-seos-and-developers": {
+    "verdict": "A comprehensive image-SEO checklist covering filenames, alt text, structured data, and responsive delivery, with the May 2025 headline update being Google's new push for one consistent canonical URL per image across a site. Comes with a genuinely usable audit table developers can work through directly, from WebP/AVIF adoption to avoiding CDN-driven URL variants that waste crawl budget on duplicates."
+  },
+  "google-search-is-getting-rebuilt-by-ai-the-quiet-ai-revolution-that-could-hit-your-business": {
+    "verdict": "Argues Google is rebuilding its search stack around LLMs at every layer — retrieval, ranking, and presentation — turning a keyword-matching engine into something closer to an answer engine. The business-strategy framing is the sharpest part: media outlets need to offer analysis AI can't replicate, and everyone needs a direct audience channel since Google increasingly sits as a middle layer between you and your readers."
+  },
+  "your-first-500-users-lied-to-you-this-is-why-your-traffic-doesnt-convert": {
+    "verdict": "Argues Indian AI-SaaS founders are building for the wrong audience — optimizing for Bangalore Tech Twitter when the real 10,000-customer opportunity is field agents in Kanpur or SME owners in Ludhiana who discover tools through WhatsApp groups and colleague referrals, not Product Hunt launches. The practical fix is concrete: make the product feel like 'send a WhatsApp message, get a quote' rather than requiring users to learn prompts."
+  },
+  "why-old-seo-metrics-dont-work-anymore-and-what-indian-founders-should-measure-today": {
+    "verdict": "Proposes twelve new KPIs for a GenAI-integrated web — adoption rate, query length, abandonment rate, error rate — arguing organic clicks alone can't capture value when your content trains or influences AI answers nobody clicks through to see. The old-KPI-to-new-KPI mapping table is the clearest actionable piece, translating backlinks into 'AI trust + first-party data' as the more relevant modern signal."
+  },
+  "how-googles-ai-search-features-are-changing-seo-for-indian-businesses": {
+    "verdict": "Walks through nine Indian industry verticals — news, e-commerce, real estate, travel, sports — showing concrete example queries and exactly what AI Overviews might surface for each, paired with specific schema and content recommendations per sector. The real value is the sector-specific KPI table at the end, translating 'AI snippet inclusion' and 'brand mentions' into what each industry should actually be tracking instead of raw rankings."
+  },
+  "googles-event-structured-data-update-what-it-means-for-your-seo-strategy": {
+    "verdict": "Reports Google narrowing Events structured data eligibility to public, physical, in-person events only, explicitly dropping support for online-only events after years of pandemic-era virtual listings cluttering the format. Uses concrete Indian examples — a BookMyShow comedy show qualifies, a private Zoom webinar doesn't — plus a full JSON-LD template for an eligible event, making the audit checklist immediately actionable."
+  },
+  "google-just-updated-its-safesearch-guidelines-heres-what-it-means-for-your-site": {
+    "verdict": "Breaks down Google's overhauled SafeSearch documentation, covering stricter CSAM/non-consensual content removal guidance, a clearer appeals process for mistakenly flagged sites, and a specific new warning that blocked video files can tank Google Video Search rankings even for legitimate NSFW content. Uses three concrete site-type scenarios — adult blog, artist video platform, general forum with a stray flagged post — to make the guidance land as practical rather than abstract policy."
+  },
+  "sundar-pichais-ai-playbook-what-googles-ceo-just-revealed-about-the-future-of-search-content-and-engineering": {
+    "verdict": "Recaps Sundar Pichai's Bloomberg Tech Summit interview, where he commits to continued engineer hiring through 2026, describes his own casual 'vibe coding' with tools like Cursor and Replit, and insists AI Overviews are meant to enrich rather than replace the ten-blue-links model. The publisher-relevant claim worth scrutinizing: Pichai says Google has grown its indexed page count by 45% over two years and that AI Overviews actually route clicks to a wider variety of sites, not just big brands."
+  },
+  "why-google-is-suddenly-obsessed-with-tagging-explicit-content-and-what-it-means-for-ai-search": {
+    "verdict": "Argues Google's stricter explicit-content tagging push isn't really about morality policing — it's AI-readiness infrastructure, since Google can't risk quoting NSFW or misleading material inside a family-safe AI Overview. Frames it as a genuine mindset shift for site owners: your content now needs to pass not just crawlability checks but 'AI-citable' classification, and mixed clean/explicit content without proper separation risks having your entire domain excluded from AI summaries."
+  },
+  "how-to-use-the-image-tag-in-recipe-structured-data-and-what-it-actually-does": {
+    "verdict": "Clears up a common confusion for food bloggers: the Recipe schema's image property only influences rich-result eligibility, not which image Google actually picks for a standard text snippet — that's determined algorithmically from page layout, prominence, and lazy-loading behavior. The practical fix is doing both — proper JSON-LD markup and an early, eager-loaded, well-named hero image in the actual HTML — since structured data alone won't guarantee the right picture shows up."
+  },
+  "bill-gates-was-right-about-covid-now-hes-predicting-which-careers-ai-wont-replace": {
+    "verdict": "Cites Bill Gates naming three career categories he believes stay resistant to AI displacement — engineering (for ethical oversight and debugging), energy specialists (for judgment calls under real-world uncertainty), and biologists (for hypothesis generation and clinical trial execution). Leans on Gates' pandemic-prediction credibility to lend the forecast weight, though the underlying argument boils down to the familiar claim that AI still can't replace human judgment under genuine uncertainty."
+  },
+  "does-gen-z-still-need-mentors-in-the-age-of-ai": {
+    "verdict": "Argues mentorship isn't disappearing for Gen Z so much as decentralizing — from scheduled one-on-ones with senior professionals to following builders who 'ship in public' on X, GitHub, and Discord, prioritizing proof of work over titles. The comparison table crystallizes the shift well: 'respect based on title' becoming 'respect based on output,' with a genuinely useful call to older professionals to mentor by sharing process and mistakes rather than polished frameworks."
+  },
+  "why-online-reputation-management-orm-is-critical-for-ceos-in-the-age-of-generative-ai": {
+    "verdict": "Argues ORM has shifted from reactive PR crisis management to proactive AI-narrative shaping, since LLMs now synthesize CEO bios from whatever public data exists — including outdated forum posts or deepfaked audio — and present it as fact in investor and journalist research. The concrete action list is useful: structured schema markup on executive bios, monitoring your 'digital twin' via AI-generated summaries, and pre-registering voice data to counter deepfake impersonation before it happens."
+  },
+  "why-blocking-ai-crawlers-wont-save-your-brand-itll-just-make-you-invisible": {
+    "verdict": "Pushes back directly against the instinct to block AI crawlers, arguing that doing so doesn't protect your brand — it just means AI fills the gap with whatever secondhand information exists on Reddit threads and old news instead of your own accurate content. Introduces 'Language Model Optimization' as the sequel to SEO, with a simple diagnostic anyone can run: ask ChatGPT what it thinks your company does, and see how wrong the answer already is."
+  },
+  "the-rise-of-ai-smart-founders-why-vcs-now-fund-prompts-not-products": {
+    "verdict": "A sharply satirical takedown of 2025 pitch culture, where founders raise seed rounds on GPT-generated mockups and 'prompt portfolios' instead of actual working products, illustrated by a real anecdote of a mental-health app funded on nothing but a Midjourney screenshot and a Notion page. The closing argument lands the point cleanly: prompts are trivially copyable, so real defensibility still comes from data flywheels, distribution, and the unglamorous work of shipping — not clever screenshots that impress FOMO-addled VCs."
   }
 }
