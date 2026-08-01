@@ -110,7 +110,12 @@ export default async function ContentPage({
           datePublished: item.date,
           dateModified: item.date,
           articleSection: item.categories[0],
-          author: { "@type": "Person", name: AUTHOR_NAME, url: `${SITE_URL}${AUTHOR_URL}` },
+          author: {
+            "@type": "Person",
+            name: AUTHOR_NAME,
+            url: `${SITE_URL}${AUTHOR_URL}`,
+            sameAs: ["https://linkedin.com/in/rudrakasturi"],
+          },
           publisher: { "@type": "Organization", name: "Rudra Kasturi", url: SITE_URL },
         }),
       },

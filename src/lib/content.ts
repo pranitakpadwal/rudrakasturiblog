@@ -111,7 +111,8 @@ function hashString(input: string): number {
   return Math.abs(hash);
 }
 
-// A small, restrained set of duotones — editorial rather than "AI gradient".
+// A small, restrained set of duotones — used only for the single article
+// hero banner, never repeated across grids/cards.
 export const DUOTONES: [string, string][] = [
   ["#1c1917", "#8a5a3b"], // ink / clay
   ["#0f1f1c", "#2f6f5e"], // pine / sage
@@ -123,6 +124,40 @@ export const DUOTONES: [string, string][] = [
 
 export function duotoneForSlug(slug: string): [string, string] {
   return DUOTONES[hashString(slug) % DUOTONES.length];
+}
+
+// A muted, print-catalogue palette keyed by category — same category always
+// gets the same color, so the color itself carries information (which
+// section a post belongs to) instead of being random decoration.
+const CATEGORY_COLORS = [
+  "#7a5c3e", // clay
+  "#3d6b56", // pine
+  "#4a5a7a", // slate blue
+  "#7a3e4a", // brick
+  "#5c5c3e", // olive
+  "#3e6b7a", // teal
+  "#6b4a7a", // plum
+  "#7a6b3e", // ochre
+];
+
+export function categoryColor(category: string): string {
+  return CATEGORY_COLORS[hashString(category) % CATEGORY_COLORS.length];
+}
+
+export interface PostSummary {
+  slug: string;
+  title: string;
+  category: string;
+}
+
+// Lean projection for client-side infinite scroll — no body text, no full
+// date/tag payload, just enough to render a card.
+export function getPostSummaries(): PostSummary[] {
+  return getAllPosts().map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    category: p.categories[0] ?? "",
+  }));
 }
 
 export function readingTime(markdown: string): number {

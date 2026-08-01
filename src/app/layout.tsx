@@ -82,7 +82,14 @@ const SITE_JSON_LD = {
       "@id": "https://blog.rudrakasturi.com/#organization",
       name: "Rudra Kasturi",
       url: "https://blog.rudrakasturi.com",
-      sameAs: ["https://x.com/kasturitagore"],
+      sameAs: [
+        "https://x.com/kasturitagore",
+        "https://linkedin.com/in/rudrakasturi",
+        "https://appstudiox.com",
+        "https://aividhyarthi.org",
+        "https://hermidlife.org",
+        "https://apprankr.in",
+      ],
     },
   ],
 };

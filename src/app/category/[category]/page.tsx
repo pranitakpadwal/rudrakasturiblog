@@ -5,7 +5,7 @@ import {
   getAllCategories,
   getPostsByCategory,
   categorySlug,
-  duotoneForSlug,
+  categoryColor,
   readingTime,
   formatDateIST,
 } from "@/lib/content";
@@ -106,30 +106,22 @@ export default async function CategoryPage({
       <h1 className="font-display text-4xl font-semibold text-ink">{name}</h1>
       <p className="mt-3 text-ink-soft">{posts.length} posts</p>
 
-      <div className="mt-12 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => {
-          const [from, to] = duotoneForSlug(post.slug);
-          return (
-            <Link
-              key={post.slug}
-              href={`/${post.slug}`}
-              className="group flex flex-col overflow-hidden rounded-xl border border-line transition hover:shadow-md hover:shadow-black/5"
-            >
-              <div
-                className="aspect-[4/3] w-full"
-                style={{ background: `linear-gradient(155deg, ${from}, ${to})` }}
-              />
-              <div className="flex flex-1 flex-col p-5">
-                <h3 className="font-display text-lg font-semibold leading-snug text-ink group-hover:text-accent">
-                  {post.title}
-                </h3>
-                <p className="mt-auto pt-3 text-sm text-ink-soft">
-                  {formatDateIST(post.date)} · {readingTime(post.content_md)} min read
-                </p>
-              </div>
-            </Link>
-          );
-        })}
+      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post) => (
+          <Link
+            key={post.slug}
+            href={`/${post.slug}`}
+            style={{ borderLeftColor: categoryColor(name) }}
+            className="group block rounded-md border border-line border-l-4 bg-paper p-4 transition hover:shadow-sm"
+          >
+            <h3 className="font-display text-base font-semibold leading-snug text-ink group-hover:text-accent">
+              {post.title}
+            </h3>
+            <p className="mt-2 text-sm text-ink-soft">
+              {formatDateIST(post.date)} · {readingTime(post.content_md)} min read
+            </p>
+          </Link>
+        ))}
       </div>
     </div>
   );

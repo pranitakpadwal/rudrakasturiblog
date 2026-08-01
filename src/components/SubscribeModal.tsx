@@ -74,9 +74,10 @@ export default function SubscribeModal() {
 
         {status === "done" ? (
           <div>
-            <h2 className="font-display text-xl font-semibold text-ink">You&apos;re in.</h2>
+            <h2 className="font-display text-xl font-semibold text-ink">Got it — thanks.</h2>
             <p className="mt-2 text-sm text-ink-soft">
-              Thanks for subscribing — new posts will land in your inbox.
+              We&apos;ve noted your email. Newsletter delivery is being set up right now —
+              you won&apos;t miss the first issue.
             </p>
           </div>
         ) : (
