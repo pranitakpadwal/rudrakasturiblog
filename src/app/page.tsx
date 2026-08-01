@@ -50,11 +50,11 @@ export default function Home() {
         <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-accent">
           Search · Strategy · AI
         </p>
-        <h1 className="font-display text-4xl font-semibold leading-tight text-ink sm:text-5xl">
-          Notes on search, AI, and building an edge before everyone else has one.
+        <h1 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+          SEO, AEO, and AI search
         </h1>
-        <p className="mt-4 text-lg leading-relaxed text-ink-soft">
-          Search. Strategy. AI. Growth. Coach. Revenue.
+        <p className="mt-3 text-base leading-relaxed text-ink-soft sm:text-lg">
+          Practical writing on search, AI, and building an edge before everyone else has one.
         </p>
       </div>
 

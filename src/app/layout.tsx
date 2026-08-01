@@ -46,10 +46,45 @@ export const metadata: Metadata = {
     "google-adsense-account": ADSENSE_CLIENT_ID,
   },
   alternates: {
+    canonical: "/",
     types: {
       "text/plain": "/llms.txt",
     },
   },
+  openGraph: {
+    title: "Rudra Kasturi — Search. Strategy. AI. Growth.",
+    description: "Search. Strategy. AI. Growth. Coach. Revenue.",
+    url: "https://blog.rudrakasturi.com",
+    siteName: "Rudra Kasturi",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    site: "@kasturitagore",
+    title: "Rudra Kasturi — Search. Strategy. AI. Growth.",
+    description: "Search. Strategy. AI. Growth. Coach. Revenue.",
+  },
+};
+
+const SITE_JSON_LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://blog.rudrakasturi.com/#website",
+      url: "https://blog.rudrakasturi.com",
+      name: "Rudra Kasturi",
+      description: "Search. Strategy. AI. Growth. Coach. Revenue.",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://blog.rudrakasturi.com/#organization",
+      name: "Rudra Kasturi",
+      url: "https://blog.rudrakasturi.com",
+      sameAs: ["https://x.com/kasturitagore"],
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -68,6 +103,10 @@ export default function RootLayout({
         <link rel="llms-sitemap" href="/llms.txt" />
       </head>
       <body className="flex min-h-full flex-col bg-paper text-ink">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_JSON_LD) }}
+        />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"

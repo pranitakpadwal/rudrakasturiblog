@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllPages, getAllPosts } from "@/lib/content";
+import { getAllCategories, getAllPages, getAllPosts, categorySlug } from "@/lib/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://blog.rudrakasturi.com";
@@ -14,5 +14,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(page.date),
   }));
 
-  return [{ url: base, lastModified: new Date() }, ...posts, ...pages];
+  const categories = getAllCategories().map((category) => ({
+    url: `${base}/category/${categorySlug(category)}`,
+    lastModified: new Date(),
+  }));
+
+  return [
+    { url: base, lastModified: new Date() },
+    { url: `${base}/archive`, lastModified: new Date() },
+    ...posts,
+    ...pages,
+    ...categories,
+  ];
 }

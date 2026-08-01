@@ -15,6 +15,7 @@ import PostBanner from "@/components/PostBanner";
 import MarkdownContent from "@/components/MarkdownContent";
 import AiShareBar from "@/components/AiShareBar";
 import ArticleSidebar from "@/components/ArticleSidebar";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const SITE_URL = "https://blog.rudrakasturi.com";
 
@@ -75,15 +76,28 @@ export default async function ContentPage({
   const description =
     item.excerpt || item.content_md.slice(0, 160).replace(/\n/g, " ");
 
+  const primaryCategory = item.categories[0];
+  const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    ...(isPost && primaryCategory
+      ? [{ label: primaryCategory, href: `/category/${categorySlug(primaryCategory)}` }]
+      : []),
+    { label: item.title },
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, item: { "@id": SITE_URL, name: "Rudra Kasturi" } },
-          { "@type": "ListItem", position: 2, item: { "@id": url, name: item.title } },
-        ],
+        itemListElement: breadcrumbItems.map((crumb, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@id": crumb.href ? `${SITE_URL}${crumb.href === "/" ? "" : crumb.href}` : url,
+            name: crumb.label,
+          },
+        })),
       },
       {
         "@type": isPost ? "BlogPosting" : "WebPage",
@@ -109,6 +123,8 @@ export default async function ContentPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
+      <Breadcrumbs items={breadcrumbItems} />
 
       {isPost && item.categories.length > 0 && (
         <div className="mb-4 flex flex-wrap gap-2">
@@ -171,9 +187,9 @@ export default async function ContentPage({
   }
 
   return (
-    <div className="mx-auto grid max-w-6xl gap-12 px-5 py-14 lg:grid-cols-[minmax(0,1fr)_280px]">
-      {articleBody}
-      <div className="lg:sticky lg:top-24 lg:h-fit">
+    <div className="mx-auto grid min-w-0 max-w-6xl gap-12 px-5 py-14 lg:grid-cols-[minmax(0,1fr)_280px]">
+      <div className="min-w-0">{articleBody}</div>
+      <div className="min-w-0 lg:sticky lg:top-24 lg:h-fit">
         <ArticleSidebar currentSlug={slug} />
       </div>
     </div>

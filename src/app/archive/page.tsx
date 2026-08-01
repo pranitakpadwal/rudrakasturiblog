@@ -1,10 +1,26 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllPosts, formatShortDateIST } from "@/lib/content";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Archive",
   description: "Every post from Rudra Kasturi, newest first.",
+  alternates: { canonical: "/archive" },
+  openGraph: {
+    title: "Archive | Rudra Kasturi",
+    description: "Every post from Rudra Kasturi, newest first.",
+    url: "https://blog.rudrakasturi.com/archive",
+    siteName: "Rudra Kasturi",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    site: "@kasturitagore",
+    title: "Archive | Rudra Kasturi",
+    description: "Every post from Rudra Kasturi, newest first.",
+  },
 };
 
 export default function ArchivePage() {
@@ -17,6 +33,7 @@ export default function ArchivePage() {
 
   return (
     <div className="mx-auto max-w-3xl px-5 py-14">
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Archive" }]} />
       <h1 className="font-display text-4xl font-semibold text-ink">Archive</h1>
       <p className="mt-3 text-ink-soft">{posts.length} posts, newest first.</p>
 

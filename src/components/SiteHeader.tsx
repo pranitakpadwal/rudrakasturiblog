@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { categorySlug } from "@/lib/content";
+import MobileMenu from "@/components/MobileMenu";
 
 export default function SiteHeader({ categories }: { categories: string[] }) {
   return (
     <header className="sticky top-0 z-20 border-b border-line bg-paper/90 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-5 py-4">
+      <div className="relative mx-auto flex max-w-5xl items-center justify-between gap-6 px-5 py-4">
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ink font-display text-base font-semibold text-paper">
             R
@@ -24,12 +25,15 @@ export default function SiteHeader({ categories }: { categories: string[] }) {
             </Link>
           ))}
         </nav>
-        <Link
-          href="/contact-rudrakasturi"
-          className="shrink-0 rounded-full border border-ink px-4 py-1.5 text-sm text-ink transition hover:bg-ink hover:text-paper"
-        >
-          Contact
-        </Link>
+        <div className="flex shrink-0 items-center gap-3">
+          <Link
+            href="/contact-rudrakasturi"
+            className="rounded-full border border-ink px-4 py-1.5 text-sm text-ink transition hover:bg-ink hover:text-paper"
+          >
+            Contact
+          </Link>
+          <MobileMenu categories={categories} />
+        </div>
       </div>
     </header>
   );
