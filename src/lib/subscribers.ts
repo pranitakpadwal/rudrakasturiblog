@@ -1,14 +1,22 @@
 import { createHmac } from "crypto";
 
-const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+// Storage: a JSON file in a dedicated branch of this same GitHub repo,
+// read/written via GitHub's Contents API. No third-party database, no
+// signup beyond a free GitHub Personal Access Token — GitHub never
+// requires payment for PATs. Using a separate branch (not the Vercel
+// production branch) so subscribe requests don't trigger site rebuilds.
+const GITHUB_TOKEN = process.env.SUBSCRIBERS_GITHUB_TOKEN;
+const GITHUB_REPO = process.env.SUBSCRIBERS_GITHUB_REPO; // "owner/repo"
+const GITHUB_BRANCH = process.env.SUBSCRIBERS_GITHUB_BRANCH ?? "subscribers-data";
+const GITHUB_PATH = process.env.SUBSCRIBERS_GITHUB_PATH ?? "subscribers.json";
+
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const RESEND_FROM_EMAIL = process.env.RESEND_FROM_EMAIL ?? "newsletter@blog.rudrakasturi.com";
 const UNSUBSCRIBE_SECRET = process.env.UNSUBSCRIBE_SECRET ?? "dev-only-secret-change-me";
 const SITE_URL = "https://blog.rudrakasturi.com";
 
 export function isSubscriberStoreConfigured(): boolean {
-  return Boolean(SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY);
+  return Boolean(GITHUB_TOKEN && GITHUB_REPO);
 }
 
 export function isEmailSendConfigured(): boolean {
@@ -19,83 +27,122 @@ export function unsubscribeToken(email: string): string {
   return createHmac("sha256", UNSUBSCRIBE_SECRET).update(email.toLowerCase()).digest("hex");
 }
 
-// Upserts into a `subscribers` table (email text primary key, created_at
-// timestamptz default now(), source text). Returns "added" | "duplicate".
+interface SubscriberRecord {
+  email: string;
+  source: string;
+  created_at: string;
+}
+
+function githubHeaders() {
+  return {
+    Authorization: `Bearer ${GITHUB_TOKEN}`,
+    Accept: "application/vnd.github+json",
+    "Content-Type": "application/json",
+  };
+}
+
+function contentsUrl(): string {
+  return `https://api.github.com/repos/${GITHUB_REPO}/contents/${GITHUB_PATH}`;
+}
+
+async function readFile(): Promise<{ records: SubscriberRecord[]; sha: string | null }> {
+  const res = await fetch(`${contentsUrl()}?ref=${GITHUB_BRANCH}`, {
+    headers: githubHeaders(),
+    cache: "no-store",
+  });
+
+  if (res.status === 404) {
+    return { records: [], sha: null };
+  }
+  if (!res.ok) {
+    throw new Error(`GitHub read failed: ${res.status} ${await res.text()}`);
+  }
+
+  const data = await res.json();
+  const decoded = Buffer.from(data.content, "base64").toString("utf-8");
+  return { records: JSON.parse(decoded || "[]"), sha: data.sha };
+}
+
+async function writeFile(records: SubscriberRecord[], sha: string | null, message: string): Promise<void> {
+  const content = Buffer.from(JSON.stringify(records, null, 2)).toString("base64");
+
+  const res = await fetch(contentsUrl(), {
+    method: "PUT",
+    headers: githubHeaders(),
+    body: JSON.stringify({
+      message,
+      content,
+      branch: GITHUB_BRANCH,
+      ...(sha ? { sha } : {}),
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error(`GitHub write failed: ${res.status} ${await res.text()}`);
+  }
+}
+
+function assertConfigured() {
+  if (!GITHUB_TOKEN || !GITHUB_REPO) {
+    throw new Error("Subscriber store not configured");
+  }
+}
+
+// Retries once on a 409 (someone else wrote the file between our read and
+// write) by re-reading and re-applying the mutation.
+async function withRetry<T>(mutate: () => Promise<T>): Promise<T> {
+  try {
+    return await mutate();
+  } catch (err) {
+    if (err instanceof Error && err.message.includes("409")) {
+      return mutate();
+    }
+    throw err;
+  }
+}
+
 export async function addSubscriber(
   email: string,
   source: string
 ): Promise<"added" | "duplicate"> {
-  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
-    throw new Error("Subscriber store not configured");
-  }
+  assertConfigured();
+  const normalized = email.toLowerCase();
 
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/subscribers`, {
-    method: "POST",
-    headers: {
-      apikey: SUPABASE_SERVICE_ROLE_KEY,
-      Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
-      "Content-Type": "application/json",
-      Prefer: "resolution=ignore-duplicates,return=representation",
-    },
-    body: JSON.stringify({ email: email.toLowerCase(), source }),
+  return withRetry(async () => {
+    const { records, sha } = await readFile();
+    if (records.some((r) => r.email === normalized)) return "duplicate";
+
+    records.push({ email: normalized, source, created_at: new Date().toISOString() });
+    await writeFile(records, sha, `Add subscriber ${normalized}`);
+    return "added";
   });
-
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Supabase insert failed: ${res.status} ${body}`);
-  }
-
-  const rows = await res.json();
-  return Array.isArray(rows) && rows.length > 0 ? "added" : "duplicate";
 }
 
 export async function removeSubscriber(email: string): Promise<void> {
-  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
-    throw new Error("Subscriber store not configured");
-  }
+  assertConfigured();
+  const normalized = email.toLowerCase();
 
-  const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/subscribers?email=eq.${encodeURIComponent(email.toLowerCase())}`,
-    {
-      method: "DELETE",
-      headers: {
-        apikey: SUPABASE_SERVICE_ROLE_KEY,
-        Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
-      },
-    }
-  );
-
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Supabase delete failed: ${res.status} ${body}`);
-  }
+  await withRetry(async () => {
+    const { records, sha } = await readFile();
+    const filtered = records.filter((r) => r.email !== normalized);
+    if (filtered.length === records.length) return;
+    await writeFile(filtered, sha, `Remove subscriber ${normalized}`);
+  });
 }
 
 export async function listSubscriberEmails(): Promise<string[]> {
-  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
-    throw new Error("Subscriber store not configured");
-  }
-
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/subscribers?select=email`, {
-    headers: {
-      apikey: SUPABASE_SERVICE_ROLE_KEY,
-      Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
-    },
-  });
-
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Supabase list failed: ${res.status} ${body}`);
-  }
-
-  const rows: { email: string }[] = await res.json();
-  return rows.map((r) => r.email);
+  assertConfigured();
+  const { records } = await readFile();
+  return records.map((r) => r.email);
 }
 
 // Resend's batch endpoint caps at 100 recipients per call.
 const BATCH_SIZE = 100;
 
-export async function broadcastEmail(subject: string, html: (email: string) => string): Promise<{ sent: number }> {
+export async function broadcastEmail(
+  subject: string,
+  html: (email: string) => string
+): Promise<{ sent: number }> {
   if (!RESEND_API_KEY) throw new Error("Email sending not configured");
 
   const emails = await listSubscriberEmails();
