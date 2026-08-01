@@ -913,5 +913,50 @@
   },
   "the-case-for-a-calm-ai-mode": {
     "verdict": "Argues the next meaningful AI product differentiator isn't speed but restraint — a hypothetical 'Calm Mode' that dims the interface, offers fewer but better suggestions, and responds like a grounded friend rather than an over-eager intern racing to prove usefulness. The genuinely interesting business point is about long-term moat: products built purely around response speed and engagement-per-session win short-term attention, but trust built through emotional regulation is a much harder thing for competitors to copy."
+  },
+  "do-you-still-need-a-degree-if-you-can-build-a-robot": {
+    "verdict": "Uses a viral story of a Chinese student sending a self-built humanoid robot to collect his diploma as a springboard to critique India's exam-obsessed education system, contrasting NEET and JEE's brutal filtering (2.6% IIT acceptance from 11 lakh applicants) against a 17-year-old who simply built something real. The core argument is blunt but grounded: proof of work is starting to outcompete proof of marks outside India, and the piece questions whether a system built for sorting rather than building can keep pace."
+  },
+  "how-keralas-high-court-quietly-set-the-rules-for-ai-in-indian-courtrooms": {
+    "verdict": "Details Kerala High Court's first-of-its-kind AI policy for Indian courts, which explicitly permits AI for summarization, legal research and scheduling while drawing a hard line against using it for final legal reasoning or judgments. The phase-by-phase breakdown is genuinely useful — pre-hearing duplicate-case flagging, in-court citation surfacing, post-judgment translation into regional languages — framed correctly as clearing bureaucratic clutter so judges, not machines, get more time to actually think through complex cases."
+  },
+  "the-actor-died-the-film-didnt-ai-finished-it": {
+    "verdict": "Uses director Gareth Edwards completing a film after his lead actor's death via AI face and voice reconstruction as the hook for a pointed argument that Indian studios are lagging badly on AI infrastructure, still outsourcing post-production to multiple vendors and taking eight months on VFX that other markets are compressing dramatically. The old-way-versus-AI-way table lands the practical point cleanly, translating the emotional story into concrete production problems — actor unavailability, crowd scenes, multi-language dubbing — that AI can solve at a fraction of the cost."
+  },
+  "what-is-baby-grok-elon-musks-new-ai-chatbot-for-kids": {
+    "verdict": "Explains xAI's planned child-safe Baby Grok chatbot as a direct response to backlash over Grok's adult-flavored companion personas like 'Valentine,' which were clearly unsuitable once kids started accessing the main app. Honest about how little is actually confirmed — no launch date, no detailed safety architecture — treating the announcement as a signal that big AI platforms are finally acknowledging kids are already using their tools without age-appropriate guardrails."
+  },
+  "how-an-old-diabetes-drug-may-save-us-from-superbugs-thanks-to-ai": {
+    "verdict": "Tells the story of Halicin, a forgotten diabetes drug candidate that AI screening identified as unexpectedly effective against 17 of 18 tested drug-resistant bacteria strains, including hospital staples like E. coli and staph. Explains the mechanism clearly — Halicin disrupts bacterial energy production rather than punching cell-wall holes like conventional antibiotics, making resistance harder to develop — and frames AI-assisted drug repurposing as a genuinely faster, cheaper alternative to years of traditional antibiotic discovery."
+  },
+  "what-is-llms-txt-why-it-matters-for-seo": {
+    "verdict": "A practical primer on llms.txt as a proposed robots.txt-style Markdown file meant to point AI crawlers toward a site's most valuable content, explicit that John Mueller has confirmed no major AI platform actually reads it yet. Frames early adoption as a low-cost, zero-downside bet — much like XML sitemaps before Google formally supported them — and includes concrete setup steps like generating .md versions of key pages for cleaner AI parsing."
+  },
+  "google-search-central-apac-2025-in-a-world-full-of-ai-content-google-still-wants-a-human-to-write-it": {
+    "verdict": "Reports Google's Search Central APAC 2025 confirmation that its ranking systems are trained specifically on human-written content, with AI-generated text sitting in a separate part of the index that doesn't inform ranking signals at all. The practical takeaway is stated plainly: 500 unedited AI blog posts won't beat ten well-researched, human-voiced pages, because volume stopped being the winning strategy once Google's systems got better at detecting genuine depth versus generic AI phrasing."
+  },
+  "the-only-seo-that-works-even-in-a-genai-world-written-by-humans-not-machines": {
+    "verdict": "A companion piece to the APAC recap, attributing the human-content-training claim directly to Gary Illyes and translating it into concrete SEO team actions — invest in E-E-A-T with real author credentials, hire editors rather than just writers, and treat AI as a drafting starting point rather than a publishing engine. The 'attic versus living room' framing for AI content's place in Google's index is a sharp, memorable way to describe indexed-but-ignored status."
+  },
+  "google-ai-generated-text-has-a-different-lane-in-google-index": {
+    "verdict": "Extends the APAC announcement into a more granular warning specifically aimed at affiliate publishers and content mills, using a library analogy — AI content sits in the basement, technically catalogued but never actually pulled off the shelf — to explain why indexing and ranking are fundamentally different outcomes. The audit advice is concrete: check Search Console for pages with impressions but zero clicks, then honestly assess whether that page was human-reviewed and offers anything a machine couldn't fake."
+  },
+  "gen-z-doesnt-google-they-lens-why-visual-search-is-your-next-growth-channel": {
+    "verdict": "Cites the striking stat that roughly 20% of Google Lens's 100 billion searches carry buying intent, arguing visual search has quietly become a genuine e-commerce conversion channel rather than a novelty feature for younger users who point their camera instead of typing. The practical 'Lens-readiness' checklist is specific and usable — descriptive alt text over generic filenames, real-life contextual product photography over flat stock shots, and structured Product schema paired with rich captions."
+  },
+  "google-trends-api-alpha-google-just-opened-the-doors-to-real-time-search-trends": {
+    "verdict": "Covers Google's alpha-stage Trends API, which finally lets developers programmatically pull search interest data going back to 2004 — time-series trends, top and rising queries, and regional breakdowns down to metro level — instead of relying on manual dashboard exports. Flags realistic use cases across journalism, SEO, and finance while being upfront about the alpha-stage caveat: limited access and likely API changes mean it's built for testing and feedback, not production deployment yet."
+  },
+  "ai-was-supposed-to-disrupt-google-its-doing-the-opposite": {
+    "verdict": "Cites Similarweb data showing ChatGPT and other AI tools sent over 91 million referral visits to Google.com and YouTube combined in June 2025 alone, arguing AI chatbots are reinforcing rather than disrupting Google's dominance since they still rely on Google-owned properties as trusted, well-structured citation sources. The sharper insight is structural: AI hasn't escaped the old web's link economy, it's just become a new front door that still routes deeper research and video needs straight back through Google and YouTube."
+  },
+  "india-times-is-the-only-indian-news-publisher-in-ai-chatbot-top-50": {
+    "verdict": "Reports Indiatimes.com as the sole Indian outlet in Similarweb's global top-50 AI-referral domains, sitting behind Reuters and The Guardian but ahead of every other Indian publisher, attributed to its high update frequency, broad topic coverage, and clean technical SEO hygiene. Frames the finding optimistically as evidence that AI referral traffic may reward exactly the kind of consistent, well-structured original reporting that traditional SEO sometimes failed to reward, while warning other Indian publishers that the window to become an AI-trusted source is closing fast."
+  },
+  "is-ai-a-therapist-youve-already-decided-it-is": {
+    "verdict": "Uses Sam Altman's blunt warning that ChatGPT conversations carry no legal confidentiality as the jumping-off point for examining why millions confide their deepest struggles to a chatbot anyway — it's always available, never judges, and mimics compassion convincingly even without any actual clinical training or accountability. The sharpest reframe treats the real problem as human, not technological: AI didn't force its way into the therapist's chair, people put it there because broken mental healthcare systems and expensive, inaccessible therapy left them nowhere else to turn at 3am."
+  },
+  "google-just-solved-indias-most-pointless-weekend-fight-waiting-outside-trial-rooms": {
+    "verdict": "Covers Google's AI Try-On shopping feature, which visualizes clothing on a user's uploaded photo, alongside price-drop alerts and AI-summarized review highlights, framed with heavy comic exaggeration as a fix for the very specific Indian ritual of exhausted trial-room waiting and outfit-approval arguments. Underneath the humor sits a real observation about product strategy — Google is increasingly solving small emotional friction points rather than purely functional ones, treating shopping fatigue as a legitimate UX problem worth an AI feature."
   }
 }
