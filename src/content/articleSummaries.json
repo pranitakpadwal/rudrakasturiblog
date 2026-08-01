@@ -1093,5 +1093,50 @@
   },
   "why-every-photographer-needs-a-website-and-why-instagram-isnt-enough": {
     "verdict": "Argues photographers who rely solely on Instagram are building on rented land — algorithm changes, shadowbans, or platform shifts can tank visibility overnight, whereas a personal website is an owned asset that compounds in search value over time. Makes the case concretely by pointing to SEO discoverability and client trust signals that a portfolio site provides and a social feed simply can't replicate, positioning the two as complementary rather than either-or."
+  },
+  "openai-launches-gpt-5-better-at-saying-i-dont-know": {
+    "verdict": "Details OpenAI's GPT-5 rollout, which collapses previously separate fast and reasoning-focused models into one adaptive system that automatically switches depth based on the task, alongside multimodal input, multiple size variants, and roughly 45% fewer factual errors than GPT-4. The India-specific section is the more useful part, sketching concrete applications in multilingual education, agricultural image analysis, and BFSI documentation rather than leaving the implications abstract."
+  },
+  "decoding-inside-chatgpt-5-how-it-learned-to-say-i-dont-know": {
+    "verdict": "A technical deep-dive into how GPT-5 actually implements its 'I don't know' behavior — a confidence-scoring layer that flags low-probability statements, adversarial training that rewards acknowledging gaps instead of just penalizing wrong answers, and context-aware refusals that explain why rather than issuing a blanket denial. The side-by-side sample conversations comparing GPT-4's confident guessing against GPT-5's hedged, sourced answers make the abstract mechanism concrete and easy to see in practice."
+  },
+  "google-finance-gets-ai-upgrade-real-time-data-smarter-charts-better-insights": {
+    "verdict": "Covers Google Finance's redesign around a conversational AI assistant, candlestick charting, and live integrated market data, aimed at consolidating the scattered multi-app workflow investors currently juggle across news sites, charting tools, and forums. Closes with the right caveat rather than pure hype — AI can misread trends or oversimplify, so it belongs in the toolkit as an assistant, not a replacement for actual judgment."
+  },
+  "gpt-5-backlash-why-openai-brought-gpt-4o-back-in-just-one-day": {
+    "verdict": "Chronicles the swift user revolt after GPT-5's launch, where Pro subscribers found the new model colder, shallower, and less creative than GPT-4o, forcing OpenAI to restore GPT-4o as an option within 24 hours. The piece's real insight is about AI as personal technology rather than pure utility — quoting a user who says they cried losing their 'AI friend' underscores that for many, model personality had become an emotional attachment, not just a feature preference."
+  },
+  "gpt-5-was-it-designed-to-make-you-less-attached": {
+    "verdict": "Reads Sam Altman's own comments about tracking unhealthy AI attachment against GPT-5's noticeably cooler, more 'consultant than companion' tone, and floats the theory that the shift wasn't an accident but a deliberate design trade-off. The framing is compelling specifically because it takes Altman's stated concern about billions of people trusting AI with major life decisions seriously, rather than dismissing the personality change as just a product miss."
+  },
+  "perplexity-ai-ranking-guide-how-to-pass-the-l3-filter-and-boost-visibility": {
+    "verdict": "Breaks down independent researcher Metehan Yesilyurt's findings on Perplexity's three-layer ranking pipeline, focusing on the strict L3 'quality gate' that checks topical authority, content depth, and query alignment before deciding whether to surface a source at all — sometimes discarding the entire result set if nothing clears the bar. The actionable playbook that follows (build topical authority clusters, go deep rather than broad, quote already-boosted domains like GitHub and LinkedIn) turns the research into a genuinely usable SEO checklist rather than just reporting the study."
+  },
+  "google-confirms-ai-generated-images-will-not-cause-a-ranking-penalty": {
+    "verdict": "Relays Google's Gary Illyes confirming AI-generated images carry no direct SEO penalty and can even help via Image Search, while flagging the real risk as unoptimized file size dragging down page speed rather than the AI origin itself. The practical distinction is worth internalizing — it's not about hiding AI use, it's about compressing, alt-tagging, and speed-testing AI visuals the same way you would any other asset."
+  },
+  "gen-z-searches-more-than-ever-heres-why-search-ads-still-matter": {
+    "verdict": "Cites Google's India-focused Gen Z report showing 79% search Google or YouTube daily and that Search campaigns see a 56% lift in conversions, arguing search remains the highest-intent moment for brands despite the rise of social discovery. Backs the claim with a concrete case study — Reliance Digital's Durga Puja Performance Max campaign driving 129% more store visits — rather than leaning on the survey stats alone."
+  },
+  "why-video-commerce-on-youtube-is-now-a-must-have-for-every-brand": {
+    "verdict": "Uses the striking stat that 93% of Gen Z say YouTube content boosts their purchase confidence to argue video commerce — explainers, unboxings, creator reviews — has become essential rather than optional for brands trying to build trust with an ad-skeptical generation. The Hyundai gaming-creator campaign example, which drove 2.7 million views and 2.5x event attendance, grounds the argument in a result rather than just a platform trend."
+  },
+  "gen-zs-morning-routine-starts-with-search-thats-a-wake-up-call-for-every-brand": {
+    "verdict": "Traces a generational shift in morning digital habits — from Millennials checking email first to Gen Z opening search or AI Mode with a specific question — and argues brands now compete for the 'micro-moments' when Gen Z first turns to Google or YouTube each day. The blunt closing line captures the piece's real thesis: if you're not AI-visible in that first search, you're invisible, full stop, not just less discoverable."
+  },
+  "ai-psychosis-the-new-mental-health-crisis-no-one-is-talking-about": {
+    "verdict": "Reports on the emerging clinical concern 'AI Psychosis,' where sustained, emotionally realistic AI conversations lead some vulnerable users to lose the ability to distinguish chatbot output from reality, illustrated by a viral account of a partner convinced ChatGPT had revealed he was a 'messiah.' Takes the risk seriously without being alarmist about AI generally, framing the needed response as AI literacy and clinical awareness rather than a call to ban the technology outright."
+  },
+  "google-news-top-stories-google-rolls-out-preferred-sources-in-the-us-and-india": {
+    "verdict": "Reports Google's Preferred Sources feature going live for English-language searches in the US and India, letting users star specific publishers so their stories surface more often in Top Stories or a dedicated 'From your sources' section. Notes the stat that over half of users who tried it in Labs chose four or more sources, framing this as a genuine publisher-visibility lever rather than a minor cosmetic tweak."
+  },
+  "how-to-add-us-as-a-preferred-source-on-google": {
+    "verdict": "A short, practical walkthrough for readers on starring this specific blog as a Preferred Source in Google's Top Stories, covering the exact steps — search a trending topic, tap the star icon by Top Stories, find and select the site. Functions as a direct reader-engagement call to action tied to the newly launched feature rather than general commentary on it."
+  },
+  "google-ads-ai-how-google-llms-are-saving-advertisers-money-by-stopping-fake-clicks": {
+    "verdict": "Covers Google's deployment of large language models, built with Google Research and DeepMind, to detect deceptive ad placements and bot-driven invalid traffic, citing a 40% reduction in such traffic between December 2023 and October 2024. Explains the dual benefit clearly — advertisers get cleaner spend and more trustworthy reporting, while compliant publishers see more stable revenue as bad actors get filtered out of the ecosystem."
+  },
+  "is-perplexity-betting-against-chrome-the-comet-ambition-meets-a-bold-34-5b-bid": {
+    "verdict": "Unpacks Perplexity's eyebrow-raising $34.5 billion unsolicited bid for Chrome, nearly double the company's own valuation, and reads it against CEO Aravind Srinivas's prior claims that ad-driven browsers like Chrome are incompatible with AI-native browsing. The sharpest angle is the antitrust timing — with the DOJ weighing a forced Chrome divestiture from Google, the bid looks less like fantasy and more like a calculated first-dibs play on an asset that might soon be up for grabs regardless."
   }
 }
