@@ -823,5 +823,50 @@
   },
   "google-read-aloud-user-agent-update-effective-july-1-2025": {
     "verdict": "A technical notice on Google updating its Read Aloud accessibility crawler's user agent string to mimic a modern Chrome browser instead of an outdated one, fixing rendering failures on JavaScript-heavy or PWA sites that were blocking or mishandling the old signature. The practical checklist for site owners is narrow but clear: whitelist the updated Google-Read-Aloud user agent in bot rules and verify accessibility tooling actually reads your content correctly now that the crawler behaves like a real modern browser."
+  },
+  "dont-fall-for-the-ai-mode-seo-trap-why-your-editors-are-your-best-investment": {
+    "verdict": "Warns publishers against paying premium agency fees for 'AI Mode SEO' before training their own editors, arguing in-house teams already understand the audience and voice — what they lack is specific knowledge of how AI Overviews select and cite content. The concrete plan is scaled to smaller publishers' actual budgets: audit top articles, rework twenty high-impact pieces for structure, run one real training session, and only consider outsourcing after the team understands what AI-optimized content actually looks like."
+  },
+  "indias-largest-used-car-exporter-delhi": {
+    "verdict": "Uses Google Trends data to show Delhi's new ban on decade-plus-old diesel and petrol vehicles triggering a spike in 'used cars in Delhi' searches from unexpected states like Nagaland and Kerala, revealing an emergent interstate resale pipeline for deregistered cars. The actionable angle for platforms like Cars24 and Spinny is specific: tag Delhi listings as 'outside NCR eligible' and build state-targeted campaigns before local dealers and unorganized agents capture the arbitrage first."
+  },
+  "the-youtube-middle-class-is-being-erased-no-face-no-voice-no-revenue": {
+    "verdict": "Reports YouTube's July 2025 policy change stripping monetization from mass-produced AI voiceover and low-effort templated content, framing it as a deliberate 'great filter' mirroring Google Search's core-update crackdown on unoriginal content. The losers-versus-survivors breakdown is genuinely useful — AI-narrated compilation channels and dropshipping video spam get cut off, while creators with visible commentary, first-person voice, and original footage keep their revenue."
+  },
+  "in-ai-mode-search-your-flats-dont-sell-your-reviews-do": {
+    "verdict": "Compares traditional Google search results for real estate queries against AI Mode's output, finding the latter surfaces GMB listings, live reviews and Maps data directly instead of aggregator homepages like MagicBricks or 99acres. The reframed competitive question for real estate marketers is sharp: you're no longer competing on backlinks and content depth, you're competing on review volume and Google Business Profile accuracy — a five-month GMB effort can now beat five years of SEO investment."
+  },
+  "scroll-state-the-new-parliament-is-online": {
+    "verdict": "Argues Indian (and global) policymaking increasingly runs on a 'draft, float, monitor social reaction, revise or reverse' cycle, using Agnipath's dilution and the Farm Laws repeal as evidence that viral outrage now functions as an informal check on legislation. The sharper, more cynical framing lands well: political war rooms now spend more time on Instagram story monitoring than budget allocation, because a ₹5,000 meme campaign can derail a ₹500 crore scheme."
+  },
+  "search-console-update-track-forum-threads-with-new-discussion-forum-filter": {
+    "verdict": "A technical walkthrough of Google's new DiscussionForumPosting structured data type, which lets genuine multi-reply community threads surface as rich preview cards in search results. Clearly distinguishes it from QAPage schema with a simple test — one factual answer gets QAPage, an open discussion with multiple opinions gets DiscussionForumPosting — and includes a full copy-paste JSON-LD example for implementation."
+  },
+  "opinion-your-forum-googles-answer-box-seo-in-2025": {
+    "verdict": "A pointed rebuttal to the companion piece on forum structured data, arguing markup like DiscussionForumPosting and QAPage increasingly functions as 'clean scraping instructions' that let Google extract and display your content directly in search results without sending a click. The buffet metaphor captures the frustration precisely: publishers spend years building community content, then Google shows guests eating from the display window instead of walking through the door."
+  },
+  "ai-didnt-see-the-japan-tsunami-but-baba-vanga-did": {
+    "verdict": "Uses the persistence of Baba Vanga searches during a 2025 Japan seismic scare to explore why AI's hedge-heavy probabilistic language loses the emotional trust battle against confident mystic prophecy, even when the AI is more accurate. The reframed question at the close is the real thesis: not whether mystics beat AI on correctness, but why AI still hasn't learned to speak in a register that feels believable to frightened people."
+  },
+  "ai-mode-just-went-live-in-india-and-my-first-observations-are-wild": {
+    "verdict": "A real-time field report on India's AI Mode rollout, documenting that identical queries produce different summaries across devices, logins, and even repeated refreshes on the same session — search results are no longer static. The most consequential finding for SEOs: YouTube videos are being cited directly inside the AI paragraph itself, not listed separately, meaning explainer video content now competes head-to-head with blog posts for the same AI summary real estate."
+  },
+  "ai-experiment-why-my-100-ai-website-got-ghosted-by-google": {
+    "verdict": "A genuine before-and-after experiment: a 100%-AI-generated site got crawled but never properly indexed and was rejected twice by AdSense, while a second site blending human-written foundational content with AI-scaled long-tail articles got indexed within a week, accepted into Google News, and approved for monetization. The clearest lesson is about sequencing, not tool choice — starting with manual content to build domain trust, then layering AI on top for scale, worked; starting AI-first and trying to retrofit trust afterward did not."
+  },
+  "funding-take-what-if-the-next-great-vc-wasnt-a-person": {
+    "verdict": "Speculates about AI replacing VC pattern-matching with cold, comprehensive data analysis — burn-to-growth ratios, founder credibility scores, historical failure patterns — that could flag red flags human partners are too polite or too invested in the pitch's story to voice. Correctly identifies the real obstacle as cultural, not technical: venture capital runs on conviction and narrative, and an industry that wants to be right in public may keep choosing loud belief over quiet, uncomfortable data even when the data is right."
+  },
+  "google-canonical-a-porn-site-for-a-publisher-news-article": {
+    "verdict": "Recounts a real incident where Google's canonicalization system mistakenly credited a porn site that had scraped a legitimate Indian news article, burying the original publisher's version as a 'duplicate' and costing them traffic on a breaking story. Uses the incident to argue Google's professed commitment to E-E-A-T rings hollow when its crawling infrastructure can't reliably distinguish a scraper site from the original reporting newsroom, especially under India's fast-moving news cycle."
+  },
+  "reality-check-is-a-media-career-now-5-years-shorter": {
+    "verdict": "Argues the economic runway for a media career has genuinely compressed, citing AI Overviews breaking the link between reporting effort and click-through reward, YouTube's July 2025 monetization crackdown squeezing news creators specifically, and Connected TV quietly becoming the highest-value screen while most digital teams still optimize for Shorts and feeds. The clearest strategic prescription is about ownership: since platforms won't protect your career, building a direct app, newsletter, or subscriber base is the only hedge against algorithms that can change the payout rules overnight."
+  },
+  "fack-check-the-next-gen-ceo-cant-just-sell-they-need-to-build": {
+    "verdict": "Argues the charismatic, sales-first CEO archetype that thrived through the 2010s is losing ground to leaders with genuine product intuition and technical fluency, since GenAI tools have automated away much of what pure storytelling and capital-raising used to accomplish. Names Sam Altman's hands-on product cadence and Daniel Ek's voice-AI investments as examples, while pointedly noting most Indian founders still delegate AI entirely to 'innovation labs' rather than engaging with it directly — a gap the piece treats as an increasingly dangerous one."
+  },
+  "denmark-just-gave-citizens-copyright-over-their-face-every-nation-should-be-taking-notes": {
+    "verdict": "Reports Denmark's June 2025 proposal to grant citizens legal copyright over their own face, voice and body, explicitly aimed at criminalizing unauthorized AI deepfakes while carving out protection for satire. Frames it as a potential GDPR-style global precedent, arguing it correctly shifts legal responsibility onto AI platforms and content creators — watermarking, consent frameworks, audit trails — rather than leaving deepfake victims with no recourse against 'we're just the medium' platform excuses."
   }
 }
