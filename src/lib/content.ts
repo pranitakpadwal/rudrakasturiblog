@@ -51,6 +51,21 @@ export function getPostsByCategory(category: string): ContentItem[] {
   );
 }
 
+export function categorySlug(category: string): string {
+  return category.toLowerCase().replace(/\s+/g, "-");
+}
+
+export function getTopCategories(limit: number): string[] {
+  const counts = new Map<string, number>();
+  for (const post of posts) {
+    for (const c of post.categories) counts.set(c, (counts.get(c) ?? 0) + 1);
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit)
+    .map(([name]) => name);
+}
+
 function hashString(input: string): number {
   let hash = 0;
   for (let i = 0; i < input.length; i++) {
@@ -60,15 +75,21 @@ function hashString(input: string): number {
   return Math.abs(hash);
 }
 
-const GRADIENTS = [
-  "from-rose-500 via-fuchsia-500 to-indigo-500",
-  "from-amber-500 via-orange-500 to-rose-500",
-  "from-emerald-500 via-teal-500 to-cyan-500",
-  "from-indigo-500 via-purple-500 to-pink-500",
-  "from-sky-500 via-blue-500 to-indigo-500",
-  "from-lime-500 via-green-500 to-emerald-500",
+// A small, restrained set of duotones — editorial rather than "AI gradient".
+export const DUOTONES: [string, string][] = [
+  ["#1c1917", "#8a5a3b"], // ink / clay
+  ["#0f1f1c", "#2f6f5e"], // pine / sage
+  ["#1a1423", "#5b3a8f"], // aubergine / violet
+  ["#1e2a3a", "#3d6b8a"], // navy / slate blue
+  ["#241a12", "#b5651d"], // espresso / rust
+  ["#151515", "#4a4a4a"], // charcoal / graphite
 ];
 
-export function gradientForSlug(slug: string): string {
-  return GRADIENTS[hashString(slug) % GRADIENTS.length];
+export function duotoneForSlug(slug: string): [string, string] {
+  return DUOTONES[hashString(slug) % DUOTONES.length];
+}
+
+export function readingTime(markdown: string): number {
+  const words = markdown.trim().split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 220));
 }

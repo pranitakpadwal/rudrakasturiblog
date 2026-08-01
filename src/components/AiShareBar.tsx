@@ -58,9 +58,11 @@ export default function AiShareBar({ url }: { url: string }) {
     <div
       role="region"
       aria-label="Open in AI to summarize"
-      className="mb-8 flex flex-wrap items-center gap-2 rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3"
+      className="flex flex-wrap items-center gap-2 rounded-xl border border-line bg-paper px-4 py-3"
     >
-      <span className="mr-1 text-sm font-bold">Ask AI</span>
+      <span className="mr-1 font-mono text-xs uppercase tracking-wide text-ink-soft">
+        Ask AI
+      </span>
       {AI_BUTTONS.map((btn) => (
         <a
           key={btn.ai}

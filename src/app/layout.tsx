@@ -1,25 +1,34 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
+import { Fraunces, Source_Serif_4, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
+import { getTopCategories } from "@/lib/content";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-51ZDEXDSP8";
 const ADSENSE_CLIENT_ID = "ca-pub-2121262893172079";
+const GOOGLE_SITE_VERIFICATION = "sxPoZT3xoLuLLAEMqhOPd_IGbac5xcnxQdckPe7_Gp0";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fraunces = Fraunces({
+  variable: "--font-display",
+  subsets: ["latin"],
+  axes: ["opsz", "SOFT", "WONK"],
+});
+
+const sourceSerif = Source_Serif_4({
+  variable: "--font-serif",
   subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Rudra Kasturi",
+    default: "Rudra Kasturi — Search. Strategy. AI. Growth.",
     template: "%s | Rudra Kasturi",
   },
   description: "Search. Strategy. AI. Growth. Coach. Revenue.",
@@ -29,8 +38,16 @@ export const metadata: Metadata = {
     follow: true,
     "max-image-preview": "large",
   },
+  verification: {
+    google: GOOGLE_SITE_VERIFICATION,
+  },
   other: {
     "google-adsense-account": ADSENSE_CLIENT_ID,
+  },
+  alternates: {
+    types: {
+      "text/plain": "/llms.txt",
+    },
   },
 };
 
@@ -39,12 +56,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const topCategories = getTopCategories(5);
+
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${sourceSerif.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-neutral-900">
+      <head>
+        <link rel="llms-sitemap" href="/llms.txt" />
+      </head>
+      <body className="flex min-h-full flex-col bg-paper text-ink">
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -63,25 +85,9 @@ export default function RootLayout({
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
           strategy="afterInteractive"
         />
-        <header className="border-b border-neutral-200">
-          <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-5">
-            <Link href="/" className="text-lg font-semibold tracking-tight">
-              Rudra Kasturi
-            </Link>
-            <nav className="flex gap-5 text-sm text-neutral-600">
-              <Link href="/about-rudra-kasturi" className="hover:text-neutral-900">
-                About
-              </Link>
-              <Link href="/contact-rudrakasturi" className="hover:text-neutral-900">
-                Contact
-              </Link>
-            </nav>
-          </div>
-        </header>
+        <SiteHeader categories={topCategories} />
         <main className="flex-1">{children}</main>
-        <footer className="border-t border-neutral-200 py-8 text-center text-sm text-neutral-500">
-          © {new Date().getFullYear()} Rudra Kasturi
-        </footer>
+        <SiteFooter categories={topCategories} />
       </body>
     </html>
   );

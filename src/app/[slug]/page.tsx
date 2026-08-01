@@ -1,9 +1,12 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import {
   getAllSlugs,
   getPageBySlug,
   getPostBySlug,
+  categorySlug,
+  readingTime,
 } from "@/lib/content";
 import PostBanner from "@/components/PostBanner";
 import MarkdownContent from "@/components/MarkdownContent";
@@ -97,30 +100,59 @@ export default async function ContentPage({
   };
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12">
+    <article className="mx-auto max-w-2xl px-5 py-14">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <PostBanner title={item.title} slug={item.slug} />
-      <h1 className="mt-8 text-3xl font-bold tracking-tight">{item.title}</h1>
+
+      {isPost && item.categories.length > 0 && (
+        <div className="mb-4 flex flex-wrap gap-2">
+          {item.categories.map((c) => (
+            <Link
+              key={c}
+              href={`/category/${categorySlug(c)}`}
+              className="rounded-full border border-line px-3 py-1 font-mono text-xs uppercase tracking-wide text-ink-soft transition hover:border-accent hover:text-accent"
+            >
+              {c}
+            </Link>
+          ))}
+        </div>
+      )}
+
+      <h1 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+        {item.title}
+      </h1>
+
       {isPost && (
-        <p className="mt-2 text-sm text-neutral-500">
+        <p className="mt-4 font-mono text-sm text-ink-soft">
           {new Date(item.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric",
           })}
-          {item.categories.length > 0 && ` · ${item.categories.join(", ")}`}
+          {" · "}
+          {readingTime(item.content_md)} min read
         </p>
       )}
-      {isPost && (
-        <div className="mt-6">
-          <AiShareBar url={url} />
-        </div>
-      )}
+
+      <div className="my-8">
+        <PostBanner title={item.title} slug={item.slug} category={item.categories[0]} />
+      </div>
+
+      {isPost && <AiShareBar url={url} />}
+
       <div className="mt-8">
         <MarkdownContent content={item.content_md} />
+      </div>
+
+      <div className="mt-16 border-t border-line pt-8">
+        <Link
+          href="/archive"
+          className="font-mono text-sm text-ink-soft transition hover:text-accent"
+        >
+          ← Back to all writing
+        </Link>
       </div>
     </article>
   );

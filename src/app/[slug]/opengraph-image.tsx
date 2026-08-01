@@ -1,27 +1,9 @@
 import { ImageResponse } from "next/og";
-import { getPageBySlug, getPostBySlug } from "@/lib/content";
+import { getPageBySlug, getPostBySlug, duotoneForSlug } from "@/lib/content";
 
 export const alt = "Rudra Kasturi";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-
-const GRADIENT_STOPS: [string, string][] = [
-  ["#f43f5e", "#6366f1"],
-  ["#f59e0b", "#f43f5e"],
-  ["#10b981", "#06b6d4"],
-  ["#6366f1", "#ec4899"],
-  ["#0ea5e9", "#6366f1"],
-  ["#84cc16", "#10b981"],
-];
-
-function hashString(input: string): number {
-  let hash = 0;
-  for (let i = 0; i < input.length; i++) {
-    hash = (hash << 5) - hash + input.charCodeAt(i);
-    hash |= 0;
-  }
-  return Math.abs(hash);
-}
 
 export default async function Image({
   params,
@@ -31,7 +13,7 @@ export default async function Image({
   const { slug } = await params;
   const item = getPostBySlug(slug) ?? getPageBySlug(slug);
   const title = item?.title ?? "Rudra Kasturi";
-  const [from, to] = GRADIENT_STOPS[hashString(slug) % GRADIENT_STOPS.length];
+  const [from, to] = duotoneForSlug(slug);
 
   return new ImageResponse(
     (
@@ -40,19 +22,46 @@ export default async function Image({
           width: "100%",
           height: "100%",
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "80px",
-          background: `linear-gradient(135deg, ${from}, ${to})`,
+          flexDirection: "column",
+          justifyContent: "space-between",
+          padding: "72px",
+          background: `linear-gradient(155deg, ${from}, ${to})`,
         }}
       >
         <div
           style={{
-            fontSize: 64,
+            display: "flex",
+            alignItems: "center",
+            gap: 14,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: 48,
+              height: 48,
+              borderRadius: 999,
+              background: "rgba(255,255,255,0.15)",
+              color: "white",
+              fontSize: 26,
+              fontWeight: 700,
+            }}
+          >
+            R
+          </div>
+          <div style={{ color: "rgba(255,255,255,0.85)", fontSize: 26 }}>
+            Rudra Kasturi
+          </div>
+        </div>
+        <div
+          style={{
+            fontSize: 58,
             fontWeight: 700,
             color: "white",
-            textAlign: "center",
-            lineHeight: 1.2,
+            lineHeight: 1.25,
+            maxWidth: 980,
           }}
         >
           {title}
