@@ -1228,5 +1228,50 @@
   },
   "google-brings-satellite-sos-to-pixel-watch-4-a-lifeline-beyond-cellular-networks": {
     "verdict": "Details the Pixel Watch 4's new Satellite SOS feature, letting users send emergency messages via satellite without a nearby phone when cellular service is unavailable, complete with guided orientation cues and a locked interface to keep panicked users focused during a crisis. Notes the real engineering challenge honestly — squeezing satellite-grade antenna performance into a watch-sized device — rather than treating the feature as trivially easy to build."
+  },
+  "google-brings-ai-writing-smarter-sharing-and-more-in-september-2025-android-update": {
+    "verdict": "Rounds up September 2025's Android feature drop, headlined by AI writing assistance built into Gboard for tone adjustment and rewrites, alongside refreshed Emoji Kitchen, LE Audio group listening, and a redesigned Quick Share interface. The framing captures Google's dual push well — AI woven into daily typing rather than a separate app, paired with playful touches like the returning Androidify selfie bot."
+  },
+  "are-ai-selfie-apps-safe-the-hidden-risks-of-uploading-your-photos": {
+    "verdict": "A pointed warning against the viral trend of uploading selfies into AI avatar apps, arguing your face functions as permanent, unchangeable biometric currency once it enters a training pipeline, unlike a password you can reset. Backs the alarm with real cases — Clearview AI's 3-billion-image scrape used by police, the $25 million Hong Kong deepfake heist, China's exported surveillance tech — rather than vague hypotheticals, landing on the blunt trade-off: a few Instagram likes for a face you can never take back."
+  },
+  "from-asking-to-doing-how-chatgpt-conversations-grew-482-in-just-one-year": {
+    "verdict": "Breaks down a year-over-year data set showing ChatGPT's daily messages grew 482%, driven overwhelmingly by non-work use jumping from 53% to 73% of all conversations, with usage splitting cleanly into Asking, Doing, and Expressing categories. The sharpest framing contrasts Google Search as a tool for finding information against ChatGPT as a tool for getting things done, explaining why writing tasks dominate professional use while personal use skews toward everyday guidance."
+  },
+  "report-1-in-10-adults-now-talk-to-chatgpt-and-1-in-4-of-their-conversations-replace-search": {
+    "verdict": "Reports that ChatGPT reached 700 million weekly users by mid-2025 — roughly 1 in 10 adults globally — with information-seeking conversations nearly doubling from 14% to 24% of all messages in a single year, directly encroaching on Google's core search territory. The India angle is the more interesting thread, noting faster adoption among lower-income segments and a young user base that could make India the world's largest 'AI-native' market."
+  },
+  "the-myth-of-reddit-its-not-your-blog-its-a-minefield": {
+    "verdict": "Pushes back hard on the marketer assumption that Reddit is just another content distribution channel, arguing brands that post like it's a blog get their threads deleted, their comments flagged, and their accounts branded as spam by communities with sharp instincts for inauthenticity. The 'subreddits as different countries' framing is the piece's best structural insight — content can't scale across Reddit the way it does on a blog, because each community has its own culture, tone, and tolerance for anything resembling marketing."
+  },
+  "youtubes-new-monetization-updates-what-you-need-to-know": {
+    "verdict": "Rounds up YouTube's new monetization tools — post-publish dynamic sponsorship swaps, direct brand links in Shorts, AI-powered product tagging with auto-timestamps, and non-interruptive side-panel ads for live streams. Flags the real risk clearly: easier product tagging invites spammy over-tagging, and creators who lean on AI shortcuts without genuine voice risk both viewer trust and YouTube's inauthentic-content penalties."
+  },
+  "youtube-adds-title-a-b-testing-more-power-to-creators": {
+    "verdict": "Explains YouTube's expansion of thumbnail A/B testing to include titles, letting creators test up to three variations per video with the winner chosen by watch-time share rather than raw click-through rate. The distinction is the useful part — a title that wins clicks but tanks retention won't be crowned the winner, which discourages pure clickbait in favor of titles that actually deliver on their promise."
+  },
+  "youtube-introduces-ask-studio-an-ai-partner-for-creators": {
+    "verdict": "Introduces Ask Studio, a conversational AI assistant built into YouTube Studio that lets creators query their own channel analytics, summarize audience comments, and get content ideas in plain language instead of digging through dashboards manually. The closing line frames its limits appropriately — it's a compass pointing toward insight, not a replacement for the creator's own voice and judgment."
+  },
+  "youtubes-inspiration-tab-helping-creators-spark-fresh-ideas": {
+    "verdict": "Covers YouTube's new Inspiration Tab, which generates nine trend-informed content ideas per prompt along with the reasoning behind why each might resonate, aimed at solving the blank-page problem that stalls many creators before filming even starts. The sample idea titles included make the abstract feature concrete, showing what a genuinely usable, audience-informed prompt actually looks like rather than generic suggestions."
+  },
+  "youtube-makes-collaborations-easier-with-new-studio-feature": {
+    "verdict": "Details YouTube's new in-Studio collaboration tool letting creators tag up to five collaborators on a single video so it surfaces in all their subscribers' feeds, with revenue clearly routed to whichever channel uploads it to avoid disputes. Frames the update accurately as productizing something creators already did informally, lowering the coordination friction that used to make collabs a hassle to organize and cross-promote."
+  },
+  "who-uses-chatgpt-the-most-managers-and-business-roles-lead-the-way": {
+    "verdict": "Uses large-scale conversation data to show management and business professionals are ChatGPT's heaviest workplace users, with 52% of their usage going toward writing tasks like emails and reports, compared to coders who lean on it mainly for technical debugging. The framing captures a clean divide worth remembering: for engineers, ChatGPT functions as a co-coder, while for managers, it functions as a co-writer handling the communication overhead that eats into actual decision-making time."
+  },
+  "youtubes-auto-dubbing-with-lip-sync-across-20-languages-breaking-language-barriers": {
+    "verdict": "Covers YouTube's upcoming auto-dubbing feature that syncs translated audio to a speaker's actual lip movements across 20 languages, aiming to make dubbed content feel native rather than the jarringly mismatched dubs viewers are used to. Reasonably tempers the hype by noting it's still in early testing and voice emotion may not always translate naturally, while still framing the implication well — a small Indian creator could suddenly reach Mexico, France, or Japan without any extra production cost."
+  },
+  "are-we-having-better-conversations-with-ai-how-chatgpts-conversation-quality-improved-in-a-year": {
+    "verdict": "Tracks ChatGPT's good-to-bad user feedback ratio improving from 3:1 to 4:1 over a year, but notes the gains are uneven — self-expression and casual conversation consistently rate highest, while coding help remains the most criticized category because small syntax errors instantly break user trust. The domain-specific breakdown is the useful takeaway: tolerance for imperfection varies wildly between creative tasks, where 'good enough' suffices, and technical tasks, where users expect near-professional accuracy."
+  },
+  "google-discover-adds-follow-buttons-and-social-media-posts": {
+    "verdict": "Reports Google Discover adding follow buttons, dedicated creator spaces, and embedded social posts from YouTube Shorts, X, and Instagram directly into the feed, effectively blurring the line between Discover and a social media timeline. The practical publisher guidance is well-aimed — cross-posting and consistent branding now matter for Discover visibility in a way pure SEO optimization alone doesn't capture anymore."
+  },
+  "reddit-google-in-talks-to-deepen-ai-partnership-report": {
+    "verdict": "Reports Reddit and Google negotiating an expanded data-licensing deal built around dynamic pricing tied to how central Reddit content becomes to AI answers, building on the existing $60 million agreement and Reddit's broader $203 million in industry licensing deals. Frames the shift precisely — Reddit is repositioning itself from a cheap, disposable data source into a renewable strategic asset, which matters for SEOs and brands since community participation is quietly becoming a real visibility lever in AI-generated answers."
   }
 }
