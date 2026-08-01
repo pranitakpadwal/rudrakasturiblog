@@ -958,5 +958,50 @@
   },
   "google-just-solved-indias-most-pointless-weekend-fight-waiting-outside-trial-rooms": {
     "verdict": "Covers Google's AI Try-On shopping feature, which visualizes clothing on a user's uploaded photo, alongside price-drop alerts and AI-summarized review highlights, framed with heavy comic exaggeration as a fix for the very specific Indian ritual of exhausted trial-room waiting and outfit-approval arguments. Underneath the humor sits a real observation about product strategy — Google is increasingly solving small emotional friction points rather than purely functional ones, treating shopping fatigue as a legitimate UX problem worth an AI feature."
+  },
+  "gujarats-ai-plan-is-not-just-optics-it-might-actually-work": {
+    "verdict": "Details Gujarat's 2025-2030 AI Action Plan, arguing it stands apart from typical state-level AI announcements by pairing GPU infrastructure and Tier-2/3 compute hubs with a genuine 2.5-lakh-person training target and partnerships with IBM, Microsoft and NASSCOM at GIFT City. Stays appropriately skeptical about execution risk, flagging that the plan collapses into optics if pilots get buried in paperwork, training becomes checkbox skilling, or local-language support gets deprioritized in favor of Silicon Valley aesthetics."
+  },
+  "vogue-just-featured-an-ai-model-its-not-just-an-ad-its-a-warning": {
+    "verdict": "Covers backlash to Vogue's August 2025 Guess ad featuring a fully AI-generated model with only a small disclaimer credit, noting readers canceled subscriptions and a plus-size model publicly called the choice 'lazy and cheap.' The sharpest critique is about regression, not just automation: the AI model Vogue chose to showcase was flawless, thin and white — the least diverse, most algorithmically 'ideal' body possible — undercutting years of hard-won progress toward realistic representation in fashion media."
+  },
+  "chinas-new-ai-model-just-got-cheaper-than-deepseek-but-thats-not-the-real-story": {
+    "verdict": "Covers Moonshot AI's Yi-1.5 models undercutting even DeepSeek at $0.20 per million tokens versus GPT-4o's $5, framing the real story as industrial strategy rather than a simple price war — China building full-stack AI infrastructure while Western labs stay locked into high-margin API businesses they can't afford to abandon. Makes a compelling case for why this specifically matters to India and the Global South: sub-$0.25 pricing finally makes vernacular fine-tuning and sector-specific local models commercially viable in ways GPT-4-level pricing never did."
+  },
+  "90-of-your-growth-problem-is-product-not-marketing": {
+    "verdict": "Builds on Rand Fishkin's viral LinkedIn observation that leadership routinely fires marketing teams for missing growth targets when the actual bottleneck is retention, onboarding or product-market fit that no campaign can fix. Draws a sharp parallel between today's AI funding boom and the 2021 crypto wave — companies selling stock to investors rather than product to customers, with marketing serving as a convenient scapegoat that keeps the illusion of traction alive while the core product stays underbaked."
+  },
+  "mira-murati-the-woman-who-said-no-to-zuckerbergs-1-billion-8340-crore-inr-offer": {
+    "verdict": "Profiles former OpenAI CTO Mira Murati's reported rejection of a $1 billion Meta offer in favor of building Thinking Machines Lab, a public-benefit AI company explicitly focused on open science and human-aligned models over pure scale. The detailed career timeline grounds the narrative well, tracing her path from Tesla's Model X team through OpenAI's CTO role and brief interim-CEO stint during the Altman board crisis to a $2 billion seed round backed by Andreessen Horowitz, Nvidia and the Albanian government."
+  },
+  "whats-new-in-google-searchs-ai-mode-features-rolling-out-now-whats-coming-soon": {
+    "verdict": "Breaks down Google's back-to-school AI Mode expansion into what's already live (step-by-step math and science help, follow-up conversational questions) versus what's coming soon (Search Live camera-based real-time explanation, PDF and image question-answering, a Canvas study-plan builder). Correctly frames the bigger shift: Google is repositioning Search from an answer-retrieval tool into something closer to a tutoring platform, currently English-only and US-first but with clear implications for how millions of students elsewhere might eventually study."
+  },
+  "whats-new-in-google-veo-3-ai-video-creation-gets-a-major-upgrade": {
+    "verdict": "Covers Veo 3's upgrade to synchronized AI-generated dialogue and sound, native multilingual speech generation, and 1080p output suitable for professional marketing use, alongside an upcoming still-image-to-8-second-video feature launching in August. Flags the responsible-AI angle concretely too — every generated frame now carries an invisible SynthID watermark, paired with Google extending indemnity protections for enterprise clients using the tool within its guidelines."
+  },
+  "what-is-inference-in-ai-a-simple-explanation": {
+    "verdict": "A clean explainer distinguishing AI training (the expensive, one-time learning phase) from inference (the real-time reasoning that happens every time you actually use a model), using relatable examples like a Google Translate request or a Lens-scanned math problem. The training-versus-inference comparison table is the most useful takeaway, and the closing insight reframes AI's real cost structure correctly: training happens once, but inference happens millions of times a day, which is why compute costs scale directly with usage rather than staying fixed."
+  },
+  "web-guide-googles-experimental-step-toward-ai-organized-search-results": {
+    "verdict": "Introduces Google's experimental Web Guide feature, which restructures complex search queries into a Gemini-organized topic map with expandable subtopic cards and multi-source links rather than a flat list of blue links. Frames the implication for publishers precisely: as AI increasingly decides how topics get framed and which subtopics get highlighted, a page's internal structure becomes as important to visibility as the quality of its content itself."
+  },
+  "google-discover-its-replacing-your-content-with-its-content": {
+    "verdict": "Argues Google Discover is actively squeezing out publisher content in favor of Google's own properties — YouTube Shorts replacing article cards, AI summaries embedded directly in Discover cards killing click incentive, and Reddit threads surfacing as AI-summarized answer cards instead of curated newsroom content. The blunt strategic framing lands the whole piece: Google isn't destroying publisher visibility, it's substituting its own content for theirs, and the practical response is treating Discover as a bonus channel rather than a traffic strategy to build a business plan around."
+  },
+  "how-dom-works-and-how-google-uses-it-to-understand-your-website": {
+    "verdict": "A technical primer explaining that Googlebot indexes the rendered DOM tree — what JavaScript has actually built after execution — rather than raw HTML source, meaning content that only appears after delayed client-side rendering can go effectively invisible to search. Includes concrete good-versus-bad DOM code examples and a practical checklist (keep critical content early, avoid JS-only rendering, flatten nested structures) for auditing whether a site's technical setup is actually SEO-friendly."
+  },
+  "how-reddit-quietly-became-the-1-domain-for-ai-and-why-it-changes-everything": {
+    "verdict": "Reports Reddit overtaking Wikipedia and YouTube to become the most-cited domain in AI training data as of Q2 2025, arguing LLMs specifically crave Reddit's messy, contradictory, argument-heavy threads because real-world questions rarely have single clean answers. The strategic implication for brands and SEOs is stated directly: authentic participation in Reddit conversations is becoming a genuine visibility lever for both human searchers and the AI models increasingly mediating what they see."
+  },
+  "reddits-ceo-steve-huffman-on-search-deep-knowledge-and-ai-how-data-is-fueling-the-next-generation-of-answers": {
+    "verdict": "Unpacks Reddit CEO Steve Huffman's Q2 2025 shareholder letter, backed by striking numbers — 70 million weekly searches, Reddit Answers growing from 1 million to 6 million users in three months, and ad revenue up 84% year-over-year — to argue Reddit is deliberately repositioning itself as a search engine and AI data backbone, not just a social platform. Huffman's central thesis is worth sitting with: AI doesn't invent knowledge, it learns from real people, and 80% of surveyed users say some questions simply can't be answered without genuine human perspective."
+  },
+  "what-does-crawled-currently-not-indexed-mean-in-seo": {
+    "verdict": "A concise reference explainer distinguishing crawling (Google fetched the page) from indexing (Google decided to include it in search results) for the common Search Console status 'Crawled - currently not indexed,' walking through the main causes — thin or duplicate content, crawl budget prioritization on large sites, stray legacy noindex signals. The fix list is appropriately proportionate to the causes: improve content quality and internal linking first, check for technical conflicts second, and build genuine authority as the longer-term lever."
+  },
+  "discover-and-refresh-in-google-crawl-stats-explained": {
+    "verdict": "Clarifies the Discover versus Refresh distinction in Search Console's Crawl Stats report — Discover meaning Googlebot found a genuinely new URL for the first time, Refresh meaning it revisited a known page to check for updates — using clean, specific scenarios like a new blog post versus an updated product price. Useful mainly as a quick-reference definition piece for anyone trying to interpret their crawl stats data without overanalyzing normal Googlebot behavior."
   }
 }
