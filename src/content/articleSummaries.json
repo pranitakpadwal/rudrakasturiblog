@@ -643,5 +643,50 @@
   },
   "chatgpt-just-got-smarter-and-more-personal-heres-what-memory-with-search-means-for-you": {
     "verdict": "Covers OpenAI's Memory-plus-Search feature, which quietly rewrites your search queries using remembered context — like knowing you're vegan and in San Francisco — to skip the need to re-explain preferences every time. Addresses the obvious privacy concern directly, noting memory is fully editable, deletable, and toggleable off entirely if the personalization trade-off doesn't feel worth it."
+  },
+  "youtubes-new-ai-overviews-in-search-for-youtube-premium-members-in-the-us": {
+    "verdict": "Covers YouTube testing AI-curated video carousels that surface the single most relevant clip from within a video rather than the whole upload, currently limited to a small group of US Premium subscribers. The strategic shift for creators is real: chapters, tight segmenting, and directly answering specific questions early now matter more than optimizing just titles and thumbnails."
+  },
+  "top-10-jobs-ai-has-already-replaced-in-2024-and-what-comes-next": {
+    "verdict": "A rundown of ten roles genuinely reshaped by AI in 2024 — Klarna's 700 support agents replaced by chatbots, banks reporting 90% reductions in manual data entry, law firms cutting junior researchers — each grounded in a specific named example rather than vague speculation. The nuance worth noting: it argues AI is shrinking entry-level headcount and changing job value more than eliminating professions outright."
+  },
+  "are-review-ips-putting-your-site-at-risk-of-google-penalties-heres-what-you-need-to-know": {
+    "verdict": "A technical explainer for developers on a subtle review-system bug: if your moderation workflow overwrites a reviewer's original IP with the moderator's, Google's spam-detection systems may flag genuine reviews as fake for looking suspiciously uniform. Includes actual database schema advice — separate submission_ip and moderator_ip fields — to fix the root cause rather than just hoping Google doesn't notice."
+  },
+  "what-is-google-extended-and-why-it-matters-for-your-website-april-2025-update": {
+    "verdict": "Clarifies that Google-Extended is a robots.txt directive controlling whether your content trains Gemini and other Google AI models — a separate concern entirely from search indexing or rankings, and not itself a crawler. Also flags a quiet but important documentation fix: Googlebot-News rules were previously (and incorrectly) said to control Google News tab visibility, which Google has now corrected."
+  },
+  "the-short-life-of-a-hot-ai-job-how-prompt-engineering-peaked-and-fizzled": {
+    "verdict": "Traces prompt engineering's rapid fall from $250K-plus salaries in 2023 to functional obsolescence by 2025, as models got better at parsing vague input and prompting itself became a baseline skill rather than a specialty. Frames it as a cautionary tale about transitional AI-era job titles, redirecting attention toward more durable adjacent fields like AI product management and domain-specific AI fluency."
+  },
+  "trump-signs-executive-order-to-bring-ai-education-to-k-12-schools": {
+    "verdict": "Summarizes Trump's April 2025 executive order establishing a White House AI Education Task Force, a Presidential AI Challenge, and AI-focused teacher training grants aimed at building K-12 AI literacy nationwide. Presents supporter and critic viewpoints fairly, with critics specifically flagging data privacy risks and the need for real teacher training before rollout, not just policy on paper."
+  },
+  "seo-in-2025-funnel-first-ai-ready-human-always": {
+    "verdict": "Lays out a seven-part 2025 SEO framework built around funnel-stage content prioritization, topical authority clusters, and heavier E-E-A-T signals like documented first-hand product testing over generic AI output. The practical prioritization table at the end is the most useful part — ranking funnel-driven content and schema/backlinks as 'high' priority while visual search optimization sits at 'medium.'"
+  },
+  "how-to-hire-the-right-ai-seo-expert-to-drive-your-companys-future-growth": {
+    "verdict": "A hiring guide for founders evaluating SEO candidates in an AI-search world, arguing the real differentiator is whether someone thinks like an 'AI trainer' building topical authority versus an old-school 'traffic hacker' still talking about keyword density. Provides concrete interview tactics — scenario-based tests, live tool walkthroughs, demanding topic-authority proof over vague traffic-bump claims — plus a clean red-flag list for weeding out outdated candidates."
+  },
+  "dolphingemma-how-google-ai-is-learning-to-talk-to-dolphins": {
+    "verdict": "Covers DeepMind and the Wild Dolphin Project's DolphinGemma model, trained on recorded dolphin clicks and whistles to hunt for conversational patterns between individual animals. Written in an accessible, almost kid-friendly register, with the genuine stakes being clearer — better dolphin communication understanding could aid conservation and shed light on how language itself might have originated."
+  },
+  "what-is-image-streaming-whats-googles-perspective-on-image-streaming-and-seo": {
+    "verdict": "A technical warning that JavaScript- or canvas-rendered images without a standard img tag often go invisible to Googlebot, quoting John Mueller's blunt line that streaming is basically 'a great way to prevent your images from being found through search engines.' Provides concrete before/after code — a bad JS-only example versus a proper img tag with lazy loading and alt text — plus a noscript fallback pattern for sites that must use canvas viewers."
+  },
+  "notebooklms-new-ai-audio-overviews-now-in-50-languages": {
+    "verdict": "Covers NotebookLM's Audio Overview feature turning uploaded documents into podcast-style AI conversations across 50-plus languages, including Hindi, Spanish, and Korean. Frames it specifically as a content-repurposing opportunity for SEO and localization teams — written content that becomes audio can reach YouTube, Spotify, and in-app players, engagement channels a blog post alone never touches."
+  },
+  "youtubes-blurred-thumbnails-test-a-step-toward-safer-search-and-smarter-monetization": {
+    "verdict": "Details YouTube's small-scale test blurring thumbnails in search results for queries prone to surfacing sexually suggestive content, with viewers able to manually unblur and creators' titles/descriptions staying fully visible. Makes a genuinely useful distinction via its comparison table — this is not age restriction or demonetization, and may actually help legitimate creators in sensitive topics (sexual health, LGBTQ+ content) by filtering out mismatched casual clicks rather than punishing them."
+  },
+  "30-of-the-code-in-the-companys-repositories-is-now-written-by-ai-microsoft-ceo-satya-nadella": {
+    "verdict": "Reports Satya Nadella's LlamaCon reveal that 30% of Microsoft's codebase is now AI-written, with Python seeing the strongest results while C++ still trips up current models. Frames the real shift correctly — developers becoming curators and conductors of AI output rather than typists, since AI can assemble code but still can't originate the underlying product questions worth solving."
+  },
+  "the-last-quiet-billionaire-what-warren-buffett-knew-that-we-forgot": {
+    "verdict": "A tribute-slash-manifesto tied to Buffett's 2025 retirement announcement, contrasting his decades of quiet, patient compounding against today's hustle-culture pressure toward instant scale and viral overnight success. Reads more as motivational essay than reporting — its real target audience is Gen Z entrepreneurs, urging them to trust slow skill-building over dopamine-driven career sprints."
+  },
+  "how-tollywoods-larven-ai-studio-could-reshape-indian-filmmaking-a-tech-deep-dive": {
+    "verdict": "Profiles LARVEN AI Studio, a Dil Raju and Dimension NXG venture bringing generative pre-visualization, script-optimization NLP, and neural-rendered VFX to Telugu cinema — claiming a six-month Baahubali-scale war sequence could now render in weeks. Takes the ethical questions seriously rather than glossing over them, pressing on job displacement for junior VFX technicians and the risk that algorithm-optimized scripts homogenize Telugu cinema's more experimental instincts."
   }
 }
