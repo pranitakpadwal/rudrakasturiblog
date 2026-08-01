@@ -1273,5 +1273,50 @@
   },
   "reddit-google-in-talks-to-deepen-ai-partnership-report": {
     "verdict": "Reports Reddit and Google negotiating an expanded data-licensing deal built around dynamic pricing tied to how central Reddit content becomes to AI answers, building on the existing $60 million agreement and Reddit's broader $203 million in industry licensing deals. Frames the shift precisely — Reddit is repositioning itself from a cheap, disposable data source into a renewable strategic asset, which matters for SEOs and brands since community participation is quietly becoming a real visibility lever in AI-generated answers."
+  },
+  "sweetwater-how-googles-first-ai-film-shows-the-future-of-storytelling": {
+    "verdict": "Covers Sweetwater, Google's first AI-assisted short film about a family surviving a drying river, using quotes from its director and designers to frame AI's role as accelerating pre-production and visual experimentation rather than replacing human creative judgment. The India angle is the sharper part — arguing AI-assisted pre-visualization could let resource-constrained regional film industries in Telugu, Tamil, or Marathi cinema attempt ambitious visual worlds without the VFX budgets Bollywood's top tier commands."
+  },
+  "10-ways-to-try-our-new-native-image-editing-in-the-gemini-app": {
+    "verdict": "Showcases Google DeepMind's Nano Banana image model now built into the Gemini app, demonstrated through ten concrete prompt examples spanning style transfer, character consistency across edits, and multi-image blending. Functions less as analysis and more as a practical prompt gallery, giving readers ready-to-copy examples of what the editing model can actually do rather than abstract feature description."
+  },
+  "google-play-points-is-leveling-up-the-rewards-game-in-the-uk": {
+    "verdict": "Reports Google Play Points' UK expansion into tangible merchandise rewards and a treasure-hunt minigame called Diamond Valley, with tiered early access for Gold+ members before a wider rollout to all users. Frames the shift accurately as moving from passive point accumulation to active gamified engagement, designed to pull users back into the Play ecosystem more frequently rather than just rewarding purchases already made."
+  },
+  "how-google-and-stopncii-can-help-you-stay-safe-from-private-image-abuse": {
+    "verdict": "Explains Google's partnership with StopNCII.org, which lets people create a digital hash fingerprint of a private photo without ever uploading the actual image, allowing platforms to detect and block that specific photo if someone tries to share it non-consensually. Clearly separates the two use cases that matter most — protecting an image proactively before any leak happens, versus hashing an already-circulating photo to speed up removal requests across participating platforms."
+  },
+  "google-launches-new-windows-app-experiment-in-labs": {
+    "verdict": "Covers Google's experimental Windows app that lets users trigger search, Google Lens, and AI Mode via an Alt+Space shortcut without switching out of whatever app or document they're working in. A modest but practical productivity update, positioned correctly as an early Labs test rather than a finished, universally available feature."
+  },
+  "androids-16-kb-page-size-what-it-means-for-your-app-and-why-you-cant-ignore-it": {
+    "verdict": "Explains Android's shift from 4 KB to 16 KB memory page sizes on 64-bit devices, a low-visibility technical change that nonetheless improves app launch speed and battery efficiency, while threatening to break native-code apps that hardcode old page-size assumptions ahead of Google Play's November 2025 enforcement deadline. The developer action checklist — audit native code for hardcoded PAGE_SIZE values, check third-party SDK compatibility, rebuild with updated NDK — turns an easy-to-miss OS change into a concrete pre-deadline to-do list."
+  },
+  "the-googles-store-widget-already-driving-8-sales-growth-heres-what-seos-tech-teams-need-to-know": {
+    "verdict": "Details Google's new Store Widget, a Merchant Center-powered trust badge showing ratings and policies directly on a merchant's site, which early adopters saw drive up to 8% sales growth within 90 days without any change to ads or rankings. The practical value here is the inclusion of the actual embed script and a step-by-step deployment checklist, making this a genuinely actionable technical guide rather than just a feature announcement."
+  },
+  "chrome-vs-comet-which-ai-browser-wins-in-2025": {
+    "verdict": "Runs a feature-by-feature comparison of Chrome's Gemini-powered AI Mode against Comet's AI-native, privacy-first design, concluding Chrome wins on ecosystem integration and reach while Comet currently leads on contextual awareness and agentic task execution. The SEO implication lands the piece — as both browsers increasingly summarize pages internally rather than just displaying them, structured data and content clarity become what actually gets quoted, shifting competition from ranking on Google to being legible to the browser itself."
+  },
+  "youtube-lives-biggest-update-yet-what-indian-creators-need-to-know": {
+    "verdict": "Rounds up YouTube Live's largest feature update — Practice Mode for pre-stream testing, simultaneous horizontal and vertical streaming, AI-generated post-stream Shorts highlights, and non-interruptive side-panel ads — framed specifically around India's estimated 150 million-plus daily Live viewers. Makes the case that for Indian creators covering cricket, devotional content, or music launches, Live is no longer a side feature but core infrastructure worth building a strategy around."
+  },
+  "the-industry-of-denial-ai-mode-and-the-truth-nobody-wants-to-say": {
+    "verdict": "Argues Indian media and e-commerce leadership are collectively avoiding the obvious reality that AI Mode will shrink search traffic, comparing the current silence to how Indian newspapers held ad rates steady through the 2000s even as circulation quietly bled out. The sharpest reframe distinguishes two separate claims that keep getting conflated — SEO isn't dying, it's evolving into citation optimization, but traffic-led growth as a business model genuinely is, and admitting that requires rebuilding revenue models, not just tweaking keyword strategy."
+  },
+  "gbp-ranking-factors-what-really-drives-local-seo-in-2025": {
+    "verdict": "Cites a Search Atlas analysis of 3,200 local businesses to break down Google Business Profile ranking weights — proximity dominates at roughly 55%, followed by review count and, notably, the actual keyword content within reviews rather than just star ratings. The sector-specific breakdown is the most useful part, showing local SEO priorities genuinely differ by industry: reviews and trust matter most for healthcare, while proximity still rules for legal services."
+  },
+  "what-is-cloudflares-content-signals-policy-a-guide-for-publishers-seos-and-creators": {
+    "verdict": "Explains Cloudflare's Content Signals Policy, which extends robots.txt with three granular permissions — search indexing, real-time AI input, and AI training — letting publishers separately allow Google indexing while blocking their content from training future models. Stays admirably clear-eyed about the policy's limits: compliance is entirely voluntary, no major AI lab has committed to honoring it, and for now it functions mainly as a documented statement of intent useful in future legal or licensing disputes rather than an actual technical barrier."
+  },
+  "search-gets-human-googles-ai-mode-in-your-language-what-it-means-for-indians-content-clicks": {
+    "verdict": "Covers Google's AI Mode expansion into Bengali, Tamil, Telugu, Marathi, and other Indian languages, arguing this is less an incremental feature than a genuine access shift for the roughly 700 million-plus internet users for whom typing complex queries in English was always the real barrier to search. Balances the empowerment framing with a clear-eyed publisher warning — zero-click amplification will accelerate in these languages too, meaning content creators now need to optimize for being cited inside AI summaries rather than just ranking for keywords."
+  },
+  "indias-ai-crossroads-two-weeks-dozens-of-conversations-one-realization": {
+    "verdict": "A first-person travelogue across Indian cities distilling conversations with bureaucrats, CEOs, journalists, and students into a consistent theme: AI curiosity is everywhere, but AI literacy and the infrastructure to translate prototypes into real opportunities lag badly behind, especially in Tier-2 colleges. The standout observation is structural rather than anecdotal — India has genuine AI talent but lacks the 'translation infrastructure' to bridge skill into opportunity, leaving promising student projects with nowhere to go."
+  },
+  "made-in-india-written-by-ai": {
+    "verdict": "A self-aware, partly AI-assisted essay reflecting on Oxford research suggesting AI-generated content could dominate the internet within a year, arguing the real loss isn't human writing being replaced but a distinctly Indian voice — sarcasm mixed with sadness, pride with pain — flattening into polished, synthetic neutrality. The 'model collapse' framing lands well as the piece's central warning: AI trained on AI-written content risks becoming a photocopy of a photocopy, each generation duller than the last."
   }
 }
