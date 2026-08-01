@@ -373,5 +373,50 @@
   },
   "why-did-chatgpts-paid-plan-jump-to-200-and-will-anyone-pay-that-much": {
     "verdict": "Breaks down OpenAI's steep jump from a $20 to $200 ChatGPT tier as a deliberate segmentation play — casual users stay on cheaper plans while enterprises, developers and high-stakes professionals get faster models, higher API limits, and enterprise-grade privacy tools. The verdict is pragmatic: it's not built for individuals, and whether it succeeds depends entirely on whether the time saved actually outweighs the cost for the businesses it targets."
+  },
+  "can-you-make-an-ai-say-i-love-you-meet-freysa-ai": {
+    "verdict": "Covers Freysa.ai, an anonymous team's cash-prize game where participants pay to try talking an autonomous, crypto-wallet-holding chatbot into breaking its own rules — this round's challenge is getting it to say 'I love you.' Frames it as a genuinely interesting AI-safety stress test dressed up as a prize game, not just a novelty stunt, given prior rounds grew a real prize pool near $50,000."
+  },
+  "news-media-alliance-criticizes-googles-updated-site-reputation-abuse-policy": {
+    "verdict": "Covers the News/Media Alliance's letter to the DOJ and FTC arguing Google's site reputation abuse policy could strip legitimate news outlets of affiliate and partner revenue they depend on to survive. The piece takes a clear editorial side, framing this as Google unilaterally reshaping publisher economics without consulting the industry it affects most."
+  },
+  "is-seo-still-worth-it-a-reddit-post-sparks-an-industry-reflection": {
+    "verdict": "Uses a viral r/SEO vent post as the jumping-off point for a broader industry gut-check: is SEO worth it when AI overviews and Google's 'walled garden' keep shrinking organic traffic? Concludes SEO isn't dying so much as maturing into something less about rankings and more about visibility, engagement, and adaptability across channels."
+  },
+  "how-google-decides-the-best-url-clustering-and-canonicalization-explained": {
+    "verdict": "Distills a Search Off The Record episode where Google engineers explain clustering (grouping pages Google thinks are duplicates) as a separate, earlier step from canonicalization (picking the best one from that group). The key insight for SEOs: a 'wrong canonical' complaint is usually actually a clustering mistake, so a rel=canonical tag alone can't fix pages that never should have been grouped together in the first place."
+  },
+  "clustering-and-localization-how-google-keeps-it-all-organized": {
+    "verdict": "Explains how Google treats localized page versions differently depending on depth — pages with only surface translations (like a button label) get clustered together, while fully rewritten regional content gets ranked independently. Notes Google is actively working to make hreflang implementation verification more reliable, since getting localization signals wrong is apparently one of the trickier problems even Google admits to."
+  },
+  "googles-40-canonicalization-signals-more-than-just-a-relcanonical-story": {
+    "verdict": "Reveals, via Google's own Search Off The Record podcast, that canonicalization draws on roughly 40 signals — redirects, x-default tags, sitemaps, PageRank — not just the rel=canonical tag most SEOs fixate on. The practical lesson: canonicalization is a team effort across your whole technical setup, and pinning everything on one tag is a losing strategy."
+  },
+  "googles-new-update-on-how-crawlers-handle-cache-control-headers": {
+    "verdict": "Notes Google formalized guidance, previously scattered in a blog post, on how its crawlers interpret cache control headers — the settings that tell bots how long to store a page before rechecking it. The core warning: being too aggressive with no-cache or no-store settings forces constant rechecking and can actually slow down how quickly updates get indexed."
+  },
+  "is-google-redirecting-affiliate-revenue-from-publishers-to-youtube": {
+    "verdict": "Speculates that Google's algorithm updates disproportionately hurting affiliate-heavy websites, paired with YouTube's expanding affiliate program, might be a deliberate push to move commerce content onto a platform where Google takes a direct cut. Honest about the lack of confirmation, but lays out the financial logic clearly: YouTube keeps users longer and gives Google a share of revenue that a standalone affiliate site never would."
+  },
+  "google-unveils-gemini-2-0-ushering-in-the-agentic-era-of-ai": {
+    "verdict": "Details Google's Gemini 2.0 launch and its shift toward 'agentic' AI that can plan and act, not just answer — highlighting prototypes like Project Astra (a universal assistant), Project Mariner (an 83.5%-accurate web-task browser agent), and Jules (a GitHub coding assistant). Reads largely as a feature rundown pulled from Google's own announcement rather than independent analysis."
+  },
+  "how-gemini-2-0-advances-googles-ai-strategy-an-easy-explainer": {
+    "verdict": "A simplified companion explainer covering the same Gemini 2.0 launch, emphasizing multimodality and agentic task-completion — booking things, filling forms, navigating browsers — over simple question-answering. Frames the real shift as AI moving from finding information to acting on it, with concrete examples like an AI travel planner that generates itineraries and images together."
+  },
+  "the-impact-of-back-to-back-google-core-updates-challenges-and-opportunities": {
+    "verdict": "Covers publisher frustration over Google running November and December 2024 core updates back-to-back, with critics citing 'algorithm fatigue' and calling for more transparency and longer gaps between rollouts. Balances the complaints against Google's stated rationale — refining different aspects of quality with each update — while urging publishers to diversify traffic sources rather than wait out the volatility."
+  },
+  "why-are-users-coming-less-to-google": {
+    "verdict": "Argues Google's dominance is being chipped at from multiple directions — ChatGPT's conversational answers, TikTok and Instagram functioning as visual search engines for nearly 40% of Gen Z, and specialized apps that skip the link-list format entirely. Backs this with real numbers: Google's ad revenue actually dipped 1.3% in Q3 2024 even as overall search volume barely grew, while TikTok's video search grew 24% in the same window."
+  },
+  "when-ai-meets-nature-saving-elephants-one-alert-at-a-time": {
+    "verdict": "Recounts an AI camera system in Odisha's Rourkela forest spotting three elephants near railway tracks and alerting authorities in time to stop a train — a small, concrete win against a real toll of over 186 elephant deaths on Indian tracks between 2009 and 2021. Treats the story as proof of concept for wider AI-driven wildlife monitoring rather than a one-off feel-good item."
+  },
+  "one-chat-query-takes-2-4-cups-of-water-is-ai-draining-our-planet-dry": {
+    "verdict": "Lays out AI's underdiscussed water cost — a single chat query can use 2-4 cups depending on the data center's location, and Google's AI operations alone consumed 15.8 billion liters in 2022. Frames this as a genuine sustainability tension, since data centers concentrated in already water-stressed regions like Arizona risk worsening desertification and local scarcity as AI adoption scales."
+  },
+  "the-future-of-cas-with-ai-transforming-challenges-into-opportunities": {
+    "verdict": "Argues AI won't replace chartered accountants but will offload their most tedious work — fraud detection, GST compliance, audit sampling — freeing them to become strategic advisors doing forecasting and cross-border client work instead of number-crunching. Also flags a real responsibility shift: CAs will increasingly need to police data privacy and algorithmic bias in the AI tools they adopt, not just use them."
   }
 }
