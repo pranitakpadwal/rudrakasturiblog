@@ -508,5 +508,50 @@
   },
   "writers-its-time-to-rewrite-the-rules-with-ai-in-2025": {
     "verdict": "A pep talk aimed squarely at writers anxious about AI replacement, arguing the real 2025 job description becomes writer-plus-strategist-plus-storyteller rather than pure prose generator. Heavy on motivational quotes and light on data, but the practical advice underneath — learn SEO fundamentals, use AI for drafts and research, keep authenticity as the differentiator — tracks with the rest of the site's AI-and-work coverage."
+  },
+  "ai-meets-the-brain-effortless-learning-or-a-risky-shortcut-to-the-future": {
+    "verdict": "Covers a neurofeedback breakthrough where researchers use fMRI and AI to nudge the brain toward correct patterns without conscious effort — the person just watches shapes on a screen react to their own brain activity. Balances genuine excitement about stroke rehab and learning applications against real worries about brain manipulation and unequal access to a technology still in early experimental stages."
+  },
+  "is-ai-advancing-too-quickly-godfather-of-ai-warns-of-the-risks": {
+    "verdict": "Relays Geoffrey Hinton's escalated warning that AI poses a 10-20% chance of causing human extinction within three decades, framing humanity as toddlers trying to control something smarter than itself. Notes the split among AI's own pioneers explicitly — Meta's Yann LeCun dismisses the doomsday framing, arguing AI is more likely to help solve existential threats than cause one."
+  },
+  "how-europe-and-india-are-shaping-the-future-of-green-tech-startups": {
+    "verdict": "Compares Europe's policy-driven green tech approach — the European Green Deal, Horizon Europe funding — against India's grassroots-scale model built on the National Solar Mission and startups like Log9 and Ola Electric. Frames the two regions as genuinely complementary rather than competitive, citing real EIB investment figures into Indian renewable projects as evidence collaboration is already underway."
+  },
+  "how-indian-and-european-startups-are-leveraging-the-creator-economy-for-growth": {
+    "verdict": "Contrasts India's mass-reach, micro-influencer creator economy — see Meesho and Mamaearth's rapid scaling — against Europe's niche, sustainability-focused creator partnerships like Depop's $1.6 billion Etsy acquisition. The clearest actionable insight: Indian startups could learn from Europe's ethical-storytelling angle, while European startups could borrow India's cost-efficient micro-influencer playbook."
+  },
+  "building-a-bridge-how-indian-vcs-are-eyeing-european-tech-startups": {
+    "verdict": "Explains why Indian VCs like Sequoia India and Blume Ventures are increasingly backing European deep tech and fintech startups, citing lower Series A valuations in Europe (averaging $7M versus $12M in the US) as a key draw. Flags real friction points too — GDPR compliance, currency risk, and cultural gaps between India's risk-tolerant style and Europe's long-term-growth mindset."
+  },
+  "new-search-console-update-export-hourly-data-for-the-last-24-hours-%f0%9f%93%88": {
+    "verdict": "Covers Search Console adding CSV/Sheets export for its hourly 24-hour performance data, directly responding to SEO community requests after the same-day reporting feature launched. Highlights the practical wins — pinpointing exactly when a traffic spike or crawl issue happened, and tracking paid campaign performance hour by hour instead of guessing."
+  },
+  "google-search-falls-below-90-market-share-is-this-the-dawn-of-a-new-search-era": {
+    "verdict": "Reports Google's global search share dipping to 88.6%, its first sub-90% reading in nearly a decade, attributing the erosion to voice assistants, app-based discovery (Amazon, TikTok), and AI chatbots answering directly instead of returning links. Frames it less as Google's collapse than search itself fragmenting into invisible, embedded, decentralized experiences across devices and platforms."
+  },
+  "googles-new-guidelines-for-news-and-discover-what-they-mean-and-why-they-matter": {
+    "verdict": "Breaks down Google's new News and Discover transparency rules into five concrete violation categories — hidden ownership, impersonation, undisclosed sponsorship, misrepresented location — each with a clear real-world example. The practical checklist for publishers is straightforward: disclose who you are, who funds you, and where you're actually based, or risk losing Discover visibility entirely."
+  },
+  "googles-new-recommendations-for-review-snippets": {
+    "verdict": "Covers Google's push for review snippets to require both a written comment and an author name before qualifying for rich results, aimed at filtering out generic five-star ratings with no real substance. Gives a clean before/after example — 'five stars' alone versus a specific, attributed comment — plus the exact structured data fields (author, reviewBody, ratingValue) needed to stay compliant."
+  },
+  "tiktok-goes-dark-in-the-u-s-perplexity-ais-bold-merger-bid-and-what-it-means-for-the-future": {
+    "verdict": "Details Perplexity AI's proposed merger — not acquisition — with TikTok US, structured so ByteDance's existing investors keep their equity while sidestepping the divestiture pressure driving the ban threat. Lays out the strategic logic clearly: TikTok's video data could fuel Perplexity's AI training and give it a real ad-revenue model, while TikTok gets a plausible path around US regulatory concerns."
+  },
+  "ai-face-off-deepseek-vs-chatgpt-which-one-suits-you-best": {
+    "verdict": "A straightforward specialist-versus-generalist comparison: DeepSeek excels at narrow, technical domains like finance and legal analysis with strong Chinese-language support, while ChatGPT wins on everyday versatility and ease of use without requiring custom fine-tuning. The decision framework offered is simple and usable — pick based on whether your need is deep and specific or broad and casual."
+  },
+  "deepseek-r1-the-6m-ai-model-redefining-the-game-and-challenging-openais-600m-giant": {
+    "verdict": "Covers DeepSeek R1's arrival as a genuine shock to AI economics — trained for roughly $6 million against GPT-4's reported $600 million-plus, and running at under $4 per million tokens versus OpenAI's $100-plus, while being fully open-source. Frames it explicitly as a geopolitical moment, quoting Marc Andreessen's 'Sputnik for AI' line to argue China just proved frontier AI doesn't require Silicon Valley's capital moat."
+  },
+  "how-to-encode-various-types-of-prices-in-structured-data": {
+    "verdict": "A technical how-to on Google's updated Merchant listing schema, covering the new priceType property (regular, sale, clearance, strikethrough) and the beta validForMemberTier field for loyalty-tier pricing. Comes with copy-paste JSON-LD examples for single, multi-tier, and member-exclusive pricing scenarios, aimed squarely at e-commerce developers implementing the markup correctly."
+  },
+  "ai-mode-in-robots-meta-tag-what-seos-need-to-know-now": {
+    "verdict": "Explains how Google extended existing meta robots directives like nosnippet and max-snippet to also govern whether content feeds AI Overviews and AI Mode specifically, not just traditional snippets. The clear takeaway: site owners now have an explicit lever to opt out of having their content repurposed into AI-generated answers, separate from whether they want to appear in regular search results at all."
+  },
+  "updated-feature-availability-for-breadcrumb-markup-what-seos-should-know": {
+    "verdict": "Reports Google limiting breadcrumb display to desktop search results only, dropping them from mobile due to screen space and truncation issues, while keeping the underlying structured data valid either way. Recommends SEOs shift mobile optimization energy toward titles, meta descriptions, and other rich-result types like FAQ schema now that breadcrumbs won't show up there."
   }
 }
