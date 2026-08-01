@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllPosts } from "@/lib/content";
+import { getAllPosts, formatShortDateIST } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Archive",
@@ -33,10 +33,7 @@ export default function ArchivePage() {
                   >
                     <span className="text-ink hover:text-accent">{post.title}</span>
                     <span className="shrink-0 font-mono text-xs text-ink-soft">
-                      {new Date(post.date).toLocaleDateString("en-US", {
-                        month: "short",
-                        day: "numeric",
-                      })}
+                      {formatShortDateIST(post.date)}
                     </span>
                   </Link>
                 </li>

@@ -1,22 +1,52 @@
 import Link from "next/link";
-import { getAllPosts, duotoneForSlug, readingTime } from "@/lib/content";
+import {
+  getAllPosts,
+  getTopPosts,
+  getTopCategories,
+  duotoneForSlug,
+  readingTime,
+  formatDateIST,
+  categorySlug,
+} from "@/lib/content";
 
-function formatDate(date: string) {
-  return new Date(date).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+function PostCard({ post }: { post: ReturnType<typeof getAllPosts>[number] }) {
+  const [from, to] = duotoneForSlug(post.slug);
+  return (
+    <Link
+      href={`/${post.slug}`}
+      className="group flex flex-col overflow-hidden rounded-xl border border-line transition hover:shadow-md hover:shadow-black/5"
+    >
+      <div
+        className="aspect-[4/3] w-full"
+        style={{ background: `linear-gradient(155deg, ${from}, ${to})` }}
+      />
+      <div className="flex flex-1 flex-col p-5">
+        {post.categories[0] && (
+          <p className="mb-1.5 font-mono text-xs uppercase tracking-wide text-accent">
+            {post.categories[0]}
+          </p>
+        )}
+        <h3 className="font-display text-lg font-semibold leading-snug text-ink group-hover:text-accent">
+          {post.title}
+        </h3>
+        <p className="mt-auto pt-3 text-sm text-ink-soft">
+          {formatDateIST(post.date)} · {readingTime(post.content_md)} min read
+        </p>
+      </div>
+    </Link>
+  );
 }
 
 export default function Home() {
   const posts = getAllPosts();
   const [featured, ...rest] = posts;
-  const feed = rest.slice(0, 11);
+  const feed = rest.slice(0, 9);
+  const topPosts = getTopPosts().slice(0, 3);
+  const topCategories = getTopCategories(8);
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-14">
-      <div className="mb-14 max-w-2xl">
+      <div className="mb-8 max-w-2xl">
         <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-accent">
           Search · Strategy · AI
         </p>
@@ -28,8 +58,23 @@ export default function Home() {
         </p>
       </div>
 
+      <div className="mb-16 flex flex-wrap gap-2">
+        {topCategories.map((c) => (
+          <Link
+            key={c}
+            href={`/category/${categorySlug(c)}`}
+            className="rounded-full border border-line px-3.5 py-1.5 text-sm text-ink-soft transition hover:border-accent hover:text-accent"
+          >
+            {c}
+          </Link>
+        ))}
+      </div>
+
       {featured && (
-        <Link href={`/${featured.slug}`} className="group mb-16 grid gap-8 sm:grid-cols-2 sm:items-center">
+        <Link
+          href={`/${featured.slug}`}
+          className="group mb-20 grid gap-8 border-b border-line pb-16 sm:grid-cols-2 sm:items-center"
+        >
           <div
             className="aspect-[4/3] w-full rounded-2xl"
             style={{
@@ -38,7 +83,7 @@ export default function Home() {
           />
           <div>
             <p className="mb-2 font-mono text-xs uppercase tracking-wide text-ink-soft">
-              Latest · {formatDate(featured.date)} · {readingTime(featured.content_md)} min read
+              Latest · {formatDateIST(featured.date)} · {readingTime(featured.content_md)} min read
             </p>
             <h2 className="font-display text-3xl font-semibold leading-snug text-ink group-hover:text-accent">
               {featured.title}
@@ -47,12 +92,24 @@ export default function Home() {
               <p className="mt-3 text-ink-soft leading-relaxed">{featured.excerpt}</p>
             )}
             {featured.categories.length > 0 && (
-              <p className="mt-4 text-sm text-accent">
-                {featured.categories.join(" · ")}
-              </p>
+              <p className="mt-4 text-sm text-accent">{featured.categories.join(" · ")}</p>
             )}
           </div>
         </Link>
+      )}
+
+      {topPosts.length > 0 && (
+        <div className="mb-20">
+          <div className="mb-6 flex items-center gap-4">
+            <h2 className="font-display text-xl font-semibold text-ink">Reader favorites</h2>
+            <div className="h-px flex-1 bg-line" />
+          </div>
+          <div className="grid gap-x-8 gap-y-8 sm:grid-cols-3">
+            {topPosts.map((post) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
+        </div>
       )}
 
       <div className="mb-8 flex items-center gap-4">
@@ -60,29 +117,10 @@ export default function Home() {
         <div className="h-px flex-1 bg-line" />
       </div>
 
-      <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-        {feed.map((post) => {
-          const [from, to] = duotoneForSlug(post.slug);
-          return (
-            <Link key={post.slug} href={`/${post.slug}`} className="group block">
-              <div
-                className="mb-4 aspect-[4/3] w-full rounded-xl"
-                style={{ background: `linear-gradient(155deg, ${from}, ${to})` }}
-              />
-              {post.categories[0] && (
-                <p className="mb-1.5 font-mono text-xs uppercase tracking-wide text-accent">
-                  {post.categories[0]}
-                </p>
-              )}
-              <h3 className="font-display text-lg font-semibold leading-snug text-ink group-hover:text-accent">
-                {post.title}
-              </h3>
-              <p className="mt-1.5 text-sm text-ink-soft">
-                {formatDate(post.date)} · {readingTime(post.content_md)} min read
-              </p>
-            </Link>
-          );
-        })}
+      <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+        {feed.map((post) => (
+          <PostCard key={post.slug} post={post} />
+        ))}
       </div>
 
       <div className="mt-16 flex justify-center">

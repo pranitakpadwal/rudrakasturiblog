@@ -7,6 +7,7 @@ import {
   categorySlug,
   duotoneForSlug,
   readingTime,
+  formatDateIST,
 } from "@/lib/content";
 
 export async function generateStaticParams() {
@@ -50,26 +51,27 @@ export default async function CategoryPage({
       <h1 className="font-display text-4xl font-semibold text-ink">{name}</h1>
       <p className="mt-3 text-ink-soft">{posts.length} posts</p>
 
-      <div className="mt-12 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => {
           const [from, to] = duotoneForSlug(post.slug);
           return (
-            <Link key={post.slug} href={`/${post.slug}`} className="group block">
+            <Link
+              key={post.slug}
+              href={`/${post.slug}`}
+              className="group flex flex-col overflow-hidden rounded-xl border border-line transition hover:shadow-md hover:shadow-black/5"
+            >
               <div
-                className="mb-4 aspect-[4/3] w-full rounded-xl"
+                className="aspect-[4/3] w-full"
                 style={{ background: `linear-gradient(155deg, ${from}, ${to})` }}
               />
-              <h3 className="font-display text-lg font-semibold leading-snug text-ink group-hover:text-accent">
-                {post.title}
-              </h3>
-              <p className="mt-1.5 text-sm text-ink-soft">
-                {new Date(post.date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}{" "}
-                · {readingTime(post.content_md)} min read
-              </p>
+              <div className="flex flex-1 flex-col p-5">
+                <h3 className="font-display text-lg font-semibold leading-snug text-ink group-hover:text-accent">
+                  {post.title}
+                </h3>
+                <p className="mt-auto pt-3 text-sm text-ink-soft">
+                  {formatDateIST(post.date)} · {readingTime(post.content_md)} min read
+                </p>
+              </div>
             </Link>
           );
         })}

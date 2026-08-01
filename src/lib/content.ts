@@ -66,6 +66,42 @@ export function getTopCategories(limit: number): string[] {
     .map(([name]) => name);
 }
 
+export function getCategoryCloud(): { name: string; count: number }[] {
+  const counts = new Map<string, number>();
+  for (const post of posts) {
+    for (const c of post.categories) counts.set(c, (counts.get(c) ?? 0) + 1);
+  }
+  return [...counts.entries()]
+    .filter(([, count]) => count >= 3)
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([name, count]) => ({ name, count }));
+}
+
+// Reader favorites carried over from the live site's own "Top Posts &
+// Pages" widget (real traffic data), not a guess.
+const TOP_POST_SLUGS = [
+  "you-didnt-lose-your-job-you-got-in-early",
+  "robots-txt-unreachable-heres-how-to-keep-your-site-safe-and-seo-friendly",
+  "microsoft-study-identifies-40-jobs-most-and-least-affected-by-ai",
+  "11-things-liz-reid-told-publishers-straight-from-googles-head-of-search",
+  "how-google-decides-the-best-url-clustering-and-canonicalization-explained",
+  "youtubes-blurred-thumbnails-test-a-step-toward-safer-search-and-smarter-monetization",
+  "google-discover-just-got-smarter-publishers-just-got-ghosted",
+  "gujarats-ai-plan-is-not-just-optics-it-might-actually-work",
+];
+
+export function getTopPosts(): ContentItem[] {
+  return TOP_POST_SLUGS.map((slug) => getPostBySlug(slug)).filter(
+    (p): p is ContentItem => Boolean(p)
+  );
+}
+
+export function getRecentPosts(excludeSlug: string, limit: number): ContentItem[] {
+  return getAllPosts()
+    .filter((p) => p.slug !== excludeSlug)
+    .slice(0, limit);
+}
+
 function hashString(input: string): number {
   let hash = 0;
   for (let i = 0; i < input.length; i++) {
@@ -92,4 +128,44 @@ export function duotoneForSlug(slug: string): [string, string] {
 export function readingTime(markdown: string): number {
   const words = markdown.trim().split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 220));
+}
+
+export const AUTHOR_NAME = "Rudra Kasturi";
+export const AUTHOR_URL = "/about-rudra-kasturi";
+
+// wp:post_date from the export is already wall-clock IST (the blog's admin
+// timezone) with no offset attached, so we pin it to +05:30 before
+// formatting rather than trusting ambient server/browser timezone parsing.
+function parseIST(date: string): Date {
+  return new Date(date.replace(" ", "T") + "+05:30");
+}
+
+export function formatDateIST(date: string): string {
+  return parseIST(date).toLocaleDateString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+
+export function formatShortDateIST(date: string): string {
+  return parseIST(date).toLocaleDateString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    month: "short",
+    day: "numeric",
+  });
+}
+
+export function formatDateTimeIST(date: string): string {
+  const formatted = parseIST(date).toLocaleString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
+  return `${formatted} IST`;
 }

@@ -7,10 +7,14 @@ import {
   getPostBySlug,
   categorySlug,
   readingTime,
+  formatDateTimeIST,
+  AUTHOR_NAME,
+  AUTHOR_URL,
 } from "@/lib/content";
 import PostBanner from "@/components/PostBanner";
 import MarkdownContent from "@/components/MarkdownContent";
 import AiShareBar from "@/components/AiShareBar";
+import ArticleSidebar from "@/components/ArticleSidebar";
 
 const SITE_URL = "https://blog.rudrakasturi.com";
 
@@ -92,15 +96,15 @@ export default async function ContentPage({
           datePublished: item.date,
           dateModified: item.date,
           articleSection: item.categories[0],
-          author: { "@type": "Person", name: "Rudra Kasturi", url: SITE_URL },
+          author: { "@type": "Person", name: AUTHOR_NAME, url: `${SITE_URL}${AUTHOR_URL}` },
           publisher: { "@type": "Organization", name: "Rudra Kasturi", url: SITE_URL },
         }),
       },
     ],
   };
 
-  return (
-    <article className="mx-auto max-w-2xl px-5 py-14">
+  const articleBody = (
+    <article className={isPost ? "max-w-2xl" : undefined}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -125,26 +129,31 @@ export default async function ContentPage({
       </h1>
 
       {isPost && (
-        <p className="mt-4 font-mono text-sm text-ink-soft">
-          {new Date(item.date).toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
-          {" · "}
-          {readingTime(item.content_md)} min read
-        </p>
+        <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-line pb-5 font-mono text-sm text-ink-soft">
+          <span>
+            By{" "}
+            <Link href={AUTHOR_URL} className="font-semibold text-ink hover:text-accent">
+              {AUTHOR_NAME}
+            </Link>
+          </span>
+          <span aria-hidden>·</span>
+          <time dateTime={item.date}>{formatDateTimeIST(item.date)}</time>
+          <span aria-hidden>·</span>
+          <span>{readingTime(item.content_md)} min read</span>
+        </div>
       )}
 
       <div className="my-8">
-        <PostBanner title={item.title} slug={item.slug} category={item.categories[0]} />
+        <PostBanner slug={item.slug} />
       </div>
 
-      {isPost && <AiShareBar url={url} />}
+      {isPost && (
+        <div className="mb-8">
+          <AiShareBar url={url} />
+        </div>
+      )}
 
-      <div className="mt-8">
-        <MarkdownContent content={item.content_md} />
-      </div>
+      <MarkdownContent content={item.content_md} />
 
       <div className="mt-16 border-t border-line pt-8">
         <Link
@@ -155,5 +164,18 @@ export default async function ContentPage({
         </Link>
       </div>
     </article>
+  );
+
+  if (!isPost) {
+    return <div className="mx-auto max-w-2xl px-5 py-14">{articleBody}</div>;
+  }
+
+  return (
+    <div className="mx-auto grid max-w-6xl gap-12 px-5 py-14 lg:grid-cols-[minmax(0,1fr)_280px]">
+      {articleBody}
+      <div className="lg:sticky lg:top-24 lg:h-fit">
+        <ArticleSidebar currentSlug={slug} />
+      </div>
+    </div>
   );
 }

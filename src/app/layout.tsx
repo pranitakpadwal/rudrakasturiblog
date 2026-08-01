@@ -3,6 +3,7 @@ import { Fraunces, Source_Serif_4, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import SubscribeModal from "@/components/SubscribeModal";
 import { getTopCategories } from "@/lib/content";
 import "./globals.css";
 
@@ -88,6 +89,7 @@ export default function RootLayout({
         <SiteHeader categories={topCategories} />
         <main className="flex-1">{children}</main>
         <SiteFooter categories={topCategories} />
+        <SubscribeModal />
       </body>
     </html>
   );
