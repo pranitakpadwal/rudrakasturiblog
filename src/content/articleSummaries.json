@@ -1138,5 +1138,50 @@
   },
   "is-perplexity-betting-against-chrome-the-comet-ambition-meets-a-bold-34-5b-bid": {
     "verdict": "Unpacks Perplexity's eyebrow-raising $34.5 billion unsolicited bid for Chrome, nearly double the company's own valuation, and reads it against CEO Aravind Srinivas's prior claims that ad-driven browsers like Chrome are incompatible with AI-native browsing. The sharpest angle is the antitrust timing — with the DOJ weighing a forced Chrome divestiture from Google, the bid looks less like fantasy and more like a calculated first-dibs play on an asset that might soon be up for grabs regardless."
+  },
+  "openai-creative-lab-launches-in-seoul-21-artists-ai-tools-one-month-of-creation": {
+    "verdict": "Reports OpenAI's first Creative Lab residency, bringing 21 artists to Seoul for a month to experiment with DALL-E and ChatGPT on new visual storytelling projects. Notes the program signals a broader strategic shift for OpenAI from simply shipping tools toward actively cultivating creative communities, with more city-based labs reportedly planned."
+  },
+  "could-zerodha-comet-browser-change-the-game-for-indian-investors": {
+    "verdict": "Speculates on a possible Zerodha-Perplexity Comet integration sparked by a casual public exchange between the two companies' founders, imagining a phased rollout from embedded live market data to natural-language stock queries that could function as a 'Bloomberg Terminal for the masses.' Grounds the speculation in real numbers — Zerodha's daily trade volume and Perplexity's billion-plus monthly queries — while being clear-eyed that as of publication it's still just a tease, not a confirmed deal."
+  },
+  "the-ai-complaint-black-hole-why-no-one-hears-you-when-chatgpt-or-gemini-go-wrong": {
+    "verdict": "A sharply argued piece on the accountability gap in AI: disclaimers let companies claim credit when chatbots help and dodge blame when they cause real harm, while consumer courts and regulators largely defer to the fine print. Makes the stakes concrete with scenarios — a farmer's ruined crop from bad pesticide advice, a missed visa deadline — and lands on a pointed policy ask: classify sensitive-advice chatbots as high-risk AI with real liability funds, not experimental toys."
+  },
+  "flight-deals-geminis-new-ai-powered-flight-search-tool": {
+    "verdict": "Covers Google's beta Flight Deals tool, which lets travelers describe trips in natural language rather than filtering rigid dropdowns, with Gemini 2.5 interpreting intent against live fares from 300-plus airlines. Balances the pitch with real limitations — imperfect accuracy, no multi-city support yet — rather than presenting the beta as a finished product."
+  },
+  "google-geminis-new-privacy-controls-temporary-chats-and-personalisation-features": {
+    "verdict": "Breaks down Gemini's new Personal Context memory feature alongside Temporary Chats (an incognito-style mode with a 72-hour data window) and the renamed 'Keep Activity' settings governing whether uploads help train Google's models. The reference table doing the real work here — clearly mapping what each toggle controls — makes an otherwise dense privacy-settings rollout genuinely easy to act on."
+  },
+  "google-traffic-drops-by-50-after-site-hack-what-seos-should-know": {
+    "verdict": "Uses a real case of a site losing half its Google traffic after hackers injected 210,000 fake product pages to argue security failures are SEO failures, not just a backend concern, since Google needs time to rebuild trust in a domain even after cleanup. John Mueller's advice anchors the piece practically: monitor for sudden indexed-URL spikes, don't expect instant recovery, and diversify traffic beyond organic search so a hack doesn't cut off all revenue at once."
+  },
+  "google-explores-analytics-for-preferred-sources-what-seos-and-publishers-should-know": {
+    "verdict": "Reports Google engineering VP Rajan Patel signaling the company is exploring analytics that would show publishers how many readers marked them a Preferred Source, potentially turning the feature into a visible loyalty metric similar to a subscriber count. Reasonably speculative rather than overclaiming — nothing is confirmed yet, but the piece gives publishers concrete steps to prepare, like promoting the star option now."
+  },
+  "openai-launches-chatgpt-go-in-india-at-rs-399-to-make-ai-more-affordable": {
+    "verdict": "Reports OpenAI's India-exclusive Rs. 399 ChatGPT Go tier, offering 10x higher limits on messages, image generation, and uploads with UPI payment support, framed as India serving as OpenAI's testing ground before a wider global rollout. Notes the strategic logic plainly: affordability has been one of OpenAI's most requested changes, and India's price sensitivity makes it the natural place to validate a cheaper tier first."
+  },
+  "when-ai-costs-less-than-pizza-how-chatgpt-go-could-quietly-kill-googles-everyday-search-game": {
+    "verdict": "Argues the real threat to Google isn't enterprise AI adoption but ChatGPT Go's Rs. 399 price point putting power-user AI access within reach of students, homemakers, and Tier-3 job seekers who were never loyal to Google for authority, just for quick answers. The sharpest line frames the shift precisely: Google indexes, GPT interprets, and the casual searchers who fueled Google's volume game are the ones most likely to simply stop searching and start asking instead."
+  },
+  "14-1-log-in-to-chatgpt-just-to-write-emails-this-one-line-says-everything": {
+    "verdict": "Uses the striking stat that 14.1% of ChatGPT's roughly 800 million weekly users log in specifically to write emails to argue everyday professional communication, not coding or research, is AI's biggest quiet use case in India. The warning worth sitting with is about homogenization — as everyone's AI-drafted emails start sounding identical, actual human tone and imperfection become the differentiator that gets read rather than ignored."
+  },
+  "google-explains-why-lazy-loading-can-delay-largest-contentful-paint-lcp": {
+    "verdict": "Explains Google's Martin Splitt clarifying that applying lazy loading to above-the-fold hero images directly delays Largest Contentful Paint, since the browser is told to deprioritize the exact image meant to load first. The prescriptive fix list is genuinely actionable — skip lazy loading on hero images, use fetchpriority=\"high\", preload key assets, and set explicit width/height — turning a common but overlooked performance mistake into a clear checklist."
+  },
+  "the-invisible-layer-how-serpapi-keeps-openais-real-time-answers-alive": {
+    "verdict": "Reveals that ChatGPT's real-time answers to queries like stock prices or match results actually route through SerpApi, a paid scraping service pulling structured data straight from Google Search results, rather than any native OpenAI search infrastructure. The closing insight is the piece's real payoff: OpenAI isn't replacing Google, it's abstracting it into invisibility, letting users forget Google is still doing the underlying retrieval work while ChatGPT takes the credit for the interface."
+  },
+  "why-you-shouldnt-add-review-markup-to-listing-pages-even-if-your-competitor-ranks-doing-it": {
+    "verdict": "Warns against applying Review/AggregateRating structured data to category or listing pages, since Google's guidelines restrict it to single-product pages, and gaming it risks a sitewide structured-data manual action that strips rich results even from legitimately eligible product pages. The 'don't open a publishing house next to a pirated-book stall' analogy nails the core argument — a competitor's temporary loophole isn't a scalable strategy, and the cleanup cost of getting caught far outweighs any short-term CTR gain."
+  },
+  "google-launches-august-2025-spam-update-across-all-languages": {
+    "verdict": "Reports Google's global, all-language Spam Update rolling out via its SpamBrain AI system, targeting both on-site manipulation like keyword stuffing and mass-produced AI content, and off-site tactics like link farms and expired-domain abuse. The realistic recovery timeline is the most useful part — weeks of ranking fluctuation followed by months of gradual recovery even after cleanup — setting proper expectations instead of promising a quick fix."
+  },
+  "when-a-teen-gave-voice-to-the-voiceless-why-ai-needs-young-minds": {
+    "verdict": "Profiles a Class 11 student in Gurugram who built Paraspeak, a ₹2,000 AI device that converts slurred speech from paralysis or neurological patients into clear spoken Hindi, after seeing patients unable to communicate on a school medical center visit. The standout detail is that no Hindi slurred-speech dataset existed for him to train on, so he built one himself — turning the absence of resources into the actual engineering challenge rather than an excuse to quit."
   }
 }
