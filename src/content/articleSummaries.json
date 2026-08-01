@@ -1048,5 +1048,50 @@
   },
   "leak-google-is-rolling-out-ads-inside-ai-mode-whats-actually-happening": {
     "verdict": "Reports leaked Google slides showing ads being tested inside AI Mode, triggered by full conversation context rather than single keyword matches, currently limited to Performance Max, AI Max for Search, and Shopping campaigns in US English. The concrete behavioral data point is the most useful signal for marketers: early AI Mode users are typing queries two to three times longer than traditional search, meaning keyword-bidding strategies built for short queries will need real rethinking, not just minor tweaks."
+  },
+  "silicon-valleys-hard-tech-era-why-india-should-pay-attention": {
+    "verdict": "Argues Silicon Valley is pivoting away from social-app and SaaS darlings toward 'hard tech' — defense, energy, semiconductors, robotics — pointing to defense-tech startups like Anduril and the return of manufacturing-adjacent VC bets as evidence the easy-money app era is winding down. Makes a pointed case for India specifically: a country still building out core infrastructure and manufacturing capacity is better positioned to ride this hard-tech wave than to keep chasing the consumer-app playbook that defined the last decade."
+  },
+  "google-trolls-apple-in-pixel-10-ad-intelligence-shouldnt-be-kept-waiting": {
+    "verdict": "Covers Google's Pixel 10 ad campaign directly ribbing Apple over Siri's delayed AI overhaul, using the tagline that intelligence shouldn't be kept waiting to spotlight Gemini's on-device features as already shipped rather than promised. Reads the jab as a calculated positioning move — Google leaning into the one area, AI assistant maturity, where it can credibly claim to be ahead rather than catching up to Apple's hardware polish."
+  },
+  "sergey-brin-i-dont-think-my-kids-should-go-to-college": {
+    "verdict": "Relays Google co-founder Sergey Brin's comments questioning whether traditional college is still the best path for his own children given how fast AI is reshaping which skills actually matter, favoring hands-on building and adaptability over credentialed classroom learning. Presents the view without fully interrogating the survivorship bias built in — Brin's own Stanford PhD helped build Google in the first place — but captures a real and growing unease among tech elites about degree-first career paths."
+  },
+  "what-is-script-evaluation-and-why-does-it-matter-for-core-web-vitals": {
+    "verdict": "A technical explainer breaking down script evaluation — the browser parsing and executing JavaScript before a page becomes interactive — as a frequently overlooked drag on Core Web Vitals scores, distinct from simple file download time. Gives concrete fixes worth acting on: deferring non-critical scripts, code-splitting large bundles, and auditing third-party tags that silently balloon evaluation time on otherwise fast-loading pages."
+  },
+  "did-you-know-googles-ai-now-predicts-cyclones-faster-than-ever": {
+    "verdict": "Reports on Google's Weather Lab AI model, which generates cyclone track and intensity forecasts in seconds rather than the hours traditional physics-based simulations require, giving forecasters more lead time to issue warnings. Frames the practical stakes well for a country like India, where even a few extra hours of cyclone warning translates directly into evacuation windows and lives saved along vulnerable coastlines."
+  },
+  "the-real-superpower-of-ai-its-not-genius-its-scale-sergey-brin-google-co-founder": {
+    "verdict": "Distills Sergey Brin's argument that today's AI models aren't succeeding because they're individually brilliant but because they can be replicated and deployed at a scale no human expert ever could, turning 'good enough' intelligence into something transformative purely through volume. The reframing is useful precisely because it lowers the bar for what counts as impressive — the story isn't a single genius model, it's a competent one running millions of times in parallel."
+  },
+  "are-ai-bots-breaking-the-rules-the-cloudflare-vs-perplexity-dispute-simply-explained": {
+    "verdict": "Breaks down Cloudflare's accusation that Perplexity's AI crawlers were disguising themselves to bypass robots.txt blocks and scrape content anyway, and Perplexity's pushback that its behavior reflects legitimate user-triggered fetches rather than mass scraping. Lays out why this fight matters beyond the two companies involved: it's an early skirmish over who gets to decide the rules for AI systems consuming the open web, with publishers' consent caught in the middle."
+  },
+  "how-reddit-is-playing-the-long-game-with-sachin-and-turning-cricket-fans-into-an-ai-superpower": {
+    "verdict": "Covers Reddit's push into India built around cricket fandom and a Sachin Tendulkar tie-in, arguing the platform is using culturally specific, high-engagement communities to generate the kind of messy, opinionated discussion data that AI models are increasingly hungry for. Connects the dots between Reddit's user-growth strategy and its separate identity as an AI training-data goldmine, framing cricket content as a deliberate wedge into the Indian market rather than a one-off marketing stunt."
+  },
+  "americas-students-get-1-billion-ai-investment-from-google-for-training-and-resources": {
+    "verdict": "Reports Google's $1 billion, multi-year commitment to bring AI training, tools, and resources to American colleges and nonprofits, aimed at building baseline AI literacy before students enter a job market where AI fluency is increasingly assumed rather than optional. Notes the obvious self-interested angle without dismissing the initiative outright — Google benefits from a generation trained on its tools, but the underlying literacy gap the investment addresses is real."
+  },
+  "how-googles-notebooklm-is-making-studying-simpler-for-every-student": {
+    "verdict": "Explains Google's decision to open NotebookLM to students as young as 13, letting them turn uploaded notes and readings into summaries, quizzes, and audio-style discussions grounded strictly in their own source material rather than open-ended AI hallucination. The source-grounding constraint is the feature that matters most here — it's positioned as a study aid that reduces the temptation to let AI just generate answers wholesale, rather than another shortcut around actual learning."
+  },
+  "openai-makes-advanced-ai-more-accessible-with-open-weights-release": {
+    "verdict": "Covers OpenAI's release of open-weight models that researchers and developers can download, inspect, and fine-tune locally, a notable shift for a company whose name has increasingly diverged from its closed-model practice. Frames the move as competitive positioning as much as philosophical reversal — with Meta's Llama and Chinese open models like DeepSeek gaining developer mindshare, staying fully closed was starting to cost OpenAI ecosystem relevance."
+  },
+  "google-says-clicks-are-fine-but-where-did-all-the-publisher-traffic-go": {
+    "verdict": "Unpacks Google's public insistence that organic click volume to publishers remains stable even as AI Overviews and AI Mode expand, while publishers report traffic drops that contradict the company's own aggregate numbers. Highlights the core measurement dispute clearly — Google's stable-clicks claim is aggregated across all of Search, which can mask real declines concentrated specifically on the informational queries AI answers are now absorbing directly."
+  },
+  "google-dismisses-seo-tools-traffic-analysis-as-inaccurate": {
+    "verdict": "Covers Google's dismissal of third-party SEO tools' traffic-drop data as methodologically flawed, arguing those tools can't see Google's actual internal numbers and are extrapolating from incomplete samples. Points out the awkward bind this leaves publishers in: they're being told to distrust the only external measurement tools available to them while Google declines to share the internal data that would settle the dispute either way."
+  },
+  "google-create-unique-image-landing-pages-to-improve-visibility-in-search": {
+    "verdict": "Relays Google's guidance that each meaningful image should sit on its own dedicated page with surrounding text context, rather than being buried in a gallery or grid, if publishers want that image to surface well in image search results. Practical and specific rather than generic SEO advice — the recommendation ties directly to how Google's image indexing actually parses page context, not just alt text."
+  },
+  "why-every-photographer-needs-a-website-and-why-instagram-isnt-enough": {
+    "verdict": "Argues photographers who rely solely on Instagram are building on rented land — algorithm changes, shadowbans, or platform shifts can tank visibility overnight, whereas a personal website is an owned asset that compounds in search value over time. Makes the case concretely by pointing to SEO discoverability and client trust signals that a portfolio site provides and a social feed simply can't replicate, positioning the two as complementary rather than either-or."
   }
 }
