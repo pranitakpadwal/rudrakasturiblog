@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { categorySlug } from "@/lib/content";
 import MobileMenu from "@/components/MobileMenu";
+import SiteSearch from "@/components/SiteSearch";
 
 export default function SiteHeader({ categories }: { categories: string[] }) {
   return (
@@ -26,6 +27,7 @@ export default function SiteHeader({ categories }: { categories: string[] }) {
           ))}
         </nav>
         <div className="flex shrink-0 items-center gap-3">
+          <SiteSearch />
           <Link
             href="/contact-rudrakasturi"
             className="rounded-full border border-ink px-4 py-1.5 text-sm text-ink transition hover:bg-ink hover:text-paper"

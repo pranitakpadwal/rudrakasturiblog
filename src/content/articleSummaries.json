@@ -283,5 +283,95 @@
   },
   "quality-content-zero-traffic-how-googles-penalties-devastate-content-businesses": {
     "verdict": "Draws on accounts from Google's 2024 Creator Summit where publishers say their content was acknowledged by Google as high-quality yet never recovered traffic after the 2022 update. The core grievance is less about the penalty itself than the lack of any transparent recovery path — creators describe doing everything right and still watching their business collapse with no explanation."
+  },
+  "introducing-chatgpt-search-instant-timely-answers-with-relevant-web-links": {
+    "verdict": "Covers OpenAI's launch of ChatGPT Search, giving the chatbot real-time web access for news, weather and stock prices via a web-search icon, with India included in the initial rollout. Frames it, without much hedging, as a legitimate early challenger to Google and Bing rather than just a feature bolt-on."
+  },
+  "googles-latest-update-link-inclusion-on-mobile-pages-for-large-websites": {
+    "verdict": "Flags a Google crawl-budget documentation update telling large sites to make sure every link on the desktop version also exists on mobile, since Google's mobile-first indexing means missing mobile links can slow discovery of new pages entirely. Comes with a short, concrete audit checklist for anyone still running separate mobile and desktop templates."
+  },
+  "seo-news-update-majority-of-sites-hit-by-googles-september-2023-helpful-content-update-show-limited-recovery": {
+    "verdict": "Cites Glenn Gabe's tracking of roughly 400 sites hit by the September 2023 Helpful Content Update, finding only about 22% saw a 20%-plus traffic gain after the August 2024 core update — and even those rarely returned to pre-penalty levels. The blunt conclusion: full recovery from an HCU hit is the exception, not the rule."
+  },
+  "googles-november-2024-core-update-what-it-means-for-seos": {
+    "verdict": "Walks through the practical playbook for surviving a core update: don't react mid-rollout, wait a full week after completion before comparing Search Console data, and treat small ranking drops differently from steep ones. Repeats the standard Google line that the goal is surfacing helpful content, not punishing specific sites."
+  },
+  "surge-in-google-searches-on-immigration-and-h1b-visa-in-india-post-trumps-win": {
+    "verdict": "Tracks a spike in Indian searches for 'H1B visa,' 'illegal immigration' and 'US birth citizenship' immediately after Trump's 2024 election win, tying it to his first-term record of tightening H1B rules and floating an end to birthright citizenship. Reads as a snapshot of anxiety among India's large population of US-bound tech professionals rather than any confirmed policy change."
+  },
+  "chatgpt-takes-over-now-more-searched-than-news-on-google-india": {
+    "verdict": "Notes that Google Trends showed 'ChatGPT' searches in India matching or overtaking 'news' searches by November 2024, driven by students, professionals and general curiosity about what the tool can do. Frames this as a broader signal that people are shifting from passively reading news to actively interrogating an AI for answers."
+  },
+  "googles-updated-site-reputation-abuse-policy-explained": {
+    "verdict": "Breaks down Google's site reputation abuse policy with concrete examples — a medical site hosting casino content, a news site running third-party coupons purely for SEO lift — versus what's explicitly allowed, like wire services, syndication, and genuine user-generated content. The clear instruction for anyone with offending pages: noindex them rather than wait for a manual action."
+  },
+  "googles-updated-guide-to-search-ranking-systems-what-you-need-to-know": {
+    "verdict": "Summarizes Google's clarified guide distinguishing page-level ranking signals from site-wide ones, while explicitly stating third-party scores like Domain Authority or Domain Rating play no role in its systems whatsoever. Recommends using those tools for competitive benchmarking only, never as a stand-in for how Google actually evaluates a site."
+  },
+  "seo-scores-think-again-google-doesnt-care-and-neither-should-you": {
+    "verdict": "A pointed rant against DA/DR obsession, arguing even CEOs misunderstand these as Google ranking signals when they're purely third-party inventions from Moz, Ahrefs and Semrush. The line that lands hardest: a low-DA blog post can outrank a major site if it's simply more useful — Google ranks the work, not the score."
+  },
+  "how-big-is-chatgpts-market-share-of-search": {
+    "verdict": "Cites Rand Fishkin's cross-platform breakdown putting Google at 83.5% of search activity versus ChatGPT's 4.33% as of October 2024 — striking given ChatGPT doesn't even index the web the way a search engine does. Flags real methodology caveats too, like excluded app/API traffic, that likely understate ChatGPT's actual reach."
+  },
+  "google-introduces-page-annotations-feature-and-opt-out-option-on-ios": {
+    "verdict": "A short note on Google's iOS app adding an AI-driven Page Annotations feature — likely highlights or summaries of web pages — alongside a clear opt-out toggle in settings. Framed as a small but deliberate nod to user choice amid Google's broader push to bake AI into everyday browsing."
+  },
+  "the-doj-wants-google-to-sell-chrome-whats-happening-and-why": {
+    "verdict": "Lays out the DOJ's proposal to force Google to divest Chrome following its August 2024 monopoly ruling, arguing Chrome's default search settings and data collection entrench Google's dominance in both search and advertising. Presents both sides fairly via a side-by-side table, with hearings not scheduled until April 2025 and the outcome very much unresolved."
+  },
+  "google-tests-removing-eu-news-content-from-search-news-discover-impact-and-insights-explained": {
+    "verdict": "Details a Google experiment quietly hiding EU news publishers from Search, News and Discover for 1% of users across eight countries, explicitly tied to leverage in European Copyright Directive licensing negotiations. Reads the test correctly as a pressure tactic — Google gathering data on how much publishers actually need it, right as compensation terms are being hashed out."
+  },
+  "is-the-role-of-a-political-strategist-and-data-analyst-over-examining-recent-election-outcomes": {
+    "verdict": "Uses exit-poll misses in Haryana and Maharashtra to question whether data-driven political strategy has failed, concluding the discipline isn't dying but needs to stop treating polling data as gospel and reintegrate ground-level, qualitative voter feedback. Mostly a think-piece with prescriptive bullet points rather than any hard new finding."
+  },
+  "blocking-ai-bots-in-robots-txt-a-comprehensive-guide": {
+    "verdict": "A reference list of nearly twenty AI crawlers worth knowing — GPTBot, ClaudeBot, Bytespider, Google-Extended among them — with copy-paste robots.txt rules to block each one. Honest about the limits: robots.txt is a request, not enforcement, so it recommends pairing it with firewall rules or IP blocking for bots that simply ignore the file."
+  },
+  "when-traffic-drops-or-penalties-hit-stop-calling-google-start-fixing-internally": {
+    "verdict": "A frank reality check: Google support can't and won't diagnose your specific traffic drop, so recovery is entirely on your own team's audit of technical SEO, content quality, backlinks, and shifted search intent. The strongest warning is against panic moves — mass link disavows or page deletions tend to make a bad situation worse, not better."
+  },
+  "what-to-do-when-your-site-receives-a-manual-action-penalty-a-day-by-day-explainer": {
+    "verdict": "A literal day-by-day recovery playbook for a manual action penalty, from confirming it in Search Console on day one through auditing, disavowing links, fixing content, and finally submitting a documented reconsideration request around day 26. Includes a template reconsideration letter and a realistic 7-to-30-day timeline depending on site size and severity."
+  },
+  "google-discontinues-sitelinks-search-box-feature-what-it-means-for-your-website": {
+    "verdict": "Reports Google's November 2024 removal of the sitelinks search box and its related nositelinkssearchbox rule, framed as low-impact housekeeping rather than a ranking change. Recommends site owners lean harder on internal search UX and homepage navigation now that branded queries route users to the homepage instead of a direct search box."
+  },
+  "google-search-console-vs-ga4-which-one-is-better-for-tracking-seo-data": {
+    "verdict": "Clarifies that GSC and GA4 aren't competitors but answer different questions — GSC shows how you perform in search itself (keywords, impressions, Discover), GA4 shows what happens after someone lands on your site. Explains exactly why their numbers never match: GSC applies data thresholds for privacy while GA4 counts every session, so a documented discrepancy is expected, not a bug."
+  },
+  "google-november-2024-core-update-rollout-delays-and-what-seos-should-do-next": {
+    "verdict": "Tracks how often Google's core updates blow past their own 14-day estimate, tabulating five recent rollouts where only one finished on schedule and March 2024's took 45 days. The advice for a delayed rollout is consistent with the site's other update posts: don't touch anything reactively, wait for the Search Status Dashboard to confirm completion, then audit."
+  },
+  "what-are-people-really-searching-for-on-google-a-look-at-search-intent": {
+    "verdict": "Relays Rand Fishkin's analysis of 332 million queries showing informational searches dominate at 50.7%, navigational at 33.4%, commercial at 14.5%, and transactional barely registering at 0.69% — yet that sliver drives the highest ROI. The takeaway for marketers is blunt: most people aren't ready to buy, so a strategy built only around transactional keywords is ignoring 85%+ of actual search behavior."
+  },
+  "googles-top-queries-entertainment-crushes-news-food-and-adult-content": {
+    "verdict": "More from Fishkin's query dataset: entertainment topics like actors, movies and video games make up roughly a quarter of all Google searches, while adult content sits at just 3.6% — far below the old '20% of the internet' myth. Notes entertainment traffic is often high-volume but low-conversion, a useful corrective for anyone chasing pageviews as a proxy for revenue potential."
+  },
+  "google-search-personalization-how-to-check-manage-and-control-your-results": {
+    "verdict": "A how-to on Google's transparency feature that tells users whether their results are personalized, plus the settings path to toggle it off via Web & App Activity. Notes the important nuance that turning personalization off stops Google from using your activity to shape results, but doesn't stop it from collecting that activity in the first place."
+  },
+  "perplexity-expands-publisher-program-with-new-partnerships-across-the-globe": {
+    "verdict": "Covers Perplexity signing over a dozen new publishers — LA Times, Adweek, DPReview, Mexico News Daily among them — into a program that shares ad revenue and performance metrics in exchange for their content feeding its answers. Positions it as an early attempt at a sustainable AI-publisher relationship, in contrast to publishers simply having their content scraped for free."
+  },
+  "google-unveils-paligemma-2-a-leap-forward-in-vision-language-models": {
+    "verdict": "A technical rundown of Google's PaliGemma 2 vision-language model, pairing a Vision Transformer image encoder with a text decoder to caption images, answer visual questions, and detect objects across multiple languages. Frames its lightweight, efficient design as the real differentiator, making advanced multimodal AI viable on smaller devices rather than just cloud infrastructure."
+  },
+  "branded-vs-generic-searches-what-do-google-users-really-look-for": {
+    "verdict": "Another Fishkin data point: only 44% of Google searches are branded, meaning most people start out brand-agnostic even though individual branded terms rack up far higher volume per keyword. The practical split it recommends — invest in brand-building for the searches loyal customers already make, and content marketing for the 56% still comparing options."
+  },
+  "how-gen-z-navigates-the-web-insights-based-on-rand-fishkins-web-theory": {
+    "verdict": "Applies Fishkin's Consume-Search-Compare-Convert framework specifically to Gen Z, arguing search has become a secondary, 'grandmother' step behind community validation on Reddit, Discord and TikTok comment threads. The clearest strategic implication: brands need their own direct destination, not just visibility on third-party platforms, because Gen Z distrusts anything that feels purely promotional."
+  },
+  "is-traffic-still-relevant-when-the-money-comes-from-ai-and-google-deals": {
+    "verdict": "Argues traffic is losing its status as publishing's core metric now that AI platforms pay directly for content access and communities like Reddit are absorbing search traffic that used to land on news sites. Doesn't claim SEO is dead, but reframes it as one input among several — alongside AI licensing deals, YouTube monetization, and subscriptions — in a genuinely fragmented revenue model."
+  },
+  "navigating-the-aftermath-of-googles-november-2024-core-update-your-next-steps": {
+    "verdict": "A structured recovery guide broken out by business type — news sites should lean on timeliness and author credentials, e-commerce should fix thin product pages, B2B should invest in long-form authority content. Frames a core-update hit as diagnostic information about content quality rather than a punishment with no actionable response."
+  },
+  "why-did-chatgpts-paid-plan-jump-to-200-and-will-anyone-pay-that-much": {
+    "verdict": "Breaks down OpenAI's steep jump from a $20 to $200 ChatGPT tier as a deliberate segmentation play — casual users stay on cheaper plans while enterprises, developers and high-stakes professionals get faster models, higher API limits, and enterprise-grade privacy tools. The verdict is pragmatic: it's not built for individuals, and whether it succeeds depends entirely on whether the time saved actually outweighs the cost for the businesses it targets."
   }
 }

@@ -13,8 +13,18 @@ export default function SubscribeModal() {
   useEffect(() => {
     if (sessionStorage.getItem(DISMISS_KEY)) return;
 
-    const timer = setTimeout(() => setOpen(true), 15000);
+    // Re-check on fire, not just at effect setup — the user may have
+    // already subscribed or closed the modal (setting the dismiss flag)
+    // between when this timer/listener was scheduled and when it fires.
+    const timer = setTimeout(() => {
+      if (!sessionStorage.getItem(DISMISS_KEY)) setOpen(true);
+    }, 15000);
+
     const onScroll = () => {
+      if (sessionStorage.getItem(DISMISS_KEY)) {
+        window.removeEventListener("scroll", onScroll);
+        return;
+      }
       if (window.scrollY > document.body.scrollHeight * 0.4) {
         setOpen(true);
         window.removeEventListener("scroll", onScroll);

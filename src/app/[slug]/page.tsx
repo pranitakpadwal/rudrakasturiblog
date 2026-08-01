@@ -17,6 +17,7 @@ import MarkdownContent from "@/components/MarkdownContent";
 import SocialShareBar from "@/components/SocialShareBar";
 import ArticleSidebar from "@/components/ArticleSidebar";
 import ContinuousReader from "@/components/ContinuousReader";
+import CurrentlyBuilding from "@/components/CurrentlyBuilding";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const SITE_URL = "https://blog.rudrakasturi.com";
@@ -177,6 +178,8 @@ export default async function ContentPage({
       )}
 
       {isPost ? <ArticleBody post={item} /> : <MarkdownContent content={item.content_md} />}
+
+      {item.slug === "about-rudra-kasturi" && <CurrentlyBuilding />}
 
       {!isPost && (
         <div className="mt-16 border-t border-line pt-8">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllPosts, formatShortDateIST } from "@/lib/content";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import PostingHeatmap from "@/components/PostingHeatmap";
 
 export const metadata: Metadata = {
   title: "Archive",
@@ -36,6 +37,10 @@ export default function ArchivePage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Archive" }]} />
       <h1 className="font-display text-4xl font-semibold text-ink">Archive</h1>
       <p className="mt-3 text-ink-soft">{posts.length} posts, newest first.</p>
+
+      <div className="mt-8">
+        <PostingHeatmap dates={posts.map((p) => p.date)} />
+      </div>
 
       <div className="mt-12 flex flex-col gap-12">
         {[...byYear.entries()].map(([year, yearPosts]) => (

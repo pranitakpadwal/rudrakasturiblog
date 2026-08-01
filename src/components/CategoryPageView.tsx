@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ContentItem } from "@/lib/content";
 import { categoryColor, categorySlug, readingTime, formatDateIST } from "@/lib/content";
+import { categoryBeat } from "@/content/categoryBeats";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const CATEGORY_PAGE_SIZE = 24;
@@ -30,7 +31,10 @@ export default function CategoryPageView({
         Category
       </p>
       <h1 className="font-display text-4xl font-semibold text-ink">{name}</h1>
-      <p className="mt-3 text-ink-soft">
+      {categoryBeat(name) && (
+        <p className="mt-2 max-w-2xl text-ink-soft">{categoryBeat(name)}</p>
+      )}
+      <p className="mt-3 font-mono text-xs uppercase tracking-wide text-ink-soft">
         {total} posts{totalPages > 1 ? ` · page ${page} of ${totalPages}` : ""}
       </p>
 

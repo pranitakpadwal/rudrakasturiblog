@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getPostBySlug } from "@/lib/content";
+import { getPostBySlug, getRelatedPosts } from "@/lib/content";
 import { broadcastEmail, isEmailSendConfigured, unsubscribeToken } from "@/lib/subscribers";
+import { relatedReadsHtml, renderEmailShell } from "@/lib/emailTemplate";
 
 const SITE_URL = "https://blog.rudrakasturi.com";
 const ADMIN_SECRET = process.env.NEWSLETTER_ADMIN_SECRET;
@@ -29,18 +30,21 @@ export async function POST(req: NextRequest) {
   }
 
   const url = `${SITE_URL}/${post.slug}`;
+  const related = getRelatedPosts(post, [], 3);
 
   try {
     const { sent } = await broadcastEmail(post.title, (email) => {
       const unsubscribeUrl = `${SITE_URL}/api/unsubscribe?email=${encodeURIComponent(email)}&token=${unsubscribeToken(email)}`;
-      return `
-        <p><strong>${post.title}</strong></p>
-        <p>${post.excerpt || ""}</p>
-        <p><a href="${url}">Read it here →</a></p>
-        <p style="margin-top:32px;font-size:12px;color:#888">
-          <a href="${unsubscribeUrl}">Unsubscribe</a>
-        </p>
-      `;
+      return renderEmailShell({
+        eyebrow: "New post",
+        heading: post.title,
+        bodyHtml: `
+          <p>${post.excerpt || ""}</p>
+          <p><a href="${url}" style="color:#9a3324;">Read it here →</a></p>
+          ${relatedReadsHtml(related)}
+        `,
+        unsubscribeUrl,
+      });
     });
 
     return NextResponse.json({ ok: true, sent });

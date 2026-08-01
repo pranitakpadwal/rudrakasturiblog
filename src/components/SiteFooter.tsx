@@ -1,5 +1,13 @@
 import Link from "next/link";
 import { categorySlug } from "@/lib/content";
+import { gitaQuoteForIndex, GITA_QUOTE_COUNT } from "@/content/gitaQuotes";
+
+function dayOfYearIndex(): number {
+  const now = new Date();
+  const start = new Date(Date.UTC(now.getUTCFullYear(), 0, 0));
+  const diff = now.getTime() - start.getTime();
+  return Math.floor(diff / 86400000) % GITA_QUOTE_COUNT;
+}
 
 const ELSEWHERE = [
   { label: "LinkedIn", href: "https://linkedin.com/in/rudrakasturi" },
@@ -121,8 +129,9 @@ export default function SiteFooter({ categories }: { categories: string[] }) {
             </ul>
           </div>
         </div>
-        <div className="mt-12 border-t border-line pt-6 text-xs text-ink-soft">
-          © {new Date().getFullYear()} Rudra Kasturi
+        <div className="mt-12 flex flex-col gap-3 border-t border-line pt-6 text-xs text-ink-soft sm:flex-row sm:items-center sm:justify-between">
+          <span>© {new Date().getFullYear()} Rudra Kasturi</span>
+          <span className="italic">&ldquo;{gitaQuoteForIndex(dayOfYearIndex())}&rdquo;</span>
         </div>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 import { createHmac } from "crypto";
+import { renderEmailShell } from "./emailTemplate";
 
 // Storage: a JSON file in a dedicated branch of this same GitHub repo,
 // read/written via GitHub's Contents API. No third-party database, no
@@ -192,13 +193,15 @@ export async function sendWelcomeEmail(email: string): Promise<void> {
       from: `Rudra Kasturi <${RESEND_FROM_EMAIL}>`,
       to: email,
       subject: "You're on the list",
-      html: `
-        <p>Thanks for subscribing to Rudra Kasturi — SEO, AEO, and AI search, without the fluff.</p>
-        <p>New posts will land in your inbox as they go up.</p>
-        <p style="margin-top:32px;font-size:12px;color:#888">
-          Didn't ask for this? <a href="${unsubscribeUrl}">Unsubscribe</a>
-        </p>
-      `,
+      html: renderEmailShell({
+        eyebrow: "Welcome",
+        heading: "You're on the list.",
+        bodyHtml: `
+          <p>Thanks for subscribing to Rudra Kasturi — SEO, AEO, and AI search, without the fluff.</p>
+          <p>New posts will land in your inbox as they go up.</p>
+        `,
+        unsubscribeUrl,
+      }),
     }),
   });
 
