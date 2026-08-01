@@ -418,5 +418,50 @@
   },
   "the-future-of-cas-with-ai-transforming-challenges-into-opportunities": {
     "verdict": "Argues AI won't replace chartered accountants but will offload their most tedious work — fraud detection, GST compliance, audit sampling — freeing them to become strategic advisors doing forecasting and cross-border client work instead of number-crunching. Also flags a real responsibility shift: CAs will increasingly need to police data privacy and algorithmic bias in the AI tools they adopt, not just use them."
+  },
+  "youtube-ads-paying-to-watch-or-paying-to-skip-the-ultimate-win-win-for-youtube": {
+    "verdict": "A satirical rant on YouTube's ad model, comparing it to a caterer paying the groom to serve his food while also charging guests to skip to something else. The joke lands hardest on Premium's ₹129/month price point against Indians' well-honed instinct for dodging costs and mastering the skip button."
+  },
+  "why-googles-24-hour-data-is-a-game-changer-for-seo-content-teams": {
+    "verdict": "Breaks down Search Console's new same-day reporting as a genuine workflow shift, enabling near-real-time keyword and CTR tracking instead of the old reporting lag. Also flags the obvious trap — daily data tempts overreaction to small fluctuations, so it recommends watching for patterns over a few days before making any actual changes."
+  },
+  "google-to-roll-out-more-core-updates": {
+    "verdict": "A short heads-up that Google plans more frequent core updates to keep search aligned with AI tools and filter out generic content, meaning rankings will keep shifting more often than SEOs are used to. The practical response offered is standard but sound: write for people, diversify traffic sources, and don't chase shortcuts that a future update will just undo."
+  },
+  "unitedhealthcare-ai-and-claim-denial-controversy-a-deep-dive": {
+    "verdict": "Details the lawsuit alleging UnitedHealthcare's nH Predict AI had a 90% error rate in denying post-acute care claims, disproportionately harming elderly patients denied continued care. Uses the scandal, which coincided with CEO Brian Thompson's killing, as a case study for why healthcare AI needs human-in-the-loop oversight and can't be deployed purely as a cost-cutting lever."
+  },
+  "is-social-media-the-new-google-gen-z-turns-to-google-25-less-than-gen-x-when-searching": {
+    "verdict": "Cites Forbes data showing Gen Z uses Google 25% less than Gen X, with TikTok, Instagram and YouTube increasingly functioning as search engines for beauty, fashion, and business discovery. Notes the split is topical, not total — Google still wins for restaurant searches, while TikTok dominates hair and makeup queries specifically."
+  },
+  "subject-greetings-from-2026-seo-is-alive-but-its-wearing-a-new-hat": {
+    "verdict": "A speculative letter-from-the-future format imagining SEO in 2026 as having merged with social media optimization, voice search, and brand-building rather than dying to AI chatbots. Reads as optimistic prediction dressed as narrative device — light on hard evidence, more a pep talk for anxious marketers than analysis."
+  },
+  "would-you-pay-20-a-month-to-use-an-ai-chatbot-or-do-you-still-prefer-google": {
+    "verdict": "Weighs whether AI chatbots like Perplexity can actually dethrone Google, citing an early adopter who cut Google usage by 90% alongside real hallucination failures like a chatbot giving wrong hiking directions. Concludes Google's scale and free price tag still win for now — Perplexity had only 15 million users versus Google's billions as of early 2024."
+  },
+  "break-language-barriers-with-youtubes-auto-dubbing-feature-%f0%9f%8c%8d%f0%9f%8e%99%ef%b8%8f": {
+    "verdict": "A straightforward how-to on YouTube's Auto Dubbing feature, which automatically generates translated audio tracks across eight languages without any extra work from creators. Flags the current limitation honestly — dubs don't always capture tone or emotional context yet — while teasing a Google DeepMind collaboration aimed at more expressive, natural-sounding dubs."
+  },
+  "googles-whisk-visualize-your-ideas-with-a-fun-new-image-prompting-tool": {
+    "verdict": "Introduces Google Labs' Whisk, an image-prompting tool that lets users remix visual inputs — subject, style, scene — into new images by pairing Gemini's image understanding with the Imagen 3 generator. Positioned as a lower-friction alternative to text-prompt image generation, aimed at things like stickers, merch concepts and character design rather than photorealistic output."
+  },
+  "ai-first-content-creation-the-balance-between-automation-and-human-touch": {
+    "verdict": "Relays Google's Martin Splitt warning, from the Zurich Search Central Conference, against churning out hundreds of AI-generated pages just because you can — users and Google both spot content with no real purpose. The clear directive: use AI to speed up drafting and research, but keep human judgment in the loop for anything meant to actually serve a reader."
+  },
+  "disallowing-ai-crawlers-a-guide-for-seos-and-technical-teams": {
+    "verdict": "Covers John Mueller's confirmation that blocking AI crawlers via robots.txt won't hurt normal Googlebot indexing as long as the rules are specific rather than blanket disallows. Includes practical steps — targeted user-agent blocks, firewall rules for bots ignoring robots.txt, and regular server log review — for sites that want AI training data collection off their site without losing search visibility."
+  },
+  "google-third-party-vs-in-house-content-sites-within-a-site-why-it-matters-more-than-ever-in-seo": {
+    "verdict": "Centers on John Mueller's litmus test from the Zurich conference — 'would you do this for readers if Google wasn't here?' — as the clearest gut check for whether content is genuinely useful or just written to rank. Translates that philosophy into concrete tactics: fewer, deeper pieces over volume, and continuous updates to existing content rather than one-and-done publishing."
+  },
+  "expand-with-intent-not-volume-safeguard-your-sites-reputation-the-right-way": {
+    "verdict": "Relays Google's Danny Sullivan and Martin Splitt advising that expanding into unrelated content dilutes topical authority and confuses users — the recommended fix is either staying adjacent to your existing expertise or spinning off a genuinely separate site for unrelated topics. Uses a sharp analogy: switching a drone photography YouTube channel to motorcycle travel content only works if the audience shift feels organic, not abrupt."
+  },
+  "ais-role-in-seo-enhancing-content-not-replacing-humans": {
+    "verdict": "Combines Google Search Central Conference and Fortune Brainstorm AI takeaways into a case for AI as content assistant, not author — Google's Elizabeth Reid explicitly names 'scaled content abuse' as a real risk it's actively fighting. Also explains Retrieval-Augmented Generation in plain terms and repeats OpenAI's Ilya Sutskever calling web content the 'fossil fuel of AI,' framing publisher content as the resource AI search fundamentally depends on."
+  },
+  "december-2024-google-spam-update-rolling-out-globally": {
+    "verdict": "A short status notice on Google's December 2024 spam update, targeting keyword stuffing, cloaking and low-quality content across all languages within a roughly one-week rollout. Reiterates the standard reassurance that sites following Search Essentials guidelines shouldn't see meaningful impact, with a pointer to the Search Status Dashboard for rollout confirmation."
   }
 }
