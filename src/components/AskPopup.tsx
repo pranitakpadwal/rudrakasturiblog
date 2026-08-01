@@ -6,7 +6,6 @@ import { gitaQuoteForIndex, GITA_QUOTE_COUNT } from "@/content/gitaQuotes";
 
 const DISMISS_KEY = "rk-ask-dismissed";
 const AUTO_SKIP_MS = 10000;
-const QUOTE_ROTATE_MS = 4500;
 
 interface AskResult {
   answer: string;
@@ -35,7 +34,7 @@ export default function AskPopup() {
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [result, setResult] = useState<AskResult | null>(null);
   const [errorMessage, setErrorMessage] = useState("");
-  const [quoteIndex, setQuoteIndex] = useState(0);
+  const [quoteIndex] = useState(() => Math.floor(Math.random() * GITA_QUOTE_COUNT));
 
   function close() {
     setOpen(false);
@@ -55,14 +54,6 @@ export default function AskPopup() {
     const timer = setTimeout(close, AUTO_SKIP_MS);
     return () => clearTimeout(timer);
   }, [open, question, status]);
-
-  useEffect(() => {
-    if (!open) return;
-    const timer = setInterval(() => {
-      setQuoteIndex((i) => (i + 1) % GITA_QUOTE_COUNT);
-    }, QUOTE_ROTATE_MS);
-    return () => clearInterval(timer);
-  }, [open]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
