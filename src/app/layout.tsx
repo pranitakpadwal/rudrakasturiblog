@@ -29,7 +29,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rudra Kasturi — Search. Strategy. AI. Growth.",
+    default: "Rudra Kasturi: Search. Strategy. AI. Growth.",
     template: "%s | Rudra Kasturi",
   },
   description: "Search. Strategy. AI. Growth. Coach. Revenue.",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rudra Kasturi — Search. Strategy. AI. Growth.",
+    title: "Rudra Kasturi: Search. Strategy. AI. Growth.",
     description: "Search. Strategy. AI. Growth. Coach. Revenue.",
     url: "https://blog.rudrakasturi.com",
     siteName: "Rudra Kasturi",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@kasturitagore",
-    title: "Rudra Kasturi — Search. Strategy. AI. Growth.",
+    title: "Rudra Kasturi: Search. Strategy. AI. Growth.",
     description: "Search. Strategy. AI. Growth. Coach. Revenue.",
   },
 };

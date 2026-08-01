@@ -22,7 +22,7 @@ export async function generateMetadata({
   const name = resolveCategory(category);
   if (!name) return {};
 
-  const description = `Posts about ${name} from Rudra Kasturi — Search. Strategy. AI. Growth.`;
+  const description = `Posts about ${name} from Rudra Kasturi: Search. Strategy. AI. Growth.`;
   const url = `${SITE_URL}/category/${category}`;
 
   return {

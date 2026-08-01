@@ -3,7 +3,7 @@ import { renderEmailShell } from "./emailTemplate";
 
 // Storage: a JSON file in a dedicated branch of this same GitHub repo,
 // read/written via GitHub's Contents API. No third-party database, no
-// signup beyond a free GitHub Personal Access Token — GitHub never
+// signup beyond a free GitHub Personal Access Token: GitHub never
 // requires payment for PATs. Using a separate branch (not the Vercel
 // production branch) so subscribe requests don't trigger site rebuilds.
 const GITHUB_TOKEN = process.env.SUBSCRIBERS_GITHUB_TOKEN;
@@ -197,7 +197,7 @@ export async function sendWelcomeEmail(email: string): Promise<void> {
         eyebrow: "Welcome",
         heading: "You're on the list.",
         bodyHtml: `
-          <p>Thanks for subscribing to Rudra Kasturi — SEO, AEO, and AI search, without the fluff.</p>
+          <p>Thanks for subscribing to Rudra Kasturi: SEO, AEO, and AI search, without the fluff.</p>
           <p>New posts will land in your inbox as they go up.</p>
         `,
         unsubscribeUrl,

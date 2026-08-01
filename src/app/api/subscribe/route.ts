@@ -15,10 +15,10 @@ export async function POST(req: NextRequest) {
 
   if (!isSubscriberStoreConfigured()) {
     // Subscriber storage isn't wired up yet (SUPABASE_URL /
-    // SUPABASE_SERVICE_ROLE_KEY missing) — tell the caller plainly
+    // SUPABASE_SERVICE_ROLE_KEY missing): tell the caller plainly
     // instead of pretending the email was captured.
     return NextResponse.json(
-      { error: "Subscriptions aren't set up yet — check back soon." },
+      { error: "Subscriptions aren't set up yet: check back soon." },
       { status: 503 }
     );
   }
@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     const result = await addSubscriber(email, "homepage-modal");
 
     if (result === "added" && isEmailSendConfigured()) {
-      // Best-effort — a failed welcome email shouldn't fail the signup.
+      // Best-effort: a failed welcome email shouldn't fail the signup.
       sendWelcomeEmail(email).catch((err) => console.error("Welcome email failed:", err));
     }
 

@@ -27,10 +27,10 @@ export async function generateMetadata({
   const name = resolveCategory(category);
   if (!name) return {};
 
-  const description = `Posts about ${name} from Rudra Kasturi — Search. Strategy. AI. Growth.`;
+  const description = `Posts about ${name} from Rudra Kasturi: Search. Strategy. AI. Growth.`;
 
   return {
-    title: `${name} — page ${page}`,
+    title: `${name}: page ${page}`,
     description,
     alternates: { canonical: `/category/${category}/page/${page}` },
   };

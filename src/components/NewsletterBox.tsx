@@ -18,13 +18,13 @@ export default function NewsletterBox() {
       });
       if (!res.ok) {
         const data = await res.json().catch(() => null);
-        setErrorMessage(data?.error || "Something went wrong — try again.");
+        setErrorMessage(data?.error || "Something went wrong: try again.");
         setStatus("error");
         return;
       }
       setStatus("done");
     } catch {
-      setErrorMessage("Something went wrong — try again.");
+      setErrorMessage("Something went wrong: try again.");
       setStatus("error");
     }
   }
@@ -33,7 +33,7 @@ export default function NewsletterBox() {
     <div className="rounded-xl border border-line bg-paper p-5">
       <h3 className="font-display text-base font-semibold text-ink">Get new posts by email</h3>
       {status === "done" ? (
-        <p className="mt-2 text-sm text-ink-soft">You&apos;re in — check your inbox.</p>
+        <p className="mt-2 text-sm text-ink-soft">You&apos;re in: check your inbox.</p>
       ) : (
         <form onSubmit={handleSubmit} className="mt-3 flex flex-col gap-2">
           <input

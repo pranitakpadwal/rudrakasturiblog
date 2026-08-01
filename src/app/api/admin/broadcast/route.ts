@@ -7,7 +7,7 @@ const SITE_URL = "https://blog.rudrakasturi.com";
 const ADMIN_SECRET = process.env.NEWSLETTER_ADMIN_SECRET;
 
 // Manually triggered: POST { slug, secret } and every subscriber gets an
-// email pointing at that post. Not wired to auto-fire on publish yet —
+// email pointing at that post. Not wired to auto-fire on publish yet -
 // call it (or ask me to) whenever a new post should go out.
 export async function POST(req: NextRequest) {
   if (!ADMIN_SECRET) {

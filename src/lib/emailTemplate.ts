@@ -1,6 +1,6 @@
 const SITE_URL = "https://blog.rudrakasturi.com";
 
-// Table-based layout, inline styles only — matches the site's visual
+// Table-based layout, inline styles only: matches the site's visual
 // language (mono eyebrow label, bordered cards, ink/accent palette) as
 // closely as email clients' patchy CSS support allows.
 export function renderEmailShell(opts: {

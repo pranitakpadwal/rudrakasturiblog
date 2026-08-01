@@ -12,7 +12,7 @@ function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-// One hub post per tag across the whole site — the most recent post
+// One hub post per tag across the whole site: the most recent post
 // carrying that tag becomes the link target, so topic clusters point at
 // current authority rather than an arbitrary older post.
 function buildHubIndex() {
@@ -34,7 +34,7 @@ function buildHubIndex() {
 const MAX_AUTOLINKS = 4;
 
 // Scans post body text for phrases that match another post's tags and
-// links the first occurrence to that post — real interlinking driven by
+// links the first occurrence to that post: real interlinking driven by
 // the site's own taxonomy, not a random related-posts widget.
 export function autoLinkContent(markdown: string, currentSlug: string): string {
   buildHubIndex();

@@ -10,7 +10,7 @@ interface Curated {
 const homeCurated = homeCuratedData as Record<string, Curated>;
 
 // Hand-written teaser title + 2-line blurb for the handful of posts shown
-// on the homepage — kept separate from the canonical title/excerpt so the
+// on the homepage: kept separate from the canonical title/excerpt so the
 // indexed article page's actual <title>/H1 never changes.
 export function getHomeCurated(slug: string): Curated | undefined {
   return homeCurated[slug];

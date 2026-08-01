@@ -2,7 +2,7 @@ const PROJECTS = [
   {
     name: "AppStudioX",
     url: "https://appstudiox.com",
-    description: "App and product studio — where the ideas actually ship.",
+    description: "App and product studio: where the ideas actually ship.",
   },
   {
     name: "AI Vidhyarthi",

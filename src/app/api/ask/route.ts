@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
 
   if (!isAskConfigured()) {
     return NextResponse.json(
-      { error: "Ask isn't set up yet — check back soon." },
+      { error: "Ask isn't set up yet: check back soon." },
       { status: 503 }
     );
   }
@@ -23,6 +23,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ answer, blogSources, webSources });
   } catch (err) {
     console.error("Ask failed:", err);
-    return NextResponse.json({ error: "Something went wrong — try again." }, { status: 500 });
+    return NextResponse.json({ error: "Something went wrong: try again." }, { status: 500 });
   }
 }

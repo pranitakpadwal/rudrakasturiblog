@@ -1,6 +1,6 @@
 {
   "you-didnt-lose-your-job-you-got-in-early": {
-    "teaser": "You Didn't Lose Your Job — You Got In Early",
+    "teaser": "You Didn't Lose Your Job. You Got In Early.",
     "blurb": "If AI just took your SEO job, here's the reframe: you're not late to a dying field, you're early to a new one most people haven't noticed started."
   },
   "enough-of-this-us-publishers-are-ready-to-block-google": {
@@ -13,7 +13,7 @@
   },
   "satya-nadellas-reverse-information-paradox-why-every-ai-prompt-you-type-might-be-worth-more-than-you-think": {
     "teaser": "What You're Really Giving Away Every Time You Prompt AI",
-    "blurb": "Satya Nadella flipped a 1966 Nobel-winning economics problem on its head — and it changes what \"paying for AI\" actually means."
+    "blurb": "Satya Nadella flipped a 1966 Nobel-winning economics problem on its head, and it changes what \"paying for AI\" actually means."
   },
   "google-just-told-creators-welcome-to-search": {
     "teaser": "Google Just Quietly Changed Who Search Is For",
@@ -21,30 +21,30 @@
   },
   "robots-txt-unreachable-heres-how-to-keep-your-site-safe-and-seo-friendly": {
     "teaser": "Robots.txt Unreachable? Here's What Actually Happens",
-    "blurb": "If Google can't reach your robots.txt, it isn't automatically a disaster — but there are a few things worth checking before you assume it's fine."
+    "blurb": "If Google can't reach your robots.txt, it isn't automatically a disaster, but there are a few things worth checking before you assume it's fine."
   },
   "microsoft-study-identifies-40-jobs-most-and-least-affected-by-ai": {
     "teaser": "The 40 Jobs Microsoft Says AI Will Hit Hardest",
-    "blurb": "A Microsoft Research study of 200,000+ Copilot conversations ranks which roles are most exposed to AI — and which are staying insulated for now."
+    "blurb": "A Microsoft Research study of 200,000+ Copilot conversations ranks which roles are most exposed to AI, and which are staying insulated for now."
   },
   "11-things-liz-reid-told-publishers-straight-from-googles-head-of-search": {
     "teaser": "11 Things Google's Head of Search Told Publishers Directly",
-    "blurb": "Liz Reid laid out a fairly blunt list of dos and don'ts for publishers on the AI Inside podcast — broken down point by point here."
+    "blurb": "Liz Reid laid out a fairly blunt list of dos and don'ts for publishers on the AI Inside podcast, broken down point by point here."
   },
   "content-signal-headers-llms-txt-everyone-says-add-them-google-says-dont-bother": {
     "teaser": "llms.txt and Content Signal Headers: Skip Them",
-    "blurb": "Everyone's telling you to add these two \"AI SEO\" tools to your site. Google says don't bother — here's the actual test behind that answer."
+    "blurb": "Everyone's telling you to add these two \"AI SEO\" tools to your site. Google says don't bother, here's the actual test behind that answer."
   },
   "llms-txt-content-signal-headers-everyone-says-add-them-google-says-dont-bother": {
     "teaser": "llms.txt and Content Signal Headers: Skip Them",
-    "blurb": "Everyone's telling you to add these two \"AI SEO\" tools to your site. Google says don't bother — here's the actual test behind that answer."
+    "blurb": "Everyone's telling you to add these two \"AI SEO\" tools to your site. Google says don't bother, here's the actual test behind that answer."
   },
   "claude-fable-5-the-ai-model-that-got-shut-down-by-the-us-government-and-what-happened-in-those-18-days": {
     "teaser": "The AI Model the US Government Shut Down Overnight",
     "blurb": "One of the most powerful AI models ever released vanished from the internet with no warning. Here's exactly what happened in the 18 days after."
   },
   "chatgpt-traffic-fell-then-rose-again-heres-what-actually-happened": {
-    "teaser": "ChatGPT Referral Traffic Fell, Then Rebounded — Why",
+    "teaser": "ChatGPT Referral Traffic Fell, Then Rebounded: Why",
     "blurb": "A sharp decline, tense months, then a rebound most headlines got wrong. The real pattern behind ChatGPT referral traffic across ecommerce, SaaS, and more."
   },
   "indian-forms-are-written-to-confuse-you-i-found-out-the-hard-way-then-chatgpt-agreed": {
@@ -57,11 +57,11 @@
   },
   "query-fan-out-in-ai-search-what-it-is-how-it-works": {
     "teaser": "Query Fan-Out: What AI Search Does With Your One Question",
-    "blurb": "AI search engines don't just answer your question — they secretly split it into 5-20 sub-questions and merge the results. Here's how that actually works."
+    "blurb": "AI search engines don't just answer your question. They secretly split it into 5-20 sub-questions and merge the results. Here's how that actually works."
   },
   "instagram-is-finally-letting-you-talk-back-to-its-algorithm": {
     "teaser": "Instagram Is Finally Letting You Talk Back to the Algorithm",
-    "blurb": "Your feed hasn't really been \"yours\" for years — mostly strangers and reels you never asked for. What Instagram's new control actually changes."
+    "blurb": "Your feed hasn't really been \"yours\" for years, mostly strangers and reels you never asked for. What Instagram's new control actually changes."
   },
   "google-search-is-rolling-out-information-agents-in-ai-mode-heres-what-it-means-for-seo-aeo-publishers": {
     "teaser": "Google's New \"Information Agents\" Could Reshape AI Mode",
@@ -69,7 +69,7 @@
   },
   "googles-official-ai-content-guide-decoded-what-actually-matters-in-the-ai-search-era": {
     "teaser": "Google's Official AI Content Guide, Decoded",
-    "blurb": "GEO, AEO, LLMO, GAIO — the industry invented a dozen acronyms for something Google's own guide already answered plainly. Here's what actually matters."
+    "blurb": "GEO, AEO, LLMO, GAIO: the industry invented a dozen acronyms for something Google's own guide already answered plainly. Here's what actually matters."
   },
   "trump-govt-may-check-ai-models-before-they-go-live": {
     "teaser": "Washington May Start Checking AI Models Before Launch",
@@ -93,6 +93,6 @@
   },
   "amazon-is-not-anti-ai-amazon-is-anti-free-data": {
     "teaser": "Amazon Isn't Anti-AI. It's Anti-Free-Data.",
-    "blurb": "Amazon India's robots.txt allows Googlebot and Amazonbot but blocks most major AI crawlers — GPTBot, ClaudeBot, PerplexityBot. That's not an accident."
+    "blurb": "Amazon India's robots.txt allows Googlebot and Amazonbot but blocks most major AI crawlers: GPTBot, ClaudeBot, PerplexityBot. That's not an accident."
   }
 }

@@ -17,6 +17,6 @@ export async function GET(req: NextRequest) {
     });
   } catch (err) {
     console.error("Unsubscribe failed:", err);
-    return new NextResponse("Something went wrong — try again shortly.", { status: 500 });
+    return new NextResponse("Something went wrong: try again shortly.", { status: 500 });
   }
 }

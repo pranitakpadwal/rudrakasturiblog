@@ -20,7 +20,7 @@ export interface WebSource {
   snippet: string;
 }
 
-// Cheap keyword-overlap search over the site's own posts — no embeddings,
+// Cheap keyword-overlap search over the site's own posts: no embeddings,
 // no vector DB, just title/excerpt/tag/category matching. Good enough at
 // this content volume (~500 posts) and costs nothing to run.
 export function searchBlogPosts(query: string, limit: number): BlogSource[] {
@@ -107,7 +107,7 @@ export async function askClaude(
       max_tokens: 400,
       system:
         "You answer questions about SEO, AEO, and AI search for a blog reader. " +
-        "Prefer the blog excerpts given as context when they're relevant — this is " +
+        "Prefer the blog excerpts given as context when they're relevant: this is " +
         "Rudra Kasturi's own reporting and analysis, cite it by title. Use the web " +
         "context to fill gaps the blog doesn't cover. Keep answers under 150 words, " +
         "plain language, no headers or bullet spam. If context doesn't cover the " +

@@ -19,7 +19,7 @@ export function GET() {
     "",
     "## Posts",
     "",
-    ...posts.map((p) => `- [${p.title}](${SITE_URL}/${p.slug}) — ${p.date.slice(0, 10)}`),
+    ...posts.map((p) => `- [${p.title}](${SITE_URL}/${p.slug}): ${p.date.slice(0, 10)}`),
     "",
   ];
 

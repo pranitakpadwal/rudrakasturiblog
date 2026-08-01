@@ -1,4 +1,4 @@
-// No JSON imports here on purpose — this gets imported by client
+// No JSON imports here on purpose: this gets imported by client
 // components (HomeThumb, HeroSlider) and must stay tiny in the bundle,
 // unlike lib/content.ts which pulls in the full posts dataset.
 
@@ -11,7 +11,7 @@ function hashString(input: string): number {
   return Math.abs(hash);
 }
 
-// A small, restrained set of duotones — used only for the single article
+// A small, restrained set of duotones: used only for the single article
 // hero banner, never repeated across grids/cards.
 export const DUOTONES: [string, string][] = [
   ["#1c1917", "#8a5a3b"], // ink / clay
@@ -26,7 +26,7 @@ export function duotoneForSlug(slug: string): [string, string] {
   return DUOTONES[hashString(slug) % DUOTONES.length];
 }
 
-// A muted, print-catalogue palette keyed by category — same category always
+// A muted, print-catalogue palette keyed by category: same category always
 // gets the same color, so the color itself carries information (which
 // section a post belongs to) instead of being random decoration.
 const CATEGORY_COLORS = [

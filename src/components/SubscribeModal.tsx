@@ -13,7 +13,7 @@ export default function SubscribeModal() {
   useEffect(() => {
     if (sessionStorage.getItem(DISMISS_KEY)) return;
 
-    // Re-check on fire, not just at effect setup — the user may have
+    // Re-check on fire, not just at effect setup: the user may have
     // already subscribed or closed the modal (setting the dismiss flag)
     // between when this timer/listener was scheduled and when it fires.
     const timer = setTimeout(() => {
@@ -54,14 +54,14 @@ export default function SubscribeModal() {
       });
       if (!res.ok) {
         const data = await res.json().catch(() => null);
-        setErrorMessage(data?.error || "Something went wrong — try again.");
+        setErrorMessage(data?.error || "Something went wrong: try again.");
         setStatus("error");
         return;
       }
       setStatus("done");
       sessionStorage.setItem(DISMISS_KEY, "1");
     } catch {
-      setErrorMessage("Something went wrong — try again.");
+      setErrorMessage("Something went wrong: try again.");
       setStatus("error");
     }
   }
@@ -93,7 +93,7 @@ export default function SubscribeModal() {
           <div>
             <h2 className="font-display text-xl font-semibold text-ink">You&apos;re in.</h2>
             <p className="mt-2 text-sm text-ink-soft">
-              Check your inbox for a confirmation — new posts will land there as they go up.
+              Check your inbox for a confirmation: new posts will land there as they go up.
             </p>
           </div>
         ) : (

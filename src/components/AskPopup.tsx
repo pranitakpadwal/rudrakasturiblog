@@ -13,7 +13,7 @@ interface AskResult {
   webSources: { title: string; url: string }[];
 }
 
-// Original illustration — a simple reading figure, not a licensed cartoon.
+// Original illustration: a simple reading figure, not a licensed cartoon.
 function Mascot() {
   return (
     <svg width="140" height="160" viewBox="0 0 140 160" fill="none" aria-hidden>
@@ -47,7 +47,7 @@ export default function AskPopup() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Auto-skip after 10s, but only while the popup is still untouched —
+  // Auto-skip after 10s, but only while the popup is still untouched -
   // typing a question or viewing a result cancels it.
   useEffect(() => {
     if (!open || question || status !== "idle") return;
@@ -66,14 +66,14 @@ export default function AskPopup() {
       });
       const data = await res.json();
       if (!res.ok) {
-        setErrorMessage(data?.error || "Something went wrong — try again.");
+        setErrorMessage(data?.error || "Something went wrong: try again.");
         setStatus("error");
         return;
       }
       setResult(data);
       setStatus("done");
     } catch {
-      setErrorMessage("Something went wrong — try again.");
+      setErrorMessage("Something went wrong: try again.");
       setStatus("error");
     }
   }
