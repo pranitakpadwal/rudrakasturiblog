@@ -3,6 +3,7 @@ import { getAllPosts, getTopPosts, getHomeCurated, formatShortDateIST } from "@/
 import HeroSlider from "@/components/HeroSlider";
 import HomeThumb from "@/components/HomeThumb";
 import HomeSidebar from "@/components/HomeSidebar";
+import AskPopup from "@/components/AskPopup";
 
 const SLIDER_COUNT = 5;
 const LATEST_COUNT = 16;
@@ -27,6 +28,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto grid max-w-6xl gap-12 px-5 py-10 lg:grid-cols-[minmax(0,1fr)_280px]">
+      <AskPopup />
       <div className="min-w-0">
         <div className="mb-6">
           <h1 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
