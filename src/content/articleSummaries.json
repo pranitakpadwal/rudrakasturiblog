@@ -971,9 +971,6 @@
   "90-of-your-growth-problem-is-product-not-marketing": {
     "verdict": "Builds on Rand Fishkin's viral LinkedIn observation that leadership routinely fires marketing teams for missing growth targets when the actual bottleneck is retention, onboarding or product-market fit that no campaign can fix. Draws a sharp parallel between today's AI funding boom and the 2021 crypto wave — companies selling stock to investors rather than product to customers, with marketing serving as a convenient scapegoat that keeps the illusion of traction alive while the core product stays underbaked."
   },
-  "mira-murati-the-woman-who-said-no-to-zuckerbergs-1-billion-8340-crore-inr-offer": {
-    "verdict": "Profiles former OpenAI CTO Mira Murati's reported rejection of a $1 billion Meta offer in favor of building Thinking Machines Lab, a public-benefit AI company explicitly focused on open science and human-aligned models over pure scale. The detailed career timeline grounds the narrative well, tracing her path from Tesla's Model X team through OpenAI's CTO role and brief interim-CEO stint during the Altman board crisis to a $2 billion seed round backed by Andreessen Horowitz, Nvidia and the Albanian government."
-  },
   "whats-new-in-google-searchs-ai-mode-features-rolling-out-now-whats-coming-soon": {
     "verdict": "Breaks down Google's back-to-school AI Mode expansion into what's already live (step-by-step math and science help, follow-up conversational questions) versus what's coming soon (Search Live camera-based real-time explanation, PDF and image question-answering, a Canvas study-plan builder). Correctly frames the bigger shift: Google is repositioning Search from an answer-retrieval tool into something closer to a tutoring platform, currently English-only and US-first but with clear implications for how millions of students elsewhere might eventually study."
   },
@@ -1003,5 +1000,8 @@
   },
   "discover-and-refresh-in-google-crawl-stats-explained": {
     "verdict": "Clarifies the Discover versus Refresh distinction in Search Console's Crawl Stats report — Discover meaning Googlebot found a genuinely new URL for the first time, Refresh meaning it revisited a known page to check for updates — using clean, specific scenarios like a new blog post versus an updated product price. Useful mainly as a quick-reference definition piece for anyone trying to interpret their crawl stats data without overanalyzing normal Googlebot behavior."
+  },
+  "mira-murati-the-woman-who-said-no-to-zuckerbergs-1-billion-%e2%82%b98340-crore-inr-offer": {
+    "verdict": "Profiles former OpenAI CTO Mira Murati's reported rejection of a $1 billion Meta offer in favor of building Thinking Machines Lab, a public-benefit AI company explicitly focused on open science and human-aligned models over pure scale. The detailed career timeline grounds the narrative well, tracing her path from Tesla's Model X team through OpenAI's CTO role and brief interim-CEO stint during the Altman board crisis to a $2 billion seed round backed by Andreessen Horowitz, Nvidia and the Albanian government."
   }
 }
