@@ -1318,5 +1318,50 @@
   },
   "made-in-india-written-by-ai": {
     "verdict": "A self-aware, partly AI-assisted essay reflecting on Oxford research suggesting AI-generated content could dominate the internet within a year, arguing the real loss isn't human writing being replaced but a distinctly Indian voice — sarcasm mixed with sadness, pride with pain — flattening into polished, synthetic neutrality. The 'model collapse' framing lands well as the piece's central warning: AI trained on AI-written content risks becoming a photocopy of a photocopy, each generation duller than the last."
+  },
+  "who-said-politics-belongs-on-the-newspaper-front-page": {
+    "verdict": "Traces the front-page-politics-first convention back to newspapers originating as government bulletins in 1600s Europe, arguing the hierarchy survived through colonialism, India's freedom movement, and into the algorithmic era purely as inherited habit rather than genuine reader preference. The sharpest line reframes the whole debate: legacy media confuses placement with priority, while in an algorithm-driven world relevance is measured by where content is found, not where an editor chose to put it."
+  },
+  "google-adds-notebooklm-to-user-triggered-fetchers-all-you-need-to-know": {
+    "verdict": "Explains Google officially classifying NotebookLM as a 'user-triggered fetcher' that pulls page content only when a specific user adds a URL as a research source, meaning it bypasses robots.txt entirely since it acts on individual intent rather than automated crawling. The practical publisher guidance is genuinely useful — since you can't block it via robots.txt, the real lever is strengthening on-page attribution and structured metadata so your brand stays visible even when your content is consumed privately inside someone's NotebookLM summary."
+  },
+  "from-qubits-to-quantum-echoes-why-googles-latest-quantum-breakthrough-matters-to-everyone-especially-india": {
+    "verdict": "Breaks down Google's Quantum Echoes experiment on its Willow chip, which demonstrated a verifiable 13,000x speed advantage over classical supercomputers on a real physics-based task, distinguishing this from 2019's more contested 'quantum supremacy' claim by emphasizing independent verifiability. The India-focused back half is unusually concrete for this kind of piece, mapping specific applications to pharma, battery chemistry, and monsoon prediction, and including a self-assessment quiz to gauge organizational quantum readiness rather than leaving the implications abstract."
+  },
+  "chatgpt-is-now-in-every-phone-search-is-no-longer-about-algorithms": {
+    "verdict": "Opens with a Hyderabad student who stopped Googling after discovering ChatGPT to argue India's official ChatGPT rollout on November 4, 2025 marks a quiet behavioral shift from 'searching' to 'asking,' accelerating a three-way attention split between regional YouTube, short-form scrolling, and AI-native answers. The framing that lands hardest: this isn't Google losing a feature war, it's losing the more fundamental battle for who gets asked the question first, before a single link is ever clicked."
+  },
+  "google-search-console-introduces-custom-annotations-to-reports-everything-you-should-know": {
+    "verdict": "Explains Search Console's new custom annotations feature, letting site owners tag specific dates on Performance charts with short notes explaining traffic spikes or drops from content updates, technical fixes, or campaigns. The practical limitations are worth flagging clearly — annotations cap at 200 per property, auto-delete after 500 days, and can't be edited once created, so teams relying on long-term historical context should keep a separate internal backup log."
+  },
+  "google-explains-review-snippet-markup-what-changed-how-to-fix-your-pages": {
+    "verdict": "Clarifies Google's tightened rules on review and rating structured data, centered on a few clean principles: review one specific item per page, never mark up self-written or imported reviews as your own, and keep aggregate ratings visible to users exactly as declared in the schema. The three India-specific case studies — a D2C brand losing snippets after importing Amazon reviews, a restaurant flagged for embedding its own Google Business reviews — turn abstract schema rules into concrete cautionary examples with real traffic consequences attached."
+  },
+  "google-adds-pinpoint-fetcher-to-user-triggered-crawling-here-is-what-it-means-and-why-it-matters": {
+    "verdict": "Covers Google's addition of a Pinpoint fetcher to its user-triggered crawler documentation, used specifically when journalists and researchers load a website's PDFs into Google's Pinpoint investigative tool for document analysis. The practical stakes are laid out clearly for Indian newsrooms that routinely host FIRs, court orders, and RTI replies — scanned, image-only, or poorly named PDFs simply fail inside Pinpoint, quietly costing publishers citations and credibility they'd otherwise earn from journalist research."
+  },
+  "google-is-phasing-out-practice-problem-dataset-structured-data": {
+    "verdict": "Reports Google deprecating Practice Problem structured data by January 2026 and limiting Dataset markup to the niche Dataset Search product, while notably un-deprecating Book actions markup that still serves a real search feature. Frames the pattern correctly as part of a broader simplification push — Google pruning schema types that saw low engagement or created clutter, distinguishing this cleanly as a visibility change rather than any kind of ranking penalty."
+  },
+  "is-schema-useful-for-llms-the-impact-of-schema-on-search-and-content-visibility": {
+    "verdict": "Argues structured data's role has expanded beyond helping search engines format rich results to actively helping large language models parse ambiguous content into reliable, machine-readable facts they can trust and cite. Correctly tempers the pitch with an honest caveat — schema doesn't directly improve rankings, it functions as a clarity layer that increases the odds of accurate representation in AI summaries, not a replacement for genuinely good content."
+  },
+  "understanding-google-search-consoles-new-branded-queries-filter": {
+    "verdict": "Explains Search Console's new filter separating branded searches (queries containing your name, misspellings, or product terms) from non-branded discovery traffic, letting site owners see whether growth stems from genuine brand awareness or from organic content pulling in new audiences. Flags the honest limitation clearly — classification runs through Google's automated AI system, so occasional misclassification is expected, and the filter changes reporting clarity only, not actual rankings."
+  },
+  "zero-click-what-it-is-and-why-it-is-changing-google-seo-and-marketing": {
+    "verdict": "Defines zero-click search — where featured snippets, AI Overviews, and answer boxes satisfy the query without a single site visit — and cites industry estimates that 50-60% of searches now end without a click, rising to 80-90% for purely factual queries. The strategic pivot recommended is sound and non-generic: build content too deep and original for Google to compress into a summary box, and invest in brand recognition through newsletters and communities so people search for you by name rather than relying on discoverability alone."
+  },
+  "the-real-role-of-dates-in-seo-how-google-reads-freshness-and-content-accuracy": {
+    "verdict": "Explains how Google cross-references multiple signals — on-page visible dates, HTML timestamps, article schema, and sitemap entries — to determine content freshness, and will override or ignore your stated date entirely if these signals conflict with each other. The distinction between published and updated dates is the practical core here: Google can detect shallow 'freshness' gaming like fixing a typo and recalling it a meaningful update, and repeated false signals actively erode trust rather than boosting rankings."
+  },
+  "high-volume-vs-evergreen-content-which-one-actually-builds-real-authority-and-faster-growth": {
+    "verdict": "Weighs high-volume, quickly-produced content that spreads topic coverage against evergreen pillar articles that compound authority slowly, concluding the two aren't competing strategies but complementary layers of the same content system. The practical decision heuristic is genuinely useful — ask whether a topic is timeless or fading fast, and let that single question route each piece toward evergreen depth or high-volume speed rather than defaulting to one approach across the board."
+  },
+  "the-ai-job-wipeout-is-not-what-you-think-these-five-human-skills-will-decide-who-thrives-in-2026": {
+    "verdict": "Pushes back on blanket AI-replaces-jobs panic, arguing AI eliminates low-quality repeatable tasks specifically, while five human capacities — critical judgment, original creativity, translating vague intent into precise instructions, empathy, and cross-domain thinking — become the actual differentiators. The India-specific framing is the sharper argument: no global AI model can navigate the country's layered languages, rural-urban divides, and trust networks without human mediation, meaning Indian jobs transform rather than vanish for those who pair AI fluency with real-world contextual intelligence."
+  },
+  "openai-bots-the-full-list-what-they-do-and-how-to-block-them": {
+    "verdict": "A clean technical reference documenting OpenAI's four named bots — OpenAI-User, OpenAI-Assistant, OpenAI-SearchIndexer, and GPTBot — each with its distinct purpose and exact robots.txt syntax for blocking or allowing it individually. Useful primarily as a practical lookup table for site owners who want granular control over which OpenAI systems can access their content, rather than treating 'block AI bots' as one blunt, undifferentiated decision."
   }
 }
