@@ -1003,5 +1003,50 @@
   },
   "mira-murati-the-woman-who-said-no-to-zuckerbergs-1-billion-%e2%82%b98340-crore-inr-offer": {
     "verdict": "Profiles former OpenAI CTO Mira Murati's reported rejection of a $1 billion Meta offer in favor of building Thinking Machines Lab, a public-benefit AI company explicitly focused on open science and human-aligned models over pure scale. The detailed career timeline grounds the narrative well, tracing her path from Tesla's Model X team through OpenAI's CTO role and brief interim-CEO stint during the Altman board crisis to a $2 billion seed round backed by Andreessen Horowitz, Nvidia and the Albanian government."
+  },
+  "microsoft-study-identifies-40-jobs-most-and-least-affected-by-ai": {
+    "verdict": "Reports Microsoft Research's analysis of 200,000-plus Bing Copilot interactions assigning an 'AI applicability score' to over 80 occupations, finding communication-and-content-heavy roles like translators, writers and customer service reps score highest exposure while physically grounded trades like roofers, phlebotomists and construction laborers remain largely insulated. The important caveat the piece flags clearly: this measures language-based AI exposure specifically, and advancing robotics could eventually erode the safety margin the physical-trade jobs currently enjoy."
+  },
+  "gb-news-overtakes-bbc-as-the-uks-most-watched-tv-news-channel-for-the-first-time": {
+    "verdict": "Reports GB News edging out the BBC News Channel in average daily live viewers for the first time in July 2025, with especially strong breakfast and primetime numbers, while responsibly noting BARB's live-viewer methodology excludes on-demand platforms like iPlayer where the BBC's true reach remains far larger. Balances the milestone against GB News's ongoing financial strain — over £100 million in cumulative losses and a continuing advertiser boycott — making clear this is a notable ratings moment, not proof of a durable audience shift."
+  },
+  "digital-immunity-how-ai-designed-proteins-are-shaping-the-future-of-immune-cell-generation": {
+    "verdict": "Explains how AI protein-design tools like AlphaFold are being used to engineer synthetic proteins that guide immune cell development toward recognizing cancer or infected cells, opening potential paths in immunotherapy, vaccine development and autoimmune treatment. The 'designer immunity' framing captures the genuinely novel implication well — a future where vaccines and treatments could be tuned to an individual's specific biology the way personalized recommendations are already tuned to individual behavior."
+  },
+  "how-figma-and-openai-are-redefining-design-with-ai-an-explainer": {
+    "verdict": "Explains Figma's OpenAI-powered integration letting designers generate icons, layouts and placeholder copy from plain-language prompts instead of manual arrangement, framing it as lowering the barrier to participate in design work rather than replacing designers outright. Positions the collaboration as democratizing creative iteration — faster brainstorming and prototyping for startups and agencies that previously needed dedicated design resources to move at that speed."
+  },
+  "how-mcdonalds-is-betting-big-on-ai-to-transform-fast-food": {
+    "verdict": "Covers McDonald's plan to double its AI investment by 2027 across voice-based drive-thru ordering, kitchen optimization, dynamic digital menus, and chatbot-driven customer service, framed as a scale-driven necessity for a chain running over 40,000 outlets that need consistency without sacrificing personalization. Reasonably grounded in operational specifics — predictive inventory management and peak-hour forecasting — rather than vague claims about AI transformation."
+  },
+  "googles-investment-in-stan-signals-a-new-era-for-indias-social-gaming": {
+    "verdict": "Reports Google's AI Futures Fund joining an $8.5 million Series A for Indian social gaming platform Stan, which blends mobile gaming (BGMI, Free Fire, Ludo) with a redeemable-Gems reward economy and has already crossed 25 million downloads and 5.5 million monthly active users. Notes the practical AI angle concretely — Stan already automates 70-80% of content moderation and plans avatar generators and meme tools next — positioning the investment as part of Google's broader $5.5 billion-plus bet on Indian startups."
+  },
+  "how-tejas-mk2s-ai-cockpit-is-changing-indian-fighter-jets-a-comparison-with-tejas-mk1a": {
+    "verdict": "Compares the Tejas Mk1A's multi-screen glass cockpit against the upcoming Mk2's single panoramic touchscreen and AMCA-derived AI system, which acts as a 'virtual co-pilot' fusing sensor data to flag threats and suggest tactics rather than just displaying raw information across separate panels. The comparison table crystallizes the real shift well — it's not just a bigger screen, it's a move from information display to active decision support, meant to reduce cognitive load during high-stress combat scenarios."
+  },
+  "ai-ate-my-slide-deck-and-other-existential-crises-at-mckinsey": {
+    "verdict": "Covers a Wall Street Journal report on McKinsey deploying 12,000 AI agents alongside human consultants and cutting 5,000 jobs, framing it with heavy sarcasm as the end of consultants who coast on jargon and slide polish rather than genuine judgment. The practical distinction drawn is real: AI can check logic and summarize research, but it can't walk into an ambiguous, messy client situation and exercise the contextual judgment that actually justifies consulting fees."
+  },
+  "how-gen-z-in-india-hijacked-spirituality-and-why-its-good-for-everyone-except-fake-gurus": {
+    "verdict": "Argues Indian Gen Z has stripped religious ritual of guilt and obligation and rebuilt it as an on-demand emotional toolkit — five-minute meditation breaks, Instagram Reel mantras, à la carte temple visits — citing survey data that 62% pray despite only 53% saying they care about religion. The sharpest reframe treats this as genuine mental health infrastructure rather than shallow trend-chasing, arguing spirituality is functioning as accessible emotional first-aid in a country where formal therapy remains expensive and stigmatized."
+  },
+  "robots-are-doing-phds-in-drama-whats-left-for-humans-really": {
+    "verdict": "A satirical take on a Chinese robot named Xueba 01 pursuing a PhD in drama and film, with the punchline that failure means becoming a museum exhibit rather than a personal setback. Uses the absurd premise to needle at a real question worth sitting with: if AI can convincingly perform emotion without feeling it, what happens to human claims on creative and artistic authenticity."
+  },
+  "how-to-use-chatgpt-to-learn-practise-and-do-your-homework": {
+    "verdict": "A student-facing guide from the AI Vidhyarthi initiative walking through concrete ChatGPT prompts for confusing textbook chapters, diagram explanations, generated practice questions, and essay starters, explicitly framed as a study aid rather than a way to cheat. The five-step 'honest homework roadmap' keeps the advice grounded and non-gimmicky — ask until it clicks in plain language, use it to check your own work, then actually close the laptop when done."
+  },
+  "ai-may-soon-invent-its-own-language-says-hinton-the-godfather-of-ai": {
+    "verdict": "Relays Geoffrey Hinton's warning that AI models could develop internal communication shorthand opaque to human researchers, eliminating the ability to audit or interpret their reasoning the way current chain-of-thought tracking in English still allows. The stakes are framed clearly and specifically: opacity isn't just a technical inconvenience, it directly undermines accountability for AI decisions already shaping loans, jobs, health and education outcomes."
+  },
+  "ai-layoffs-degrees-cutting-through-the-hype": {
+    "verdict": "A blunt, first-person cut through AI-jobs hysteria, arguing most layoffs blamed on AI are really just cost-cutting and bad management dressed up in a trendier excuse, and that companies quietly rehire the people they fired once AI can't actually run real operations or handle messy customer situations. The practical student advice lands because it refuses easy answers on both sides — get the degree because it still opens doors in India, but also build real side projects, because marks alone won't prove you can execute."
+  },
+  "why-ai-infrastructure-is-the-real-billion-dollar-business-not-just-ai-apps": {
+    "verdict": "Argues the durable AI money isn't in building yet another chatbot app but in owning the underlying rails — data centers, GPUs, undersea cables, and the multi-decade power contracts that keep them running — pointing to Nvidia's trillion-dollar valuation and Google's $6 billion Andhra data center as proof points. Makes a specific, actionable case for India: the country's real AI opportunity may be becoming Asia's cloud and compute backbone, since infrastructure ownership compounds for decades while individual AI startups come and go."
+  },
+  "leak-google-is-rolling-out-ads-inside-ai-mode-whats-actually-happening": {
+    "verdict": "Reports leaked Google slides showing ads being tested inside AI Mode, triggered by full conversation context rather than single keyword matches, currently limited to Performance Max, AI Max for Search, and Shopping campaigns in US English. The concrete behavioral data point is the most useful signal for marketers: early AI Mode users are typing queries two to three times longer than traditional search, meaning keyword-bidding strategies built for short queries will need real rethinking, not just minor tweaks."
   }
 }
