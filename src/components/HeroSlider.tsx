@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import HomeThumb from "@/components/HomeThumb";
 
 export interface SlideItem {
   slug: string;
@@ -32,20 +33,26 @@ export default function HeroSlider({ slides }: { slides: SlideItem[] }) {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <Link href={`/${slide.slug}`} className="group block py-10 sm:py-14">
-        {slide.category && (
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
-            {slide.category}
-          </p>
-        )}
-        <h2 className="mt-3 max-w-3xl font-display text-2xl font-semibold leading-tight text-ink group-hover:text-accent sm:text-3xl">
-          {slide.title}
-        </h2>
-        {slide.excerpt && (
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-soft sm:text-base">
-            {slide.excerpt}
-          </p>
-        )}
+      <Link
+        href={`/${slide.slug}`}
+        className="group grid gap-6 py-10 sm:grid-cols-[1fr_240px] sm:items-center sm:py-14"
+      >
+        <div>
+          {slide.category && (
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+              {slide.category}
+            </p>
+          )}
+          <h2 className="mt-3 max-w-3xl font-display text-2xl font-semibold leading-tight text-ink group-hover:text-accent sm:text-3xl">
+            {slide.title}
+          </h2>
+          {slide.excerpt && (
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-soft sm:text-base">
+              {slide.excerpt}
+            </p>
+          )}
+        </div>
+        <HomeThumb category={slide.category} className="order-first sm:order-last" />
       </Link>
 
       {slides.length > 1 && (

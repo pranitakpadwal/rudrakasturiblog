@@ -8,6 +8,7 @@ export default function SubscribeModal() {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     if (sessionStorage.getItem(DISMISS_KEY)) return;
@@ -41,10 +42,16 @@ export default function SubscribeModal() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
-      if (!res.ok) throw new Error();
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        setErrorMessage(data?.error || "Something went wrong — try again.");
+        setStatus("error");
+        return;
+      }
       setStatus("done");
       sessionStorage.setItem(DISMISS_KEY, "1");
     } catch {
+      setErrorMessage("Something went wrong — try again.");
       setStatus("error");
     }
   }
@@ -74,10 +81,9 @@ export default function SubscribeModal() {
 
         {status === "done" ? (
           <div>
-            <h2 className="font-display text-xl font-semibold text-ink">Got it — thanks.</h2>
+            <h2 className="font-display text-xl font-semibold text-ink">You&apos;re in.</h2>
             <p className="mt-2 text-sm text-ink-soft">
-              We&apos;ve noted your email. Newsletter delivery is being set up right now —
-              you won&apos;t miss the first issue.
+              Check your inbox for a confirmation — new posts will land there as they go up.
             </p>
           </div>
         ) : (
@@ -104,9 +110,7 @@ export default function SubscribeModal() {
               >
                 {status === "loading" ? "Subscribing…" : "Subscribe"}
               </button>
-              {status === "error" && (
-                <p className="text-xs text-accent">Something went wrong — try again.</p>
-              )}
+              {status === "error" && <p className="text-xs text-accent">{errorMessage}</p>}
             </form>
           </>
         )}

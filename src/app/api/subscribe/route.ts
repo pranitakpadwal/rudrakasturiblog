@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
+import {
+  addSubscriber,
+  isEmailSendConfigured,
+  isSubscriberStoreConfigured,
+  sendWelcomeEmail,
+} from "@/lib/subscribers";
 
-// STUB: this only validates and acknowledges the request — it does not
-// actually store the email anywhere yet. Wire this up to a real provider
-// (Buttondown, ConvertKit, Mailchimp, etc.) before relying on it to
-// collect subscribers. See the account's API and drop the call in below.
 export async function POST(req: NextRequest) {
   const { email } = await req.json();
 
@@ -11,5 +13,27 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
 
-  return NextResponse.json({ ok: true });
+  if (!isSubscriberStoreConfigured()) {
+    // Subscriber storage isn't wired up yet (SUPABASE_URL /
+    // SUPABASE_SERVICE_ROLE_KEY missing) — tell the caller plainly
+    // instead of pretending the email was captured.
+    return NextResponse.json(
+      { error: "Subscriptions aren't set up yet — check back soon." },
+      { status: 503 }
+    );
+  }
+
+  try {
+    const result = await addSubscriber(email, "homepage-modal");
+
+    if (result === "added" && isEmailSendConfigured()) {
+      // Best-effort — a failed welcome email shouldn't fail the signup.
+      sendWelcomeEmail(email).catch((err) => console.error("Welcome email failed:", err));
+    }
+
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error("Subscribe failed:", err);
+    return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
+  }
 }
