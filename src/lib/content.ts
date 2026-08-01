@@ -1,6 +1,7 @@
 import postsData from "@/content/posts.json";
 import pagesData from "@/content/pages.json";
 import homeCuratedData from "@/content/homeCurated.json";
+import articleSummariesData from "@/content/articleSummaries.json";
 
 interface Curated {
   teaser: string;
@@ -14,6 +15,15 @@ const homeCurated = homeCuratedData as Record<string, Curated>;
 // indexed article page's actual <title>/H1 never changes.
 export function getHomeCurated(slug: string): Curated | undefined {
   return homeCurated[slug];
+}
+
+const articleSummaries = articleSummariesData as Record<string, { verdict: string }>;
+
+// AI-written 2-3 sentence "quick take" per post, grounded in that post's
+// actual content, not a template. Shown as a card near the top of the
+// article; never overwrites the canonical title/excerpt used for SEO.
+export function getArticleSummary(slug: string): string | undefined {
+  return articleSummaries[slug]?.verdict;
 }
 
 export interface ContentItem {

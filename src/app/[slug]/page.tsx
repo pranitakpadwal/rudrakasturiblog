@@ -13,6 +13,7 @@ import {
 } from "@/lib/content";
 import PostBanner from "@/components/PostBanner";
 import ArticleBody from "@/components/ArticleBody";
+import QuickTake from "@/components/QuickTake";
 import MarkdownContent from "@/components/MarkdownContent";
 import SocialShareBar from "@/components/SocialShareBar";
 import ArticleSidebar from "@/components/ArticleSidebar";
@@ -176,6 +177,8 @@ export default async function ContentPage({
           <SocialShareBar url={url} title={item.title} />
         </div>
       )}
+
+      {isPost && <QuickTake slug={item.slug} />}
 
       {isPost ? <ArticleBody post={item} /> : <MarkdownContent content={item.content_md} />}
 
