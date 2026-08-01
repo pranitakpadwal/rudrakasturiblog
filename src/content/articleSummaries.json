@@ -868,5 +868,50 @@
   },
   "denmark-just-gave-citizens-copyright-over-their-face-every-nation-should-be-taking-notes": {
     "verdict": "Reports Denmark's June 2025 proposal to grant citizens legal copyright over their own face, voice and body, explicitly aimed at criminalizing unauthorized AI deepfakes while carving out protection for satire. Frames it as a potential GDPR-style global precedent, arguing it correctly shifts legal responsibility onto AI platforms and content creators — watermarking, consent frameworks, audit trails — rather than leaving deepfake victims with no recourse against 'we're just the medium' platform excuses."
+  },
+  "content-streaming-vs-seo-what-google-ai-bots-actually-sees-and-misses": {
+    "verdict": "A deeply technical breakdown of how progressive HTML streaming and client-side dynamic loading can render content invisible to Googlebot, since bots snapshot the DOM on first load without scrolling, clicking, or waiting for interaction-triggered content. The line summarizing the whole piece is exactly right: if it's not in the rendered DOM within roughly five seconds, it doesn't exist for search or AI Overviews, no matter how smooth the experience feels to a human user."
+  },
+  "search-take-how-smaller-publishers-can-win-in-googles-ai-mode": {
+    "verdict": "A practical playbook for small publishers trying to get cited in AI Mode — original reporting over aggregated content, entity-focused writing over pure keyword targeting, and building brand mentions across Reddit, LinkedIn and guest posts even when your own site doesn't rank highly. The reframe at the close is the most useful mindset shift: small publishers aren't competing with BBC or NYT, they're trying to become the trusted go-to voice in one specific niche or region."
+  },
+  "indias-first-ai-election-isnt-about-who-wins-its-about-who-lies-better": {
+    "verdict": "Documents how Bihar's 2025 election became the first genuinely AI-saturated Indian campaign, with deepfake voice clones, caste-and-region-targeted AI-generated reel variants, and fabricated newspaper clippings circulating on WhatsApp with no legal requirement to label any of it as synthetic. The sharpest insight is about the actual goal of deepfakes: they don't need to convincingly fool anyone, they just need to plant enough doubt that clarifications — which never go viral the way the fake did — become irrelevant."
+  },
+  "google-just-clarified-return-policy-loyalty-program-markup-heres-what-you-need-to-know": {
+    "verdict": "A technical clarification on Google's Merchant Center structured data rules: return policies and loyalty programs must now be defined at the Organization level on a separate page, not embedded inline at the offer or product level as many sites had been doing. The role-by-role breakdown is the most useful part — SEOs risk losing rich-result eligibility, developers need to restructure JSON-LD hierarchy, and e-commerce managers need a standalone policy page rather than scattered inline markup."
+  },
+  "the-open-web-is-dying-reddit-is-already-planning-the-funeral": {
+    "verdict": "Chronicles a Reddit r/neoliberal thread mourning what AI summarization has broken about the open web's basic economic bargain — you made content, people visited, you earned something, you made more — now replaced by AI skimming content and serving answers with no click and often no real credit. The most affecting point isn't about lost ad revenue but lost purpose: the disappearance of sites built purely for fun, for a friend, or for the hell of it, because that kind of pointless creativity now feels economically unsustainable."
+  },
+  "indian-students-can-now-use-google-gemini-pro-for-free": {
+    "verdict": "Reports Google offering Indian college students a free year of Gemini 2.5 Pro (normally ~₹19,500) including 2TB storage, Veo 3 video generation, and NotebookLM upgrades, positioned explicitly as a loyalty-building play aligned with India's NEP 2020 digital literacy push. Frames it correctly as strategic rather than charitable — Google is shaping AI habits early in students who'll carry Gemini into their careers, with a September 15, 2025 signup deadline via SheerID verification."
+  },
+  "your-chatgpt-query-drank-more-water-than-you-did-today": {
+    "verdict": "Cites UC research estimating GPT-3's training run consumed roughly 700,000 liters of fresh water for data center cooling — equivalent to the daily water needs of 2,000 people — and argues AI companies' carbon-neutral pledges conspicuously omit any model-by-model water or energy disclosure. The self-aware disclaimer at the end is the sharpest touch: the article itself, headline included, was AI-generated, meaning writing about AI's water cost quietly consumed a bit more water to exist."
+  },
+  "google-discover-just-got-smarter-publishers-just-got-ghosted": {
+    "verdict": "A short, sharp alert that Google Discover now generates AI summaries directly inside the feed — reading articles and videos and serving a ready-made blurb so users never need to click through — with TechCrunch confirming a US rollout starting in entertainment and lifestyle. Flags the compounding problem of topic clustering specifically: when multiple outlets cover the same story, Google now shows one grouped summary card, erasing any individual publisher's distinct framing or reporting angle entirely."
+  },
+  "googles-june-2025-algo-update-we-killed-publishers-heres-the-proof": {
+    "verdict": "Uses the darkly ironic detail of Google Discover surfacing a news story about publishers losing 20-50% of their traffic to Google's own June 2025 update as the jumping-off point for a pointed question nobody's answering: since traffic is zero-sum, where exactly did all that lost publisher traffic actually go. The conclusion pushes past complaint into strategy — treat this as structural, not temporary, and build direct relationships (apps, subscriptions, community) that an algorithm update can't quietly delete overnight."
+  },
+  "june-2025-core-update-is-google-quietly-killing-indian-publishers-targeting-the-us": {
+    "verdict": "Investigates a striking pattern where Indian-owned sites covering US sports, entertainment and lifestyle topics saw near-total visibility collapse after the March 2025 core update, despite years of the same content ranking successfully for American queries. Cites SEO analyst Lily Ray's prior observation that Indian sites were disproportionately represented as AI Overview sources for US queries, and raises the pointed unanswered question of whether Google quietly began weighting geographic proximity between newsroom and audience as a trust signal — without ever documenting or confirming the change."
+  },
+  "want-to-be-part-of-ai-theres-a-role-for-you-but-read-the-fine-print": {
+    "verdict": "Profiles the emerging 'AI Ops Lead' role — a hybrid of workflow consultant and prompt engineer who sits with every department, identifies repetitive pain points, and turns them into automated prompts or Zapier chains rather than writing code. Honest about the uncomfortable tension built into the job itself: the same person hired to make teams more efficient with AI is often the one quietly making a second headcount unnecessary, meaning the role sits right at the edge of the very disruption it's helping cause."
+  },
+  "from-impressions-to-attention-how-smart-publishers-are-monetising-trust": {
+    "verdict": "Argues digital advertising's decade-long bet on programmatic scale has quietly failed, with premium publishers now pivoting back toward first-party data, brand-safe direct-sold packages, and even print — which retains real value in India, LATAM and regional Europe specifically because it's trusted and hard to fake. The comparison table crystallizes the pitch: the emerging model treats attention and brand outcomes as the real currency, not CPMs, and organizes ad ops, sales and product into unified teams instead of competing silos."
+  },
+  "perplexity-now-on-whatsapp-the-assistant-that-feels-like-a-real-desi-dost": {
+    "verdict": "Covers Perplexity's WhatsApp-native assistant, arguing its real insight is distribution rather than technology — Indians already run their entire lives through WhatsApp, so a capable AI assistant requiring zero app download or login has an unusually low adoption barrier. Walks through concrete use cases well-suited to the format: daily news digests, medication reminders in plain language, and topic-following for cricket, politics or exam updates, all through a single saved contact number."
+  },
+  "emotions-filters-and-now-ai-how-celebs-are-perfecting-instagram-captions": {
+    "verdict": "Contrasts Bollywood's history of cringeworthy social media blunders — Disha Patani's pasted email instructions, Urvashi Rautela's caught-out borrowed lines — against the recent uptick in noticeably polished, emotionally coherent celebrity captions, floating AI writing assistance as the likely explanation. Frames the shift generously as refinement rather than inauthenticity, comparing AI-assisted caption-writing to makeup: it doesn't replace the person's voice, it just smooths the presentation of it."
+  },
+  "the-case-for-a-calm-ai-mode": {
+    "verdict": "Argues the next meaningful AI product differentiator isn't speed but restraint — a hypothetical 'Calm Mode' that dims the interface, offers fewer but better suggestions, and responds like a grounded friend rather than an over-eager intern racing to prove usefulness. The genuinely interesting business point is about long-term moat: products built purely around response speed and engagement-per-session win short-term attention, but trust built through emotional regulation is a much harder thing for competitors to copy."
   }
 }
