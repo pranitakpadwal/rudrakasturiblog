@@ -36,26 +36,42 @@ export default function HeroSlider({ slides }: { slides: SlideItem[] }) {
     >
       <Link
         href={`/${slide.slug}`}
-        style={{ borderLeftColor: accent }}
-        className="group block border-l-4 py-8 pl-6 sm:py-10"
+        className="group grid gap-6 py-10 sm:grid-cols-[1fr_240px] sm:items-center sm:py-14"
       >
-        {slide.category && (
-          <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em]" style={{ color: accent }}>
-            {slide.category}
-          </p>
-        )}
-        <h2 className="mt-3 max-w-3xl font-display text-3xl font-bold leading-[1.05] tracking-tight text-ink group-hover:text-accent sm:text-4xl md:text-5xl">
-          {slide.title}
-        </h2>
-        {slide.excerpt && (
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-soft sm:text-base">
-            {slide.excerpt}
-          </p>
-        )}
+        <div>
+          {slide.category && (
+            <p
+              className="font-mono text-xs font-semibold uppercase tracking-[0.2em]"
+              style={{ color: accent }}
+            >
+              {slide.category}
+            </p>
+          )}
+          <h2 className="mt-3 max-w-3xl font-display text-3xl font-bold leading-[1.05] tracking-tight text-ink group-hover:text-accent sm:text-4xl md:text-5xl">
+            {slide.title}
+          </h2>
+          {slide.excerpt && (
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-soft sm:text-base">
+              {slide.excerpt}
+            </p>
+          )}
+        </div>
+        <div
+          className="relative order-first aspect-[16/10] w-full overflow-hidden rounded-lg transition group-hover:brightness-110 sm:order-last"
+          style={{ background: accent }}
+        >
+          <div
+            className="pointer-events-none absolute inset-0 opacity-[0.06]"
+            style={{
+              backgroundImage:
+                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Ccircle cx='1' cy='1' r='1' fill='white'/%3E%3C/svg%3E\")",
+            }}
+          />
+        </div>
       </Link>
 
       {slides.length > 1 && (
-        <div className="flex items-center gap-4 pb-6 pl-6">
+        <div className="flex items-center gap-4 pb-6">
           <button
             type="button"
             aria-label="Previous story"
