@@ -169,7 +169,7 @@ export default async function ContentPage({
       )}
 
       <div className="my-8">
-        <PostBanner slug={item.slug} />
+        <PostBanner slug={item.slug} title={item.title} />
       </div>
 
       {isPost && (

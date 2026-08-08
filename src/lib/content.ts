@@ -2,6 +2,7 @@ import postsData from "@/content/posts.json";
 import pagesData from "@/content/pages.json";
 import homeCuratedData from "@/content/homeCurated.json";
 import articleSummariesData from "@/content/articleSummaries.json";
+import bannerTitlesData from "@/content/bannerTitles.json";
 
 interface Curated {
   teaser: string;
@@ -24,6 +25,17 @@ const articleSummaries = articleSummariesData as Record<string, { verdict: strin
 // article; never overwrites the canonical title/excerpt used for SEO.
 export function getArticleSummary(slug: string): string | undefined {
   return articleSummaries[slug]?.verdict;
+}
+
+const bannerTitles = bannerTitlesData as Record<string, string>;
+
+// AI-written punchy alt-headline shown overlaid on the article hero
+// banner: distinct phrasing from the canonical <title>/H1 (which stays
+// untouched for SEO) and from the Quick Take/pull-quote text, so the
+// same line isn't repeated three times down one page. Falls back to the
+// real title until a post has been through the banner-title pass.
+export function getBannerTitle(slug: string, fallback: string): string {
+  return bannerTitles[slug] ?? fallback;
 }
 
 export interface ContentItem {
