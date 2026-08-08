@@ -54,22 +54,17 @@ export default function Home() {
                   <Link
                     key={post.slug}
                     href={`/${post.slug}`}
-                    className={`group block ${featured ? "sm:col-span-2" : ""}`}
+                    className={`group block transition ${featured ? "sm:col-span-2" : ""}`}
                   >
                     <HomeThumb
                       category={post.categories[0] ?? ""}
-                      className={featured ? "sm:aspect-[21/9]" : undefined}
+                      title={curated?.teaser ?? post.title}
+                      featured={featured}
+                      className="transition group-hover:brightness-110"
                     />
-                    <h3
-                      className={`mt-3 font-display font-bold leading-[1.1] tracking-tight text-ink group-hover:text-accent ${
-                        featured ? "text-2xl sm:text-3xl" : "text-base font-semibold leading-snug"
-                      }`}
-                    >
-                      {curated?.teaser ?? post.title}
-                    </h3>
                     {(curated?.blurb || post.excerpt) && (
                       <p
-                        className={`mt-1 leading-snug text-ink-soft ${featured ? "max-w-2xl text-base" : "text-sm"}`}
+                        className={`mt-2 leading-snug text-ink-soft ${featured ? "max-w-2xl text-base" : "text-sm"}`}
                       >
                         {curated?.blurb ?? post.excerpt}
                       </p>
@@ -91,20 +86,14 @@ export default function Home() {
             const curated = getHomeCurated(post.slug);
             return (
               <Link key={post.slug} href={`/${post.slug}`} className="group block">
-                <HomeThumb category={post.categories[0] ?? ""} />
-                <div className="mt-3 flex items-baseline gap-3">
-                  {post.categories[0] && (
-                    <span className="font-mono text-xs uppercase tracking-wide text-ink-soft">
-                      {post.categories[0]}
-                    </span>
-                  )}
-                  <span className="font-mono text-xs text-ink-soft">
-                    {formatShortDateIST(post.date)}
-                  </span>
-                </div>
-                <h3 className="mt-1 font-display text-base font-semibold leading-snug text-ink group-hover:text-accent">
-                  {curated?.teaser ?? post.title}
-                </h3>
+                <HomeThumb
+                  category={post.categories[0] ?? ""}
+                  title={curated?.teaser ?? post.title}
+                  className="transition group-hover:brightness-110"
+                />
+                <span className="mt-2 block font-mono text-xs text-ink-soft">
+                  {formatShortDateIST(post.date)}
+                </span>
                 {curated?.blurb && (
                   <p className="mt-1 text-sm leading-snug text-ink-soft">{curated.blurb}</p>
                 )}
