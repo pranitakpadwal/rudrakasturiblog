@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getAllPosts, getTopPosts, getHomeCurated, formatShortDateIST } from "@/lib/content";
 import HeroSlider from "@/components/HeroSlider";
-import HomeThumb from "@/components/HomeThumb";
+import PostCard from "@/components/PostCard";
 import HomeSidebar from "@/components/HomeSidebar";
 import AskPopup from "@/components/AskPopup";
 
@@ -49,27 +49,15 @@ export default function Home() {
             <div className="grid gap-4 sm:grid-cols-2">
               {mustRead.map((post, i) => {
                 const curated = getHomeCurated(post.slug);
-                const featured = i === 0;
                 return (
-                  <Link
+                  <PostCard
                     key={post.slug}
-                    href={`/${post.slug}`}
-                    className={`group block transition ${featured ? "sm:col-span-2" : ""}`}
-                  >
-                    <HomeThumb
-                      category={post.categories[0] ?? ""}
-                      title={curated?.teaser ?? post.title}
-                      featured={featured}
-                      className="transition group-hover:brightness-110"
-                    />
-                    {(curated?.blurb || post.excerpt) && (
-                      <p
-                        className={`mt-2 leading-snug text-ink-soft ${featured ? "max-w-2xl text-base" : "text-sm"}`}
-                      >
-                        {curated?.blurb ?? post.excerpt}
-                      </p>
-                    )}
-                  </Link>
+                    slug={post.slug}
+                    category={post.categories[0] ?? ""}
+                    title={curated?.teaser ?? post.title}
+                    blurb={curated?.blurb ?? post.excerpt}
+                    featured={i === 0}
+                  />
                 );
               })}
             </div>
@@ -85,19 +73,14 @@ export default function Home() {
           {latest.map((post) => {
             const curated = getHomeCurated(post.slug);
             return (
-              <Link key={post.slug} href={`/${post.slug}`} className="group block">
-                <HomeThumb
-                  category={post.categories[0] ?? ""}
-                  title={curated?.teaser ?? post.title}
-                  className="transition group-hover:brightness-110"
-                />
-                <span className="mt-2 block font-mono text-xs text-ink-soft">
-                  {formatShortDateIST(post.date)}
-                </span>
-                {curated?.blurb && (
-                  <p className="mt-1 text-sm leading-snug text-ink-soft">{curated.blurb}</p>
-                )}
-              </Link>
+              <PostCard
+                key={post.slug}
+                slug={post.slug}
+                category={post.categories[0] ?? ""}
+                title={curated?.teaser ?? post.title}
+                blurb={curated?.blurb}
+                meta={formatShortDateIST(post.date)}
+              />
             );
           })}
         </div>

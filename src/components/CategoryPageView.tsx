@@ -1,8 +1,9 @@
 import Link from "next/link";
 import type { ContentItem } from "@/lib/content";
-import { categoryColor, categorySlug, readingTime, formatDateIST } from "@/lib/content";
+import { categorySlug, readingTime, formatDateIST } from "@/lib/content";
 import { categoryBeat } from "@/content/categoryBeats";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import PostCard from "@/components/PostCard";
 
 export const CATEGORY_PAGE_SIZE = 24;
 
@@ -40,19 +41,13 @@ export default function CategoryPageView({
 
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
-          <Link
+          <PostCard
             key={post.slug}
-            href={`/${post.slug}`}
-            style={{ borderLeftColor: categoryColor(name) }}
-            className="group block rounded-md border border-line border-l-4 bg-paper p-4 transition hover:shadow-sm"
-          >
-            <h3 className="font-display text-base font-semibold leading-snug text-ink group-hover:text-accent">
-              {post.title}
-            </h3>
-            <p className="mt-2 text-sm text-ink-soft">
-              {formatDateIST(post.date)} · {readingTime(post.content_md)} min read
-            </p>
-          </Link>
+            slug={post.slug}
+            category={name}
+            title={post.title}
+            meta={`${formatDateIST(post.date)} · ${readingTime(post.content_md)} min read`}
+          />
         ))}
       </div>
 

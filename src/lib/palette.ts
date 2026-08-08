@@ -1,5 +1,5 @@
 // No JSON imports here on purpose: this gets imported by client
-// components (HomeThumb, HeroSlider) and must stay tiny in the bundle,
+// components (PostCard, HeroSlider) and must stay tiny in the bundle,
 // unlike lib/content.ts which pulls in the full posts dataset.
 
 function hashString(input: string): number {
