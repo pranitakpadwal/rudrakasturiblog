@@ -149,7 +149,7 @@ export default async function ContentPage({
         </div>
       )}
 
-      <h1 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+      <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl">
         {item.title}
       </h1>
 

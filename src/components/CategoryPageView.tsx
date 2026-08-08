@@ -30,7 +30,7 @@ export default function CategoryPageView({
       <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-accent">
         Category
       </p>
-      <h1 className="font-display text-4xl font-semibold text-ink">{name}</h1>
+      <h1 className="font-display text-5xl font-bold tracking-tight text-ink">{name}</h1>
       {categoryBeat(name) && (
         <p className="mt-2 max-w-2xl text-ink-soft">{categoryBeat(name)}</p>
       )}

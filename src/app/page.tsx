@@ -30,8 +30,8 @@ export default function Home() {
     <div className="mx-auto grid max-w-6xl gap-12 px-5 py-10 lg:grid-cols-[minmax(0,1fr)_280px]">
       <AskPopup />
       <div className="min-w-0">
-        <div className="mb-6">
-          <h1 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
+        <div className="mb-8">
+          <h1 className="font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
             Make search fun.
           </h1>
         </div>
@@ -47,16 +47,30 @@ export default function Home() {
               <div className="h-px flex-1 bg-line" />
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
-              {mustRead.map((post) => {
+              {mustRead.map((post, i) => {
                 const curated = getHomeCurated(post.slug);
+                const featured = i === 0;
                 return (
-                  <Link key={post.slug} href={`/${post.slug}`} className="group block">
-                    <HomeThumb category={post.categories[0] ?? ""} />
-                    <h3 className="mt-3 font-display text-base font-semibold leading-snug text-ink group-hover:text-accent">
+                  <Link
+                    key={post.slug}
+                    href={`/${post.slug}`}
+                    className={`group block ${featured ? "sm:col-span-2" : ""}`}
+                  >
+                    <HomeThumb
+                      category={post.categories[0] ?? ""}
+                      className={featured ? "sm:aspect-[21/9]" : undefined}
+                    />
+                    <h3
+                      className={`mt-3 font-display font-bold leading-[1.1] tracking-tight text-ink group-hover:text-accent ${
+                        featured ? "text-2xl sm:text-3xl" : "text-base font-semibold leading-snug"
+                      }`}
+                    >
                       {curated?.teaser ?? post.title}
                     </h3>
                     {(curated?.blurb || post.excerpt) && (
-                      <p className="mt-1 text-sm leading-snug text-ink-soft">
+                      <p
+                        className={`mt-1 leading-snug text-ink-soft ${featured ? "max-w-2xl text-base" : "text-sm"}`}
+                      >
                         {curated?.blurb ?? post.excerpt}
                       </p>
                     )}

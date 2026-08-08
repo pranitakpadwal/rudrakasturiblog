@@ -35,7 +35,7 @@ export default function ArchivePage() {
   return (
     <div className="mx-auto max-w-3xl px-5 py-14">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Archive" }]} />
-      <h1 className="font-display text-4xl font-semibold text-ink">Archive</h1>
+      <h1 className="font-display text-5xl font-bold tracking-tight text-ink">Archive</h1>
       <p className="mt-3 text-ink-soft">{posts.length} posts, newest first.</p>
 
       <div className="mt-8">

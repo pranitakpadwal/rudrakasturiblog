@@ -43,7 +43,7 @@ export default function HeroSlider({ slides }: { slides: SlideItem[] }) {
               {slide.category}
             </p>
           )}
-          <h2 className="mt-3 max-w-3xl font-display text-2xl font-semibold leading-tight text-ink group-hover:text-accent sm:text-3xl">
+          <h2 className="mt-3 max-w-3xl font-display text-3xl font-bold leading-[1.05] tracking-tight text-ink group-hover:text-accent sm:text-4xl md:text-5xl">
             {slide.title}
           </h2>
           {slide.excerpt && (
